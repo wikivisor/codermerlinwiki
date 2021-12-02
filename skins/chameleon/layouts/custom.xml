@@ -32,7 +32,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
                <cell class="flex-grow-0">
                   <component type="Logo" addLink="yes" />
                </cell>
-               <cell id="non-mainpage-search-wrapper" class="d-flex flex-column justify-content-between">
+               <cell id="non-mainpage-search-wrapper" class="d-flex flex-column justify-content-between align-items-end">
                   <component type="PersonalTools" showUserName="yes" position="right" />
                   <component type="SearchBar" buttons="go" class="d-flex order-1" />
                </cell>
