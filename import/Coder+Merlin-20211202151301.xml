@@ -508,10 +508,7 @@ a.new {
       <origin>16574</origin>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text bytes="62" sha1="apjelhm0v1dqglxlpv6qpbmqw4shk47" xml:space="preserve">* navigation
-* CATEGORY-SIDEBAR
-* GROUP-SIDEBAR
-* USER-SIDEBAR</text>
+      <text bytes="62" sha1="apjelhm0v1dqglxlpv6qpbmqw4shk47" xml:space="preserve"></text>
       <sha1>apjelhm0v1dqglxlpv6qpbmqw4shk47</sha1>
     </revision>
   </page>
