@@ -54,6 +54,8 @@ Add this line at the bottom of your `LocalSettings.php`:
 ```php
 require_once( "$IP/extensions/wikivisor/LocalSettings.php" );
 ```
+Some notes may be found in the added [LocalSettings.php](LocalSettings.php) file.
+
 ## Done
 At this point everything should be in place, use `Ctrl+F5` and/or `Ctrl+Shift+r` to purge the page cache and to enjoy your new wiki layout.
 
