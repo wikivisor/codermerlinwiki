@@ -1,0 +1,707 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Coder Merlin</sitename>
+    <dbname>merlin</dbname>
+    <base>https://merlin.wikivisor.com/wiki/Welcome_to_Coder_Merlin</base>
+    <generator>MediaWiki 1.35.4</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Project</namespace>
+      <namespace key="5" case="first-letter">Project talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="106" case="first-letter">Form</namespace>
+      <namespace key="107" case="first-letter">Form talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="112" case="first-letter">smw/schema</namespace>
+      <namespace key="113" case="first-letter">smw/schema talk</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="274" case="first-letter">Widget</namespace>
+      <namespace key="275" case="first-letter">Widget talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>MediaWiki:Chameleon.js</title>
+    <ns>8</ns>
+    <id>8582</id>
+    <revision>
+      <id>16641</id>
+      <parentid>16640</parentid>
+      <timestamp>2021-12-01T17:57:54Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>16641</origin>
+      <model>javascript</model>
+      <format>text/javascript</format>
+      <text bytes="2636" sha1="r37ywvb0ybr44rvjhknqaytvcmq7e3z" xml:space="preserve">$(function() {
+	moveSearchOnMain();
+	miniNavbar();
+	moveTOC();
+	moveNsHeader();
+	toggleSidebar();
+	cleanFooterIcons();
+	moveSidebarTogglers();
+});
+
+const mq = window.matchMedia("(max-width: 1105px)");
+const sb = window.matchMedia("(min-width: 1740px)");
+
+$(window).resize(function() {
+	moveSearchOnSmall();
+	miniNavbar();
+	if (sb.matches) {
+		$('.sidebar').removeClass('on-canvas');
+	}
+});
+$( window ).scroll(function() {
+    var fromTop = $(window).scrollTop();
+    if(fromTop &lt; 130 ) {
+    	$('#sidebar-right #toc, #sidebar-left #hf-nsheader-').css('top', (185  - fromTop) + 'px');	
+    } else {
+    	$('#sidebar-right #toc, #sidebar-left #hf-nsheader-').css('top', '0px');	
+    }
+});
+function moveSearchOnSmall() {
+	var mp = mw.config.get( 'wgIsMainPage' );
+	if (mq.matches) {
+		$('#mainpage-search-wrapper').prepend($('#p-search'));
+	} else {
+		if (mp) { 
+		} else {
+			$('#non-mainpage-search-wrapper').prepend($('#p-search'));
+		}
+	}
+}
+function miniNavbar() {
+	if (mq.matches) {
+		$('#mw-navigation').addClass('mini');
+	} else {
+		$('#mw-navigation').removeClass('mini');
+	}
+}
+function moveSearchOnMain() {
+        var mp = mw.config.get( 'wgIsMainPage' );
+        if (mp) { 
+             $('#mainpage-search-wrapper').detach().prependTo('#bodyContent').prepend($('#p-search'));
+        }
+}
+function moveTOC(){
+	if($('#toc').length &gt; 0){
+		var toctitle = '&lt;div class="nav-item"&gt;&lt;div id="ttitle" class="nav-link px-3"&gt;Contents&lt;/div&gt;&lt;/div&gt;';
+		$('#toc').prepend(toctitle).detach().prependTo('#sidebar-right');
+	}
+}
+function miniDropdown(){
+	if (mq.matches) {
+		$('#mw-navigation.mini .dropdown-toggle').click( function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var activemenu = $(this).parent('div').find('.dropdown-menu');
+			$(activemenu).toggle();
+			$('#mw-navigation.mini .dropdown-menu').not(activemenu).hide();
+		});
+	} 
+}
+function toggleSidebar(){
+	$('#sidebar-right-toggler').bind('click', function() {
+		$('#sidebar-right-wrapper').toggleClass('on-canvas');
+		$(this).find('i').toggleClass('fa-plus-square fa-minus-square');
+	});
+	$('#sidebar-left-toggler').bind('click', function() {
+		$('#sidebar-left-wrapper').toggleClass('on-canvas');
+		$(this).find('i').toggleClass('fa-plus-square fa-minus-square');
+	});
+}
+function moveNsHeader(){
+	$('#hf-nsheader-').detach().prependTo('#sidebar-left');
+}
+function cleanFooterIcons(){
+	$('#footer-merlin .nav-link').text("");
+	$('#footer-merlin').css('display','flex');
+}
+function moveSidebarTogglers(){
+	var wrapper = $('#mw-navigation');
+	$('#sidebar-left-toggler').detach().prependTo(wrapper);
+	$('#sidebar-right-toggler').detach().appendTo(wrapper);
+}</text>
+      <sha1>r37ywvb0ybr44rvjhknqaytvcmq7e3z</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Footer-icons</title>
+    <ns>8</ns>
+    <id>8593</id>
+    <revision>
+      <id>16607</id>
+      <parentid>16606</parentid>
+      <timestamp>2021-11-30T16:49:19Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>16607</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="371" sha1="cypq0mfumkjja4tzg9zjxz5nssdnfkw" xml:space="preserve">** https://www.facebook.com/Coder-Merlin-101592328319584/ ||fab fa-facebook fa-2x
+** https://teesprin.com/stores/coder-merlin ||fas fa-tshirt fa-2x
+** https://twitter.com/codermerlin ||fab fa-twitter fa-2x
+** https://discord.gg/Hj7mTVtMbH ||fab fa-discord fa-2x
+** https://discourse.codermerlin.com/ ||fab fa-discourse fa-2x
+** https://openbadges.org/ ||fas fa-cube fa-2x</text>
+      <sha1>cypq0mfumkjja4tzg9zjxz5nssdnfkw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-Back-to-top.css</title>
+    <ns>8</ns>
+    <id>8587</id>
+    <revision>
+      <id>16544</id>
+      <timestamp>2021-11-29T19:16:26Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <comment>Created page with "#back-to-top { 	background: #6610f2; 	border-radius: 50%; 	display: flex; 	justify-content: center; 	align-items: center; 	color: #fff; 	position: fixed; 	width: 64px; 	height..."</comment>
+      <origin>16544</origin>
+      <model>css</model>
+      <format>text/css</format>
+      <text bytes="326" sha1="n3ipthrrr0nivjmbcr4jptvfv8dllec" xml:space="preserve">#back-to-top {
+	background: #6610f2;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	position: fixed;
+	width: 64px;
+	height: 64px;
+	cursor: pointer;
+	right: 20px;
+	bottom: 100px;
+	z-index: 2000;
+}
+#back-to-top:hover {
+	box-shadow: 0 8px 24px rgba(0, 0, 0, .16) !important;
+}</text>
+      <sha1>n3ipthrrr0nivjmbcr4jptvfv8dllec</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-Back-to-top.js</title>
+    <ns>8</ns>
+    <id>8586</id>
+    <revision>
+      <id>16543</id>
+      <timestamp>2021-11-29T19:13:40Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <comment>Created page with "$(function() { 	backToTop(); });  function backToTop() { $('#back-to-top').click(function(e) {         e.preventDefault();         $('html, body').animate({                 sc..."</comment>
+      <origin>16543</origin>
+      <model>javascript</model>
+      <format>text/javascript</format>
+      <text bytes="428" sha1="3n7lo7xda1abam34idslep27oqmxwpo" xml:space="preserve">$(function() {
+	backToTop();
+});
+
+function backToTop() {
+$('#back-to-top').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+                scrollTop: "0"
+        });
+});
+$(window).scroll(function() {
+        if ($(this).scrollTop()) {
+                $('#back-to-top').css('visibility', 'visible');
+        } else {
+                $('#back-to-top').css('visibility', 'hidden');
+        }
+});
+}</text>
+      <sha1>3n7lo7xda1abam34idslep27oqmxwpo</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-Back-to-top</title>
+    <ns>8</ns>
+    <id>8585</id>
+    <revision>
+      <id>16505</id>
+      <timestamp>2021-11-29T17:28:10Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <comment>Created page with "Scroll Top Button"</comment>
+      <origin>16505</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="17" sha1="4fidpfdglqz4rrx90i5otsx8wggu127" xml:space="preserve">Scroll Top Button</text>
+      <sha1>4fidpfdglqz4rrx90i5otsx8wggu127</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-Dark-theme.css</title>
+    <ns>8</ns>
+    <id>8578</id>
+    <revision>
+      <id>16491</id>
+      <timestamp>2021-11-29T00:42:24Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <comment>Created page with "/** DARK THEME **/ html {       	filter: invert(1) contrast(.65) hue-rotate(180deg) !important;         background: #fff !important; } html img {       	filter: invert(1) cont..."</comment>
+      <origin>16491</origin>
+      <model>css</model>
+      <format>text/css</format>
+      <text bytes="559" sha1="30z24anym39zro9fqeqt6ifcq7qcreg" xml:space="preserve">/** DARK THEME **/
+html {
+      	filter: invert(1) contrast(.65) hue-rotate(180deg) !important;
+        background: #fff !important;
+}
+html img {
+      	filter: invert(1) contrast(1) hue-rotate(180deg);
+}
+.mw-mmv-image-wrapper {
+      	filter: invert(0);
+      	background: #eee;
+}
+.mw-mmv-download-button, .mw-mmv-reuse-button, .mw-mmv-options-button, 
+.mw-mmv-close, .mw-mmv-fullscreen, .mw-mmv-next-image, .mw-mmv-prev-image {
+      	filter: invert(1);
+}
+a, .toctogglelabel {	
+        color: #3600ae !important
+}
+a.new {
+        color: crimson !important
+}</text>
+      <sha1>30z24anym39zro9fqeqt6ifcq7qcreg</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-Dark-theme</title>
+    <ns>8</ns>
+    <id>8580</id>
+    <revision>
+      <id>16493</id>
+      <timestamp>2021-11-29T00:43:22Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <comment>Created page with "Dark Theme"</comment>
+      <origin>16493</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="10" sha1="3u0qnd8w2sf4kcuy8cqor7z1bhuxqpx" xml:space="preserve">Dark Theme</text>
+      <sha1>3u0qnd8w2sf4kcuy8cqor7z1bhuxqpx</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadgets-definition</title>
+    <ns>8</ns>
+    <id>8579</id>
+    <revision>
+      <id>16545</id>
+      <parentid>16520</parentid>
+      <timestamp>2021-11-29T19:17:24Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>16545</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="131" sha1="ferbffexyxptghbhpa8e5bvt9c2q3q8" xml:space="preserve">* Dark-theme[ResourceLoader|type=styles]|Dark-theme.css
+* Back-to-top[ResourceLoader|default|hidden]|Back-to-top.js|Back-to-top.css</text>
+      <sha1>ferbffexyxptghbhpa8e5bvt9c2q3q8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Hf-nsfooter-</title>
+    <ns>8</ns>
+    <id>6191</id>
+    <revision>
+      <id>16612</id>
+      <parentid>16609</parentid>
+      <timestamp>2021-11-30T17:04:40Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>16612</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="21" sha1="2g01uz158kh60kqq5mqrtfvcw1b5g20" xml:space="preserve">
+{{MerlinRecommends}}</text>
+      <sha1>2g01uz158kh60kqq5mqrtfvcw1b5g20</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Hf-nsheader-</title>
+    <ns>8</ns>
+    <id>6190</id>
+    <revision>
+      <id>16588</id>
+      <parentid>16587</parentid>
+      <timestamp>2021-11-30T08:40:55Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>16588</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="952" sha1="8fxt38f4551q5l6qgqpe15u34i8drct" xml:space="preserve">{{#arraydefine: levels|{{#ask: [[Category:Knowledge and skills]]|limit=5000|?Knowledge and skills level|sort=Knowledge and skills level|order=asc|format=array|sep=^|mainlabel=-|headers=hide}}|^|unique}}
+{{#tree: extensions=["persist"] | root=Sample Tree Menu|
+{{#arraymap:{{#arrayprint: levels|^}}
+  |^
+  |@
+  |* Level @ {{#arraydefine: topics|{{#ask: [[Category:Knowledge and skills]][[Knowledge and skills level::@]]|limit=5000|?Topic area|format=array|headers=hide|sep=^|manysep=^|mainlabel=-|sort=Topic area|order=asc}}|^|unique}}
+{{#arraymap: {{#arrayprint: topics|^}}
+  |^
+  |%%
+  |** %% {{#arraydefine: skills|{{#ask: [[Category:Knowledge and skills]][[Knowledge and skills level::@]][[Topic area::%%]]|limit=5000|?Knowledge and skills description|format=array|headers=hide|sep=^|manysep=;|propsep=// }}|^}}
+{{#arraymap: {{#arrayprint: skills|^}}
+  |^
+  |$$$
+  |*** [[{{#explode:$$$|//|0}}]] {{#explode:$$$|//|1}}
+  |\n
+}}
+
+  |\n
+}}
+  |\n
+}}
+
+}}</text>
+      <sha1>8fxt38f4551q5l6qgqpe15u34i8drct</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Newsletter-label</title>
+    <ns>8</ns>
+    <id>8595</id>
+    <revision>
+      <id>16602</id>
+      <timestamp>2021-11-30T15:26:40Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <comment>Created page with "Subscribe to the Newsletter"</comment>
+      <origin>16602</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="27" sha1="f7piyj6r31amnrkiiet9pfeze70wcs6" xml:space="preserve">Subscribe to the Newsletter</text>
+      <sha1>f7piyj6r31amnrkiiet9pfeze70wcs6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Newsletter-url</title>
+    <ns>8</ns>
+    <id>8594</id>
+    <revision>
+      <id>16601</id>
+      <timestamp>2021-11-30T15:26:12Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <comment>Created page with "{{fullurl:Newsletter Subscribe}}"</comment>
+      <origin>16601</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="32" sha1="4fib32ozgvgey6u8s0j0h1cwhz2qty8" xml:space="preserve">{{fullurl:Newsletter Subscribe}}</text>
+      <sha1>4fib32ozgvgey6u8s0j0h1cwhz2qty8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Secondary-menu</title>
+    <ns>8</ns>
+    <id>8581</id>
+    <revision>
+      <id>16501</id>
+      <parentid>16500</parentid>
+      <timestamp>2021-11-29T15:28:49Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>16501</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="822" sha1="rnjvdpd89xmzrzaave981d7zf3fx658" xml:space="preserve">* My Tools
+** Merlin_Proficiency_Progress|Proficiency Progress
+** {{#invoke:MerlinAPI|guacamoleURL}}|Shell
+** {{#invoke:MerlinAPI|igisURL}}|IGIS
+** Code_Explorer|Code Explorer
+** Code_Explorer_Group_ID|CEG-ID
+* Keys and Commands
+** Emacs_Keys|Emacs Keys
+** Magit_Keys|Magit Keys
+** Screen_Keys|Screen Keys
+** LLDB_Commands|LLDB Commands
+* Overviews
+** Experiences_Overview|Experiences Overview
+** Experiences_Explorer|Experiences Explorer
+** Topic_Explorer|Topic Explorer
+** Curricula_Assistant|Curricula Assistant
+** Contributors_to_Computer_Science|Trailblazers
+* References
+** Glossary|Glossary
+** Common_Errors|Common Errors
+** References|References
+** Code_Snippets|Code Snippets
+* Navigation
+** Google_Search|Google
+* Support
+** https://ticket.codermerlin.com|Open Ticket
+* Authors
+** Articles_Wanted|Articles Wanted</text>
+      <sha1>rnjvdpd89xmzrzaave981d7zf3fx658</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Sidebar</title>
+    <ns>8</ns>
+    <id>51</id>
+    <revision>
+      <id>16574</id>
+      <parentid>16571</parentid>
+      <timestamp>2021-11-30T07:16:46Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>16574</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="62" sha1="apjelhm0v1dqglxlpv6qpbmqw4shk47" xml:space="preserve">* navigation
+* CATEGORY-SIDEBAR
+* GROUP-SIDEBAR
+* USER-SIDEBAR</text>
+      <sha1>apjelhm0v1dqglxlpv6qpbmqw4shk47</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Card</title>
+    <ns>10</ns>
+    <id>8592</id>
+    <revision>
+      <id>16590</id>
+      <timestamp>2021-11-30T14:39:59Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <comment>Created page with "&lt;includeonly&gt;&lt;div class="card rounded mb-3 mb-md-4 {{{classes|}}}" style="min-width: 20rem;"&gt;&lt;!--  --&gt;{{#if: {{{header|}}}      |&lt;div class="card-header {{{hclasses|}}} h4"&gt;{{..."</comment>
+      <origin>16590</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3974" sha1="n6kjid1x68hzx6u9g9mtlcd7tpd5k8d" xml:space="preserve">&lt;includeonly&gt;&lt;div class="card rounded mb-3 mb-md-4 {{{classes|}}}" style="min-width: 20rem;"&gt;&lt;!--
+
+--&gt;{{#if: {{{header|}}}
+     |&lt;div class="card-header {{{hclasses|}}} h4"&gt;{{{header|The Cell}}}&lt;/div&gt;
+   }}&lt;!--
+
+--&gt;{{#if: {{{image|}}}
+     |&lt;div class="{{#if: {{{header|}}}||card-img-top}} {{#switch:{{{ihalf|}}}|y|Y|Yes|yes|true|True|1=card-img-half}} d-block user-select-none bg-dark"&gt;[[File:{{PAGENAME:{{{image|}}}}}|class=w-100 h-auto|link={{{ilink|}}}]]&lt;/div&gt;
+   }}&lt;!--
+
+--&gt;{{#if: {{{preface|}}}{{{title|}}}{{{content|}}}
+     |&lt;div class="card-body"&gt;&lt;!--
+
+--&gt;{{#if: {{{preface|}}}
+     |&lt;div class="card-subtitle text-muted small"&gt;{{{preface|}}}&lt;/div&gt;
+   }}&lt;!--
+
+--&gt;{{#if: {{{title|}}}
+     |&lt;div class="card-title mt-3"&gt;{{{title|}}}&lt;/div&gt;
+   }}
+&lt;div class="card-text"&gt;
+{{{content|}}}
+&lt;/div&gt;
+&lt;/div&gt;
+}}&lt;!--
+
+--&gt;{{#if: {{{footer|}}}
+     |&lt;div id="cardfooter" class="card-footer d-flex w-100 {{{fclasses|}}}"&gt;{{{footer|}}}&lt;/div&gt;
+   }}
+&lt;/div&gt;&lt;/includeonly&gt;&lt;noinclude&gt;
+&lt;pre&gt;
+{{Card
+|header  = 
+|hclasses= # CSS class names for the header
+|image   =
+|ilink   = # image click target
+|ihalf   = # limit the image height [ Y|y|Yes|yes|True|true|1 ]
+|preface =
+|title   =
+|content =
+|footer  =
+|fclasses= # CSS class names for the footer
+|classes = # CSS class names for the card
+}}
+&lt;/pre&gt;
+== Elementary Cards ==
+{{Card
+|header  = Header
+|hclasses= 
+|image   = 
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to The Cell may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+|classes = 
+}}
+{{Card
+|header  = Header
+|image   = 
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+|classes = bg-light
+}}
+{{Card
+|header  = 
+|image   = MerlinAtDesk.jpg
+|ilink   = Special:Preferences
+|ihalf   = 1
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = 
+}}
+== Card Deck ==
+For a wall of cards wrap some of them into &lt;code&gt;&lt;nowiki&gt;&lt;div class="card-deck"&gt; ... &lt;/div&gt;&lt;/nowiki&gt;&lt;/code&gt;.
+&lt;div class="card-deck"&gt;
+{{Card
+|header  = Header
+|hclasses= bg-dark
+|image   = 
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+|fclasses= bg-dark
+|classes = bg-dark text-white
+}}
+{{Card
+|header  = Header
+|hclasses= bg-primary text-white
+|image   = 
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+|classes = bg-light
+}}
+{{Card
+|header  = 
+|image   = MerlinAtDesk.jpg
+|ilink   = Special:Preferences
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+}}
+{{Card
+|header  = 
+|image   = MerlinAtDesk.jpg
+|ilink   = Special:Preferences
+|ihalf   = 1
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = 
+}}
+&lt;/div&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>n6kjid1x68hzx6u9g9mtlcd7tpd5k8d</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Sitenotice</title>
+    <ns>10</ns>
+    <id>8591</id>
+    <revision>
+      <id>16611</id>
+      <parentid>16610</parentid>
+      <timestamp>2021-11-30T16:53:10Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>16611</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="969" sha1="mpy743vo22fs8wi2ndgmmsr761hi2hs" xml:space="preserve">{{card
+|footer={{{1|This is a site notice }}}
+|fclasses=alert alert-{{{2|primary}}} border-{{{2|primary}}} font-weight-bold mb-0 justify-content-center flex-column flex-md-row rounded
+|classes=w-100 p-1 sitenotice-alert {{{3|}}}
+}}
+&lt;noinclude&gt;
+;Code
+&lt;pre&gt;
+{{Sitenotice
+|&lt;anything&gt;             # Your message goes here ...
+|&lt;optional&gt;             # Bootstrap coloring classes names [ info, secondary, warning, success, etc ]
+}}
+&lt;/pre&gt;
+;Example
+&lt;pre&gt;
+{{Sitenotice}}
+&lt;/pre&gt;
+;Result
+{{Sitenotice}}
+;Example
+&lt;pre&gt;
+{{Sitenotice|The wiki is under maintenance. Keep quiet.|info|fa-2x}}
+&lt;/pre&gt;
+;Result
+{{Sitenotice|The wiki is under maintenance. Keep quiet.|info|fa-2x}}
+;Example
+&lt;pre&gt;
+{{Sitenotice|Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors.|warning}}
+&lt;/pre&gt;
+;Result
+{{Sitenotice|Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors.|warning}}
+
+&lt;/noinclude&gt;</text>
+      <sha1>mpy743vo22fs8wi2ndgmmsr761hi2hs</sha1>
+    </revision>
+  </page>
+</mediawiki>
