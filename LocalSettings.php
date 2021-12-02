@@ -1,7 +1,7 @@
 <?php
 
-// Simplify URL
-$wgArticlePath = '/wiki/$1';
+// Uncomment this to simplify URL (webserver configuration may be needed if fails)
+# $wgArticlePath = '/wiki/$1';
 
 // Allow CSS
 $wgAllowSiteCSSOnRestrictedPages = true;
