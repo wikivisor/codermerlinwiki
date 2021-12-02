@@ -58,6 +58,7 @@ require_once( "$IP/extensions/wikivisor/LocalSettings.php" );
 At this point everything should be in place, use `Ctrl+F5` and/or `Ctrl+Shift+r` to purge the page cache and to enjoy your new wiki layout.
 
 ## Pages description
+This is a description of the [Coder+Merlin-20211202151301.xml](import/Coder+Merlin-20211202151301.xml) contents.
 * **MediaWiki:Chameleon.js** contains some jquery for the layout elements.
 * **MediaWiki:Footer-icons** contains a menu for the footer links (facebook, twitter, etc.)
 * **MediaWiki:Gadgets-definition** contains gadgets definitions obviously.
