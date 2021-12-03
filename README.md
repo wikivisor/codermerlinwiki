@@ -2,11 +2,13 @@
 
 ## Pre-requisites
 
-### Software
 * PHP >= 7.4
 * Mediawiki 1.35
-* SemanticMediawiki >= 3
-* Chameleon >= 3.4
+* Mediawiki extensions
+  * SemanticMediawiki >= 3
+  * Gadgets (bundled)
+* Mediawiki skins
+  * Chameleon >= 3.4
 * `composer` in your $PATH
 * `git` in your $PATH
 

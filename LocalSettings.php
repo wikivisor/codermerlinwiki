@@ -27,6 +27,7 @@ $egChameleonEnableExternalLinkIcons = true;
 # $egScssCacheType = CACHE_NONE;
 
 // Additional extensions
+wfLoadExtension( 'Gadgets' );
 wfLoadExtension( 'SemanticResultFormats' );
 wfLoadExtension( 'TreeAndMenu' );
 
