@@ -485,13 +485,10 @@ body {
 }
 
 // TOC SCROLL OFFSET
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
-  .mw-headline {
-    /** margin-top: -48px;
-        padding-top: 48px; **/
-    display: flex;
-    scroll-margin-top: 4rem;
-  }
+.mw-headline {
+  /** margin-top: -48px;
+      padding-top: 48px; **/
+  scroll-margin-top: 4rem;
 }
 :target::before {
   content: "";
