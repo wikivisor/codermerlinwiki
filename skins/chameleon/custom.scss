@@ -494,17 +494,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 // TOC SCROLL OFFSET
-@supports (-webkit-appearance: none) {
-  .mw-headline {
-    margin-top: 0;
-    padding-top: 48px;
-    display: flex;
-  }
-}
 .mw-headline {
   margin-top: -48px;
   padding-top: 48px;
   display: flex;
+}
+.mw-headline:not(*:root) {
+    margin-top: 0;
+    padding-top: 48px;
+    display: flex;
 }
 
 // PRE LINE NUMBERING
