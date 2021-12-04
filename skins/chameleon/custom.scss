@@ -170,16 +170,16 @@ body {
 .navbar-toggler {
   &:before {
     color: white;
-    &:hover {
-      color: yellow !important;
-    }
+  }
+  &:hover::before {
+    color: yellow !important;
   }
   &[aria-expanded="true"] {
     &:before {
       color: rgb(255, 143, 0);
-      &:hover {
+    }
+    &:hover:before {
         color: yellow !important;
-      }
     }
   }
 }
