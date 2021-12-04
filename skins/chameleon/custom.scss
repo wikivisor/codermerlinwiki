@@ -485,13 +485,13 @@ body {
 
 // TOC SCROLL OFFSET
 @supports (-webkit-appearance: none) {
-  .mw-headline:before {
+  .mw-headline {
     margin-top: 0;
     padding-top: 48px;
     display: block;
   }
 }
-.mw-headline:before {
+.mw-headline {
   margin-top: -48px;
   padding-top: 48px;
   display: block;
