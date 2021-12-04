@@ -152,8 +152,10 @@ body {
       color: #e0e0e0 !important;
     }
   }
-  .dropdown-menu > div > a:first-child:last-child:hover {
-    background-color: $primary-accent;
+  .dropdown-menu > div > a:first-child:last-child {
+    &:active, &:focus {
+      background-color: $secondary-accent;
+    }
   }
 }
 .navbar,
