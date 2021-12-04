@@ -219,6 +219,8 @@ body {
 
 h2, .h2, h3, .h3 {
   @extend .d-flex;
+}
+.mw-headline {
   margin-top: -50px;
   padding-top: 50px;
 }
