@@ -488,11 +488,13 @@ body {
   .mw-headline:before {
     margin-top: 0;
     padding-top: 48px;
+    display: block;
   }
 }
 .mw-headline:before {
   margin-top: -48px;
   padding-top: 48px;
+  display: block;
 }
 
 // PRE LINE NUMBERING
