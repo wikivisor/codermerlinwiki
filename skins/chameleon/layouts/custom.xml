@@ -48,26 +48,20 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
    </component>
    <!-- main content -->
    <grid class="flex-fill p-0" mode="fluid">
-      <row>
-         <cell class="">
+      <component type="Html"><![CDATA[<div class="d-flex"><div class="m-auto">]]></component>
             <component type="SiteNotice" />
-         </cell>
-      </row>
-      <row>
-         <cell class="container p-0">
+      <component type="Html"><![CDATA[</div></div>]]></component>
+      <component type="Html"><![CDATA[<div class="d-flex"><div class="container p-0 m-auto">]]></component>
             <component type="PageTools" position="right" class="my-3">
                <modification type="ShowOnlyFor" permission="edit" />
             </component>
             <!--FIXME: Is this a good place to put the notifier? Vector et al. put it inside the MainContent under siteSub and contentSub -->
             <component type="NewtalkNotifier" class="mb-3" />
-         </cell>
-      </row>
-      <row>
-         <cell>
+      <component type="Html"><![CDATA[</div></div>]]></component>
+      <component type="Html"><![CDATA[<div class="d-flex"><div class="m-auto">]]></component>
             <component type="Html"><![CDATA[<div id="mainpage-search-wrapper"></div>]]></component>
             <component type="MainContent" />
-         </cell>
-      </row>
+      <component type="Html"><![CDATA[</div></div>]]></component>
    </grid>
    <!-- back to top -->
    <component type="Html"><![CDATA[<div id="back-to-top" style="visibility: hidden"><i class="fas fa-angle-double-up fa-2x"></i></div>]]></component>
