@@ -42,3 +42,11 @@ $wgHooks['SkinTemplateOutputPageBeforeExec'][] = function( $skin, &$template ) {
         $template->data['footerlinks']['places'][] = 'newsletter';
         return true;
 };
+
+// Add a class for anonymous
+$wgHooks['OutputPageBodyAttributes'][] = function ( OutputPage $out, Skin $skin, &$bodyAttrs ) {
+   if ( $out->getUser()->isAnon() ) {
+      $default = $bodyAttrs['class'];
+      $bodyAttrs['class'] = $default . ' notloggedin'; // Note the leading space character.
+   }
+};
