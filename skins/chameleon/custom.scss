@@ -488,6 +488,33 @@ body {
   padding-top: 48px;
 }
 
+// PRE LINE NUMBERING
+pre {
+    counter-reset: line-numbering;
+    font-family: Menlo, Monaco, monospace;
+    padding: 5px;
+    word-break: break-word;
+    padding: 0;
+}
+pre .line::before {
+  content: counter(line-numbering);
+  counter-increment: line-numbering;
+  padding-right: 1em;
+	text-align: right;
+	opacity: 0.35;
+	display: inline-block;
+	min-width: 65px;
+	border-right: 1px solid rgba(106, 106, 106, 0.12);
+	margin-right: 1rem;
+	background: rgba(106, 106, 106, 0.09);
+}
+pre .line:nth-of-type(1)::before {
+	padding-top: 1rem;
+}
+pre .line:nth-last-of-type(1)::before {
+	padding-bottom: 1rem;
+}
+
 // ANIMATIONS
 @keyframes slideInSBR {
   0% {
