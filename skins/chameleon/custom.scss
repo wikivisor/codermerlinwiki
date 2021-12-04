@@ -217,10 +217,6 @@ body {
   @extend .mx-auto;
 }
 
-h2, .h2, h3, .h3 {
-  @extend .d-flex;
-}
-
 // CATEGORIES
 #catlinks {
   @extend .container;
