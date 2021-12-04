@@ -497,9 +497,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 // TOC SCROLL OFFSET
 @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
   .mw-headline {
-    margin-top: -48px;
-    padding-top: 48px;
+    /** margin-top: -48px;
+        padding-top: 48px; **/
     display: flex;
+    scroll-margin-top: 4rem;
   }
 }
 :target::before {
