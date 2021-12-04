@@ -152,6 +152,9 @@ body {
       color: #e0e0e0 !important;
     }
   }
+  .dropdown-menu > div > a:first-child:last-child:hover {
+    background-color: $primary-accent;
+  }
 }
 .navbar,
 .p-navbar {
