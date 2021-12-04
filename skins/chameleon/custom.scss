@@ -166,6 +166,24 @@ body {
   z-index: 2000;
 }
 
+// NAVBAR TOGGLER
+.navbar-toggler {
+  &:before {
+    color: rgb(255, 143, 0);
+    &:hover {
+      color: yellow;
+    }
+  }
+  &.collapsed {
+    &:before {
+      color: white;
+      &hover {
+        color: yellow;
+      }
+    }
+  }
+}
+    
 // TOOLBOX
 .p-tb-dropdown {
   @extend .ml-cmln-auto;
