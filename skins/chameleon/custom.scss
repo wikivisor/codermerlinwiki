@@ -216,6 +216,10 @@ body {
   @extend .container;
   @extend .mx-auto;
 }
+h2, .h2, h3, .h3, h4, .h4 {
+  @extend .d-flex;
+  @extend .flex-column;
+}
 
 // CATEGORIES
 #catlinks {
@@ -489,14 +493,6 @@ body {
   scroll-margin-top: 4rem;
   display: inline-flex;
   width: 100%;
-}
-.mw-editsection {
-  float: right;
-  display: inline-block;
-  margin-top: -1.3rem;
-  white-space: nowrap;
-  z-index: 1;
-  position: relative;
 }
 :target::before {
   content: "";
