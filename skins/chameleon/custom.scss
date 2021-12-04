@@ -492,7 +492,9 @@ body {
 }
 .mw-editsection {
   float: right;
-  display: inline;
+  display: inline-block;
+  margin-top: -1.3rem;
+  white-space: nowrap;
 }
 :target::before {
   content: "";
