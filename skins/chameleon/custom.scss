@@ -489,12 +489,12 @@ body {
 }
 
 // PRE LINE NUMBERING
-pre {
+pre.linenum {
     counter-reset: line-numbering;
     word-break: break-word;
     padding: 0 2rem 0 0 !important;
 }
-pre .line::before {
+pre.linenum .line::before {
   content: counter(line-numbering);
   counter-increment: line-numbering;
   padding-right: 1em;
@@ -506,10 +506,10 @@ pre .line::before {
 	margin-right: 1rem;
 	background: rgba(106, 106, 106, 0.09);
 }
-pre .line:nth-of-type(1)::before {
+pre.linenum .line:nth-of-type(1)::before {
 	padding-top: 1rem;
 }
-pre .line:nth-last-of-type(1)::before {
+pre.linenum .line:nth-last-of-type(1)::before {
 	padding-bottom: 1rem;
 }
 
