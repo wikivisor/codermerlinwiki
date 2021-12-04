@@ -486,15 +486,7 @@ body {
 
 // TOC SCROLL OFFSET
 .mw-headline {
-  /** margin-top: -48px;
-      padding-top: 48px; **/
   scroll-margin-top: 4rem;
-}
-:target::before {
-  content: "";
-  display: block;
-  height: 60px;
-  margin: -90px 0 0;
 }
 
 // PRE LINE NUMBERING
