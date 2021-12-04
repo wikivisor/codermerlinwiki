@@ -177,7 +177,7 @@ body {
   &[aria-expanded="true"] {
     &:before {
       color: rgb(255, 143, 0);
-      &hover {
+      &:hover {
         color: yellow;
       }
     }
