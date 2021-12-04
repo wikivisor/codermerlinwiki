@@ -56,16 +56,6 @@ body {
   }
 }
 
-// HEADERS
-h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  display: flex;
-  align-items: baseline;
-}
-.mw-editsection {
-  float: right;
-  white-space: nowrap;
-}
-
 // BANNER
 .banner-merlin {
   background-color: $secondary-accent;
