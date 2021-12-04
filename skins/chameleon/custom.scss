@@ -491,10 +491,8 @@ body {
 // PRE LINE NUMBERING
 pre {
     counter-reset: line-numbering;
-    font-family: Menlo, Monaco, monospace;
-    padding: 5px;
     word-break: break-word;
-    padding: 0;
+    padding: 0 2rem 0 0 !important;
 }
 pre .line::before {
   content: counter(line-numbering);
