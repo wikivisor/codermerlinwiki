@@ -495,12 +495,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 // TOC SCROLL OFFSET
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
-  .mw-headline {
-    margin-top: -48px;
-    padding-top: 48px;
-    display: flex;
-  }
+:target::before {
+  content: "";
+  display: block;
+  height: 60px;
+  margin: -90px 0 0;
 }
 
 // PRE LINE NUMBERING
