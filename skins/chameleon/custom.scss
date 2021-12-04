@@ -490,8 +490,14 @@ body {
   @extend .d-inline-flex;
   @extend .w-100;
 }
-.mw-editsection {
-  @extend .ml-0;
+.mw-body {
+  .mw-editsection {
+    @extend .ml-0;
+    @extend .float-right;
+    clear: both;
+    margin-top: -1.25rem;
+    position: relative;
+  }
 }
 :target::before {
   content: "";
