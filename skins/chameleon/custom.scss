@@ -169,14 +169,14 @@ body {
 // NAVBAR TOGGLER
 .navbar-toggler {
   &:before {
-    color: rgb(255, 143, 0);
+    color: white;
     &:hover {
-      color: yellow;
+      color: yellow ;
     }
   }
-  &[aria-expanded="false"] {
+  &[aria-expanded="true"] {
     &:before {
-      color: white;
+      color: rgb(255, 143, 0);
       &hover {
         color: yellow;
       }
