@@ -495,6 +495,8 @@ body {
   display: inline-block;
   margin-top: -1.3rem;
   white-space: nowrap;
+  z-index: 1;
+  position: relative;
 }
 :target::before {
   content: "";
