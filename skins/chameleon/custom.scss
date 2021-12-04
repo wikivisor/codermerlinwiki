@@ -490,9 +490,12 @@ body {
 
 // PRE LINE NUMBERING
 pre.linenum {
-    counter-reset: line-numbering;
-    word-break: break-word;
-    padding: 0 2rem 0 0 !important;
+  counter-reset: line-numbering;
+  word-break: break-word;
+  padding: 0 2rem 0 0 !important;
+}
+pre.linenum .line {
+  white-space: nowrap;
 }
 pre.linenum .line::before {
   content: counter(line-numbering);
