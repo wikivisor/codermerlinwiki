@@ -171,14 +171,14 @@ body {
   &:before {
     color: white;
     &:hover {
-      color: yellow ;
+      color: yellow !important;
     }
   }
   &[aria-expanded="true"] {
     &:before {
       color: rgb(255, 143, 0);
       &:hover {
-        color: yellow;
+        color: yellow !important;
       }
     }
   }
