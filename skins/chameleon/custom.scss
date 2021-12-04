@@ -487,6 +487,12 @@ body {
 // TOC SCROLL OFFSET
 .mw-headline {
   scroll-margin-top: 4rem;
+  display: inline-flex;
+  width: 100%;
+}
+.mw-editsection {
+  float: right;
+  display: inline;
 }
 :target::before {
   content: "";
