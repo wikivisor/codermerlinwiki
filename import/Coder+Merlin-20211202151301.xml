@@ -67,11 +67,10 @@
 	toggleSidebar();
 	cleanFooterIcons();
 	moveSidebarTogglers();
-/**
-	$("pre.linenum").html(function (index, html) {
-	  return html.replace(/^(.*)$/mg, "<span class=\"line\">$1</span>");
+	$(&quote;pre.linenum&quote;).html(function (index, html) {
+	  return html.replace(/^(.*)$/mg, &quote;<span class=\&quote;line\&quote;>$1</span>&quote;);
 	});
-**/
+
 });
 
 const mq = window.matchMedia("(max-width: 1105px)");
