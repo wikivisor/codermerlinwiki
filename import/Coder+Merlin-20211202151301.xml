@@ -60,7 +60,6 @@
       <model>javascript</model>
       <format>text/javascript</format>
       <text bytes="2636" sha1="r37ywvb0ybr44rvjhknqaytvcmq7e3z" xml:space="preserve">$(function() {
-	loginCheck();
 	moveSearchOnMain();
 	miniNavbar();
 	moveTOC();
@@ -153,13 +152,6 @@ function moveSidebarTogglers(){
 	var wrapper = $('#mw-navigation');
 	$('#sidebar-left-toggler').detach().prependTo(wrapper);
 	$('#sidebar-right-toggler').detach().appendTo(wrapper);
-}
-function loginCheck(){
-        if(mw.config.get( 'wgUserId' ) !== null){
-                $('body').removeClass('notloggedin');
-        } else {
-                $('body').addClass('notloggedin');
-        }
 }</text>
       <sha1>r37ywvb0ybr44rvjhknqaytvcmq7e3z</sha1>
     </revision>
