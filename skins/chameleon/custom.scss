@@ -488,6 +488,12 @@ body {
   margin-top: -48px;
   padding-top: 48px;
 }
+@supports (-webkit-appearance:none) {
+  .mw-headline {
+    margin-top: 0;
+    padding-top: 48px;
+  }
+}
 
 // PRE LINE NUMBERING
 pre.linenum {
