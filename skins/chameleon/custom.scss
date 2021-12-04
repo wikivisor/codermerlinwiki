@@ -55,6 +55,16 @@ body {
   }
 }
 
+// HEADERS
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  display: flex;
+  align-items: baseline;
+}
+.mw-editsection {
+  float: right;
+  white-space: nowrap;
+}
+
 // BANNER
 .banner-merlin {
   background-color: $secondary-accent;
@@ -488,13 +498,13 @@ body {
   .mw-headline {
     margin-top: 0;
     padding-top: 48px;
-    display: block;
+    display: flex;
   }
 }
 .mw-headline {
   margin-top: -48px;
   padding-top: 48px;
-  display: block;
+  display: flex;
 }
 
 // PRE LINE NUMBERING
