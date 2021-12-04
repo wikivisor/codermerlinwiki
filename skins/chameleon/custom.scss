@@ -498,6 +498,11 @@ body {
     position: relative;
   }
 }
+.notloggedin {
+  .mw-editsection {
+    @extend .d-none;
+  }
+}	
 :target::before {
   content: "";
   display: block;
