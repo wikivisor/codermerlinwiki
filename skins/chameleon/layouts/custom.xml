@@ -48,7 +48,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
    </component>
    <!-- main content -->
    <grid class="flex-fill p-0" mode="fluid">
-      <component type="Html"><![CDATA[<div class="d-flex"><div class="m-auto">]]></component>
+      <component type="Html"><![CDATA[<div class="d-flex"><div class="w-100">]]></component>
             <component type="SiteNotice" />
       <component type="Html"><![CDATA[</div></div>]]></component>
       <component type="Html"><![CDATA[<div class="d-flex"><div class="container p-0 m-auto">]]></component>
@@ -58,7 +58,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
             <!--FIXME: Is this a good place to put the notifier? Vector et al. put it inside the MainContent under siteSub and contentSub -->
             <component type="NewtalkNotifier" class="mb-3" />
       <component type="Html"><![CDATA[</div></div>]]></component>
-      <component type="Html"><![CDATA[<div class="d-flex"><div class="m-auto">]]></component>
+      <component type="Html"><![CDATA[<div class="d-flex"><div class="w-100">]]></component>
             <component type="Html"><![CDATA[<div id="mainpage-search-wrapper"></div>]]></component>
             <component type="MainContent" />
       <component type="Html"><![CDATA[</div></div>]]></component>
