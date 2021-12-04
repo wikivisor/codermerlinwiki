@@ -174,7 +174,7 @@ body {
       color: yellow;
     }
   }
-  &.collapsed {
+  &[aria-expanded="false"] {
     &:before {
       color: white;
       &hover {
