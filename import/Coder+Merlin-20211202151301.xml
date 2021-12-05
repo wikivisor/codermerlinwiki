@@ -67,6 +67,7 @@
 	toggleSidebar();
 	cleanFooterIcons();
 	moveSidebarTogglers();
+        preLinenum();
 });
 
 const mq = window.matchMedia("(max-width: 1105px)");
@@ -149,6 +150,11 @@ function moveSidebarTogglers(){
 	var wrapper = $('#mw-navigation');
 	$('#sidebar-left-toggler').detach().prependTo(wrapper);
 	$('#sidebar-right-toggler').detach().appendTo(wrapper);
+}
+function preLinenum(){
+	$('pre.linenum').html(function (index, html) {
+		return html.replace(/^(.*)$/mg, "<span class=\"line\">$1</span>");
+	});
 }</text>
       <sha1>r37ywvb0ybr44rvjhknqaytvcmq7e3z</sha1>
     </revision>
