@@ -30,6 +30,7 @@ $egChameleonEnableExternalLinkIcons = true;
 wfLoadExtension( 'Gadgets' );
 wfLoadExtension( 'SemanticResultFormats' );
 wfLoadExtension( 'TreeAndMenu' );
+wfLoadExtension( 'Variables' );
 
 // Allow string functions
 $wgPFEnableStringFunctions = true;
