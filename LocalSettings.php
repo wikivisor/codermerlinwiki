@@ -43,10 +43,13 @@ $wgHooks['SkinTemplateOutputPageBeforeExec'][] = function( $skin, &$template ) {
         return true;
 };
 
-// Add a class for anonymous
+// Add classes to the body tag
 $wgHooks['OutputPageBodyAttributes'][] = function ( OutputPage $out, Skin $skin, &$bodyAttrs ) {
+   $default = $bodyAttrs['class'];
+   if ( $out->getUser()->getOption('gadget-Dark-theme') ){
+      $bodyAttrs['class'] = $default . ' dark-theme';
+   }
    if ( $out->getUser()->isAnon() ) {
-      $default = $bodyAttrs['class'];
-      $bodyAttrs['class'] = $default . ' notloggedin'; // Note the leading space character.
+      $bodyAttrs['class'] = $default . ' notloggedin';
    }
 };
