@@ -80,21 +80,15 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
             <component type="Html"><![CDATA[Designed with pride in Silicon Valley, CA, USA]]></component>
          </component>
       </cell>
-   </row>
-   <!-- left sidebar -->
-   <component type="Html"><![CDATA[<div id="sidebar-left-wrapper" class="sidebar flex-fill position-fixed">
+   </row><!-- left sidebar 
+   --><component type="Html"><![CDATA[<div id="sidebar-left-wrapper" class="sidebar flex-fill position-fixed">
 <div id="sidebar-left">]]></component>
    <component type="NavMenu" flatten="navigation" />
    <component type="Html"><![CDATA[</div>
 </div>]]></component>
    <!-- right sidebar -->
    <component type="Html"><![CDATA[<div id="sidebar-right-wrapper" class="sidebar flex-fill position-fixed">
-<div id="sidebar-right">
-
-</div>
-</div>]]></component>
-   <!-- left sidebar toggler -->
-   <component type="Html"><![CDATA[<span id="sidebar-left-toggler" class="nav-item order-0"><i class="nav-link far fa-plus-square text-white"></i></span>]]></component>
-   <!-- right sidebar toggler -->
-   <component type="Html"><![CDATA[<span id="sidebar-right-toggler" class="nav-item order-0"><i class="nav-link far fa-plus-square text-white"></i></span>]]></component>
+<div id="sidebar-right"></div></div>]]></component><!-- left sidebar toggler 
+--><component type="Html"><![CDATA[<span id="sidebar-left-toggler" class="nav-item order-0"><i class="nav-link far fa-plus-square text-white"></i></span>]]></component><!-- 
+right sidebar toggler --><component type="Html"><![CDATA[<span id="sidebar-right-toggler" class="nav-item order-0"><i class="nav-link far fa-plus-square text-white"></i></span>]]></component>
 </structure>
