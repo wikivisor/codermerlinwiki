@@ -1,0 +1,34 @@
+# Configure VisualEditor to work as wiki markup editor with syntax highlighting
+
+This should go to the LocalSettings.php:
+```php
+// WikiEditor 2017
+$wgDefaultUserOptions['visualeditor-enable'] = 1;
+$wgHiddenPrefs[] = 'visualeditor-enable';
+
+$wgDefaultUserOptions['visualeditor-autodisable'] = true;
+$wgVisualEditorEnableWikitext = true;
+$wgDefaultUserOptions['visualeditor-newwikitext'] = 1;
+$wgHiddenPrefs[] = 'visualeditor-newwikitext';
+
+$wgVisualEditorUseSingleEditTab = true;
+$wgHiddenPrefs[] = 'visualeditor-tabs';
+
+$wgVisualEditorEnableDiffPage = true;
+$wgVisualEditorEnableVisualSectionEditing = true;
+$wgVisualEditorEnableExperimentalCode = true;
+$wgHiddenPrefs[] = 'visualeditor-betatempdisable';
+wfLoadExtension( 'VisualEditor' );
+```
+
+Install CodeMirror:
+```php
+git clone https://github.com/wikimedia/mediawiki-extensions-CodeMirror.git --branch REL1_35 extensions/CodeMirror
+```
+
+Enable it in LocalSettings.php:
+```php
+wfLoadExtension( 'CodeMirror' );
+$wgDefaultUserOptions['usecodemirror'] = 1;
+```
+
