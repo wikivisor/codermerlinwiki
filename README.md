@@ -21,8 +21,6 @@ Download extensions useful for the left sidebar content creation, they will be i
 ```php
 git clone https://gitlab.com/organicdesign/TreeAndMenu.git extensions/TreeAndMenu
 ```
-There is a [tarball](TreeAndMenu.tar.gz) attached to the repo. It contains the version I used on the dev server. Try it if errors are fired with the original version.
-
 ### SemanticResultFormats
 If you do not have a "composer.local.json" file yet, create one and add the following content to it:
 ```php

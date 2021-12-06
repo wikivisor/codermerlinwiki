@@ -21,7 +21,7 @@ $egChameleonExternalStyleModules = [
         __DIR__ . '/skins/chameleon/custom.scss' => 'afterMain',
 ];
 $egChameleonExternalStyleVariables = [
-        'cmln-link-formats' => "(new: ('color': #ff0000, 'hover-color': #0000ff), external: #36b none #37c none)"
+        'cmln-link-formats' => "(new: ('color': #ff0000, 'hover-color': #0000ff), external: #7063a7 none #4f3f8a none)"
 ];
 $egChameleonEnableExternalLinkIcons = true;
 # $egScssCacheType = CACHE_NONE;
@@ -54,3 +54,13 @@ $wgHooks['OutputPageBodyAttributes'][] = function ( OutputPage $out, Skin $skin,
       $bodyAttrs['class'] = $default . ' notloggedin';
    }
 };
+
+// TwitterFeed
+$wgHooks['BeforePageDisplay'][] = function( OutputPage &$out, Skin &$skin ) {
+     $code = <<<'START_END_MARKER'
+<!-- Twitter Feed -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+START_END_MARKER;
+     $out->addHeadItem( 'head-tags-load', $code );
+};
+

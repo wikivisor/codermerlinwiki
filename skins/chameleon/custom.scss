@@ -1,5 +1,10 @@
-$primary-accent: #9e00e0;
-$secondary-accent: #6610f2;
+// $primary-accent: #9e00e0;
+$primary-accent: #7063a7;
+$primary-inverted: #8f9b57;
+
+// $secondary-accent: #6610f2;
+$secondary-accent: #4f3f8a;
+$secondary-inverted: #afc074;
 
 @mixin awesome {
   font-family: "Font Awesome 5 Free";
@@ -56,18 +61,49 @@ body {
   }
 }
 
+// LINKS
+// switch to secondary to make them differ
+a:visited {
+  color: $primary-accent;
+}
+.dark-theme {
+  a {
+    color: $primary-accent;
+    &:visited {
+      color: $primary-inverted;
+    }
+  }
+}
+
 // BANNER
 .banner-merlin {
   background-color: $secondary-accent;
   z-index: 1;
   order: 0;
 }
+.dark-theme {
+  .banner-merlin {
+    background-color: $secondary-inverted;
+    filter: hue-rotate(150deg);
+  }
+}
+
+// LOGO
 #p-logo {
   img {
     width: 150px;
     height: auto;
   }
 }
+.dark-theme {
+  #p-logo {
+    img {
+      filter: hue-rotate(0deg) invert(1) contrast(1);
+    }
+  }
+}
+
+// PERSONAL
 #p-personal {
   @extend .float-right;
   .p-personal-tools {
@@ -76,6 +112,15 @@ body {
       @extend .text-white;
       &:before {
         @extend .d-none;
+      }
+    }
+  }
+}
+.dark-theme {
+  #p-personal {
+    .p-personal-tools {
+      a {
+        color: #000 !important;
       }
     }
   }
@@ -167,6 +212,17 @@ body {
 .ve-init-mw-desktopArticleTarget-toolbar-opened {
   z-index: 2000;
 }
+.dark-theme {
+  #mw-navigation {
+    background-color: $primary-inverted;
+    filter: hue-rotate(150deg);
+    .nav-link {
+      &.dropdown-toggle {
+        color: #111 !important;
+      }
+    }
+  }
+}
 
 // NAVBAR TOGGLER
 .navbar-toggler {
@@ -241,15 +297,30 @@ body {
     #searchInput,
     #searchGoButton {
       @extend .border-0;
-      background-color: #333 !important;
+      background-color: #ddd !important;
       background-image: none;
     }
     .searchGoButton {
       &:before {
-        color: rgba(255, 255, 255, 0.5);
+        color: $secondary-accent;
       }
     }
   }
+}
+.dark-theme {
+#non-mainpage-search-wrapper {
+  #p-search {
+    #searchInput,
+    #searchGoButton {
+      background-color: #ddd !important;
+    }
+    .searchGoButton {
+      &:before {
+        color: #111 !important;
+      }
+    }
+  }
+}
 }
 #mainpage-search-wrapper {
   #p-search {
@@ -258,10 +329,11 @@ body {
       @extend .w-100;
       @extend .px-3;
       @extend .py-2;
-      @extend .shadow;
+//   @extend .shadow;
       @extend .rounded;
-      @extend .border;
-      @extend .border-light;
+//      @extend .border;
+      @extend .border-0;
+//      @extend .border-light;
       @extend .bg-white;
       border-bottom: 4px solid $secondary-accent !important;
     }
@@ -314,7 +386,7 @@ body {
   width: 284px;
   z-index: 0;
   top: 49px;
-  background: #fcfcfc;
+  background: #f4f6ff;
 }
 #sidebar-left-wrapper {
   left: 0;
@@ -328,7 +400,7 @@ body {
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
     &:hover {
-      scrollbar-color: #d7d7d7 transparent;
+      scrollbar-color: #efeaff transparent;
     }
     #hf-nsheader- {
       position: relative;
@@ -462,6 +534,7 @@ body {
   bottom: -800px;
   position: relative;
   color: #bbb;
+  background-color: $secondary-accent;
   animation: slideUpFTR 500ms ease-out 1s 1 normal forwards;
   a {
     @extend .text-white;
@@ -481,6 +554,22 @@ body {
   .social-icons,
   .footer-icons {
     @extend .d-none;
+  }
+}
+.dark-theme {
+  #footer-merlin {
+    background-color: $secondary-inverted;
+    color: #000 !important;
+    filter: hue-rotate(150deg);
+    a { 
+      color: #000 !important;
+    }
+    #footer-info {
+     color: #444;
+    }
+    img {
+      filter: hue-rotate(0deg) invert(1) contrast(1);
+    }
   }
 }
 
@@ -547,6 +636,12 @@ kbd {
     @extend .bg-light;
     @extend .text-dark;
 }
+.key {
+  kbd {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
 
 // ANIMATIONS
 @keyframes slideInSBR {
@@ -589,4 +684,25 @@ kbd {
     transform: translateY(-800px);
     display: flex;
   }
+}
+
+// PLYR
+.plyr {
+  border-radius: 6px;
+}
+.plyr--video .plyr__controls {
+  padding: 8px !important;
+  background: #444e !important;
+}
+.plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded="true"] {
+  background: $primary-accent !important;
+}
+.plyr__control--overlaid {
+  background: #6610f2 !important;
+}
+.plyr--full-ui input[type="range"]::-moz-range-progress {
+  background: #bbb6d2;
+}
+.bg-plyr {
+  background-color: $primary-accent !important;
 }
