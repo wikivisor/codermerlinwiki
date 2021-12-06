@@ -1,6 +1,11 @@
 # Configure VisualEditor to work as wiki markup editor with syntax highlighting
 
-This should go to the LocalSettings.php:
+VisualEditor is bundled with MW1.35, just make sure all needed libraries are installed. Run from the mediawiki root:
+```php
+git submodule update --init --recursive
+```
+
+Then add the following to the LocalSettings.php:
 ```php
 // WikiEditor 2017
 $wgDefaultUserOptions['visualeditor-enable'] = 1;
@@ -28,6 +33,7 @@ git clone https://github.com/wikimedia/mediawiki-extensions-CodeMirror.git --bra
 
 Enable it in LocalSettings.php:
 ```php
+// CodeMirror
 wfLoadExtension( 'CodeMirror' );
 $wgDefaultUserOptions['usecodemirror'] = 1;
 ```
