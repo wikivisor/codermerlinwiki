@@ -1,0 +1,800 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Coder Merlin</sitename>
+    <dbname>wiki</dbname>
+    <base>https://stg.codermerlin.com/wiki/index.php/Welcome_to_Coder_Merlin</base>
+    <generator>MediaWiki 1.35.3</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Coder Merlin</namespace>
+      <namespace key="5" case="first-letter">Coder Merlin talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="106" case="first-letter">Form</namespace>
+      <namespace key="107" case="first-letter">Form talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="112" case="first-letter">smw/schema</namespace>
+      <namespace key="113" case="first-letter">smw/schema talk</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="274" case="first-letter">Widget</namespace>
+      <namespace key="275" case="first-letter">Widget talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+      <namespace key="3000" case="first-letter">Invigilators</namespace>
+      <namespace key="3001" case="first-letter">Invigilators talk</namespace>
+      <namespace key="3002" case="first-letter">Guides</namespace>
+      <namespace key="3003" case="first-letter">Guides talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Property:Course page</title>
+    <ns>102</ns>
+    <id>8597</id>
+    <revision>
+      <id>16636</id>
+      <timestamp>2021-12-06T17:27:11Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <comment>Created a property of type Page</comment>
+      <origin>16636</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="46" sha1="jk9aupditbfg4coza27xh6berm5n0sp" xml:space="preserve">This is a property of type [[Has type::Page]].</text>
+      <sha1>jk9aupditbfg4coza27xh6berm5n0sp</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Course page number</title>
+    <ns>102</ns>
+    <id>8596</id>
+    <revision>
+      <id>16635</id>
+      <timestamp>2021-12-06T17:26:55Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <comment>Created a property of type Number</comment>
+      <origin>16635</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="48" sha1="id8gn0keu2a1u84x5rhv7b3oxwkgls6" xml:space="preserve">This is a property of type [[Has type::Number]].</text>
+      <sha1>id8gn0keu2a1u84x5rhv7b3oxwkgls6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:MerlinMultipageExperienceSubpages</title>
+    <ns>10</ns>
+    <id>8599</id>
+    <revision>
+      <id>16705</id>
+      <parentid>16704</parentid>
+      <timestamp>2021-12-06T22:15:32Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <origin>16705</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1575" sha1="59015dsu38f2zm4es4gxyuur51ymms4" xml:space="preserve">&lt;includeonly&gt;&lt;div class="d-none"&gt;
+{{#set:Sequenced subpages={{{Pages|}}}}}
+{{#arraydefine: slides
+  |{{{Pages|}}}
+  |;
+}}
+{{#arrayprint: slides
+  |
+  |@
+  |{{#subobject:@
+     |Course page={{FULLPAGENAME}}/@
+     |Course page number={{#expr:0{{#arraysearch:slides|@}}+1}}
+   }}
+}}
+&lt;/div&gt;
+&lt;div class="plainlinks mt-4 {{#ifeq: {{#titleparts:{{FULLPAGENAME}}||-1}}|All|d-none}}"&gt;&lt;!--
+
+--&gt;[[{{FULLPAGENAME}}/{{#arrayindex: slides|0}}|&lt;span class="btn btn-lg btn-dark text-white"&gt;{{{1|Start}}}&lt;/span&gt;]] &lt;!--
+
+--&gt;{{#if: {{#ask: [[{{FULLPAGENAME}}/All]][[Modification date::+]] }}
+     |[[{{FULLPAGENAME}}/All|&lt;span class="btn btn-lg btn-link"&gt;One page&lt;/span&gt;]]
+     |[{{fullurl:{{FULLPAGENAME}}/All|action=edit&amp;preload=Template:MerlinMultipageExperienceAllPreload}} &lt;span class="btn btn-lg btn-link"&gt;One page&lt;/span&gt;]
+   }}
+&lt;/div&gt;__NOTOC__
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+Converts a page into a cover page of an education course.
+
+;Usage
+&lt;pre class="linenum"&gt;
+{{MerlinMultipageExperienceSubpages
+|Pages = # the ordered list of subpages delimited by a semicolon
+|        # the first unnamed parameter is used as the start button label (default = Start)
+}}&lt;/pre&gt;
+;Example
+&lt;pre class="linenum"&gt;
+{{MerlinMultipageExperienceSubpages
+|Pages=Sample Course/Student Welcome;
+Merlin History;
+Merlin Video;
+Merlin
+|Start training
+}}&lt;/pre&gt;
+; Related stuff
+:Properties
+:* [[Property:Course page]]
+:* [[Property:Course page number]]
+:Templates
+:* [[Template:MerlinMultipageExperienceAll]]
+:* [[Template:MerlinMultipageExperienceAllPreload]]
+:* [[Template:MerlinMultipageExperienceNavBar]]
+&lt;/noinclude&gt;</text>
+      <sha1>59015dsu38f2zm4es4gxyuur51ymms4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:MerlinMultipageExperienceAllPreload</title>
+    <ns>10</ns>
+    <id>8600</id>
+    <revision>
+      <id>16695</id>
+      <parentid>16694</parentid>
+      <timestamp>2021-12-06T22:08:22Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <minor/>
+      <comment>Anton-krom moved page [[Template:MerlinAllTopics]] to [[Template:MerlinMultipageExperienceAllPreload]] without leaving a redirect</comment>
+      <origin>16694</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="32" sha1="1rw5gz42ko5efab13c643igjhetcd58" xml:space="preserve">{{MerlinMultipageExperienceAll}}</text>
+      <sha1>1rw5gz42ko5efab13c643igjhetcd58</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:MerlinMultipageExperienceAll</title>
+    <ns>10</ns>
+    <id>8539</id>
+    <revision>
+      <id>16693</id>
+      <parentid>16169</parentid>
+      <timestamp>2021-12-06T22:07:08Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <origin>16693</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="442" sha1="7sjlyaxr9usqwnrnzp7o1ocankzphsj" xml:space="preserve">&lt;includeonly&gt;
+{{#arraymap: {{#ask: [[-Has subobject::{{#titleparts:{{{1|{{FULLPAGENAME}}}}}|1}}]]
+ |mainlabel=-
+ |?Course page
+ |sort=Course page number
+ |order=asc
+ |format=array
+ |sep=;
+ |manysep=;
+ |link=none
+}}
+ |;
+ |@@@
+ |
+== {{#titleparts:@@@||-1}} ==
+{{:@@@}}
+ |\n
+}}
+__NOEDITSECTION__
+{{DISPLAYTITLE:{{#titleparts:{{{1|{{FULLPAGENAME}}}}}|1}}}}
+&lt;/includeonly&gt;&lt;noinclude&gt;
+Displays all pages of the course on a single page.
+&lt;/noinclude&gt;</text>
+      <sha1>7sjlyaxr9usqwnrnzp7o1ocankzphsj</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:MerlinMultipageExperienceNavBar</title>
+    <ns>10</ns>
+    <id>8602</id>
+    <revision>
+      <id>16703</id>
+      <parentid>16702</parentid>
+      <timestamp>2021-12-06T22:14:47Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <origin>16703</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1560" sha1="c2cf2gtfra4ezvz1xzgskha6e00vg9y" xml:space="preserve">&lt;includeonly&gt;{{#arraydefine: slides|{{#show:{{BASEPAGENAME}}|?Sequenced subpages}}|;}}
+&lt;div class="{{#ifeq: {{#titleparts:{{FULLPAGENAME}}||-1}}|All|d-none|d-flex}} w-100 justify-content-between align-items-center"&gt;&lt;!--
+
+--&gt;[[{{#ask: 
+  [[-Has subobject::{{BASEPAGENAME}}]]
+  [[Course page number::{{#arraysearch:slides|{{#titleparts:{{FULLPAGENAME}}||-1}}}}]]
+  |?Course page
+  |mainlabel=-
+  |format=array
+  |default={{BASEPAGENAME}}
+}}|&lt;span class="btn btn-dark" title="Click to return to the prior page"&gt;&amp;laquo; Prior&lt;/span&gt;]]&lt;!--
+
+--&gt;&lt;small class="d-flex flex-column flex-md-row justify-content-center align-items-center"&gt;[[{{BASEPAGENAME}}]] : {{#expr: 0{{#arraysearch:slides|{{#titleparts:{{FULLPAGENAME}}||-1}}}} + 1}} of {{#arraysize: slides}}&lt;/small&gt;&lt;!--
+
+--&gt;[[{{#ask: 
+   [[-Has subobject::{{BASEPAGENAME}}]]
+   [[Course page number::{{#expr:0{{#arraysearch:slides|{{#titleparts:{{FULLPAGENAME}}||-1}}}} + 2}}]]
+   |?Course page
+   |mainlabel=-
+   |format=array
+   |default={{BASEPAGENAME}}
+ }}|&lt;span class="btn btn-dark" title="Click to proceed to the next page"&gt;Next &amp;raquo;&lt;/span&gt;]]
+&lt;/div&gt;&lt;!--
+
+--&gt;{{#ifeq: {{#titleparts:{{FULLPAGENAME}}||-1}}|All|
+     |{{DISPLAYTITLE:{{#titleparts:{{FULLPAGENAME}}||-1}}}}
+   }}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+Adds navigation within the educational course.
+
+;Usage
+Place the template call on a page belonging to a Course (listed on the course cover page in the [[Template:MerlinMultipageExperienceSubpages|MerlinMultipageExperienceSubpages]] template):
+&lt;pre&gt;
+{{MerlinMultipageExperienceNavBar}}
+&lt;/pre&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>c2cf2gtfra4ezvz1xzgskha6e00vg9y</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Number Systems</title>
+    <ns>0</ns>
+    <id>211</id>
+    <revision>
+      <id>16699</id>
+      <parentid>16689</parentid>
+      <timestamp>2021-12-06T22:11:08Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <origin>16699</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1018" sha1="p0rsq9kzju9lxfmt4md8g535hwz2gp4" xml:space="preserve">== Curriculum ==
+{{MerlinCurriculumData|{{ROOTPAGENAME}}}}
+== Experience ==
+{{MerlinMultipageExperience}}
+&lt;!-- NEW METHOD --&gt;
+{{MerlinMultipageExperienceSubpages
+  |Pages=Positional Notation;Alternative Bases;Formal Representation;Conversions from Decimal;Customs;Shortcut Conversions
+}}
+&lt;!-- OBSOLETE {{MerlinMultipageExperienceNavBar}} --&gt;
+== Exercises ==
+{{Exercises|
+* {{MMMAssignment|M1011-10}}
+}}
+== References ==
+* [https://en.wikipedia.org/wiki/Positional_notation Positional Notation] (Wikipedia) 
+* [https://en.wikipedia.org/wiki/Radix Radix] (Wikipedia)
+{{Experience
+|experienceID=W1011
+|experienceUnit=Numbers
+|knowledgeAndSkills=§10.311
+|topicAreas=Positional notation
+|classroomTime=60 minutes
+|studyTime=3 hours
+|acquiredKnowledge=understand positional notation;
+|acquiredSkill=ability to use positional notation to represent numbers in the binary, octal, decimal, and hexadecimal systems;
+ability to convert between representations of numbers in the binary, octal, decimal, and hexadecimal systems;
+}}</text>
+      <sha1>p0rsq9kzju9lxfmt4md8g535hwz2gp4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Number Systems/All</title>
+    <ns>0</ns>
+    <id>8567</id>
+    <revision>
+      <id>16682</id>
+      <parentid>16348</parentid>
+      <timestamp>2021-12-06T20:04:25Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <origin>16682</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="58" sha1="m36d3d6crck578y0cccjtf9sijjfnl6" xml:space="preserve">{{MerlinTopics}}
+&lt;!-- {{MerlinMultipageExperienceAll}} --&gt;</text>
+      <sha1>m36d3d6crck578y0cccjtf9sijjfnl6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Number Systems/Alternative Bases</title>
+    <ns>0</ns>
+    <id>8562</id>
+    <revision>
+      <id>16707</id>
+      <parentid>16684</parentid>
+      <timestamp>2021-12-06T22:16:36Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <origin>16707</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="4985" sha1="oymua8mhrbr6x588kvhga8znge43689" xml:space="preserve">=== Number Base ===
+The '''radix''' or '''base''' is the number of unique digits, ''including zero'', used to represent numbers in a positional numeral system. The base is normally written as a subscript to the right of the number. For example, the decimal number 123 would formally be written as (123)&lt;sub&gt;10&lt;/sub&gt;&lt;br /&gt;
+Note that the parentheses are sometimes not written: 123&lt;sub&gt;10&lt;/sub&gt;&lt;br /&gt;
+In the case of decimal (base 10) numbers, the subscripted 10 is often assumed and not written.
+
+=== Decimal System ===
+The decimal system is the system with which we are most familiar. It is a decimal system because it contains ten unique digits:&lt;br /&gt;
+&lt;pre&gt;
+0 1 2 3 4 5 6 7 8 9
+&lt;/pre&gt;
+
+For any (integer) value larger than 9, we’re required to use positional notation. Please keep in mind that “10” is not a digit. Rather, it’s a number consisting of two digits, a “1” in the tens (10&lt;sup&gt;1&lt;/sup&gt;) position and a “0” in the ones position (10&lt;sup&gt;0&lt;/sup&gt;).
+
+=== Octal System ===
+The octal system uses eight unique digits to represent a number:&lt;br /&gt;
+&lt;pre&gt;
+0 1 2 3 4 5 6 7
+&lt;/pre&gt;
+
+Let’s consider the value of an octal number: 4735&lt;sub&gt;8&lt;/sub&gt;
+
+What is the ''decimal'' value of this number? We use exactly the same method that we use for knowing the value in any system:
+
+{| class="wikitable" style="text-align:right;"
+ | Digit at position:  || 4 || 7 || 3 || 5
+ |-
+ | Position multiplier: || 8&lt;sup&gt;3&lt;/sup&gt; || 8&lt;sup&gt;2&lt;/sup&gt; || 8&lt;sup&gt;1&lt;/sup&gt; || 8&lt;sup&gt;0&lt;/sup&gt;
+ |-
+ | Position value: || 4 &amp;bull; 8&lt;sup&gt;3&lt;/sup&gt; || 7 &amp;bull; 8&lt;sup&gt;2&lt;/sup&gt; || 3 &amp;bull; 8&lt;sup&gt;1&lt;/sup&gt; || 5 &amp;bull; 8&lt;sup&gt;0&lt;/sup&gt;
+ |-
+ |                 || 2048 || 448 || 24 || 5
+ |}
+
+Note that in this case, the right-most digit is, as always, representative of units (ones), just as in any positional system. However, moving one digit to the left, because we’re now using an octal system, the position indicates the number of eights (not tens). The next position to the left indicates the number of sixty-fours (not hundreds) and the final position indicates the number of 512’s. As before, we multiply each digit by its corresponding position multiplier to obtain the value of the entire number:
+
+4 &amp;bull; 8&lt;sup&gt;3&lt;/sup&gt; + 7 &amp;bull; 8&lt;sup&gt;2&lt;/sup&gt; + 3 &amp;bull; 8&lt;sup&gt;1&lt;/sup&gt; + 5 &amp;bull; 8&lt;sup&gt;0&lt;/sup&gt; =&lt;br/&gt;
+2,048&lt;sub&gt;10&lt;/sub&gt; + 448&lt;sub&gt;10&lt;/sub&gt; + 24&lt;sub&gt;10&lt;/sub&gt; + 5&lt;sub&gt;10&lt;/sub&gt; =&lt;br/&gt;
+2,525&lt;sub&gt;10&lt;/sub&gt;
+
+=== Hexadecimal System ===
+The hexadecimal (six and ten) uses sixteen digits to represent a number:&lt;br /&gt;
+&lt;pre&gt;
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+&lt;/pre&gt;
+
+Note that because we only have ten digits in our familiar decimal system, we use the letters A through F to represent the additional six digits in the hexadecimal system. Remember that these are ''digits'', that is, A represents 10, B represents 11, and so on up to F which represents 15.
+
+Let’s consider the value of a hexadecimal number: B59C&lt;sub&gt;16&lt;/sub&gt;
+
+What is the ''decimal'' value of this number? 
+
+{| class="wikitable" style="text-align:right;"
+ | Digit at position:  || B || 5 || 9 || C
+ |-
+ | Position multiplier: || 16&lt;sup&gt;3&lt;/sup&gt; || 16&lt;sup&gt;2&lt;/sup&gt; || 16&lt;sup&gt;1&lt;/sup&gt; || 16&lt;sup&gt;0&lt;/sup&gt;
+ |-
+ | Position value: || B &amp;bull; 16&lt;sup&gt;3&lt;/sup&gt; || 5 &amp;bull; 16&lt;sup&gt;2&lt;/sup&gt; || 9 &amp;bull; 16&lt;sup&gt;1&lt;/sup&gt; || C &amp;bull; 16&lt;sup&gt;0&lt;/sup&gt;
+ |-
+ |                 || 45,056 || 1280 || 144 || 12
+ |}
+
+As always, we multiply each digit by its corresponding position multiplier to obtain the value of the entire number:
+
+B &amp;bull; 16&lt;sup&gt;3&lt;/sup&gt; + 5 &amp;bull; 16&lt;sup&gt;2&lt;/sup&gt; + 9 &amp;bull; 16&lt;sup&gt;1&lt;/sup&gt; + C &amp;bull; 16&lt;sup&gt;0&lt;/sup&gt; =&lt;br/&gt;
+45,056&lt;sub&gt;10&lt;/sub&gt; + 1280&lt;sub&gt;10&lt;/sub&gt; + 144&lt;sub&gt;10&lt;/sub&gt; + 12&lt;sub&gt;10&lt;/sub&gt; =&lt;br/&gt;
+46,492&lt;sub&gt;10&lt;/sub&gt;
+
+=== Binary System ===
+The binary system (two) uses two digits to represent a number:&lt;br/&gt;
+&lt;pre&gt;
+0 1
+&lt;/pre&gt;
+
+Let’s consider the value of a binary number: 1011 1010&lt;sub&gt;2&lt;/sub&gt;&lt;br/&gt;
+What is the decimal value of this number?
+
+{| class="wikitable" style="text-align:right;"
+ | Digit at position:  || 1 || 0 || 1 || 1 || 1 || 0 || 1 || 0
+ |-
+ | Position multiplier: || 2&lt;sup&gt;7&lt;/sup&gt; || 2&lt;sup&gt;6&lt;/sup&gt; || 2&lt;sup&gt;5&lt;/sup&gt; || 2&lt;sup&gt;4&lt;/sup&gt; || 2&lt;sup&gt;3&lt;/sup&gt; || 2&lt;sup&gt;2&lt;/sup&gt; || 2&lt;sup&gt;1&lt;/sup&gt; || 2&lt;sup&gt;0&lt;/sup&gt;
+ |-
+ | Position value: || 1 &amp;bull; 2&lt;sup&gt;7&lt;/sup&gt; || 0 &amp;bull; 2&lt;sup&gt;6&lt;/sup&gt; || 1 &amp;bull; 2&lt;sup&gt;5&lt;/sup&gt; || 1 &amp;bull; 2&lt;sup&gt;4&lt;/sup&gt; || 1 &amp;bull; 2&lt;sup&gt;3&lt;/sup&gt; || 0 &amp;bull; 2&lt;sup&gt;2&lt;/sup&gt; || 1 &amp;bull; 2&lt;sup&gt;1&lt;/sup&gt; || 0 &amp;bull; 2&lt;sup&gt;0&lt;/sup&gt;
+ |-
+ |                 || 128 || 0 || 32 || 16 || 8 || 0 || 2 || 0
+ |}
+
+Multiplying each digit by its corresponding position multiplier to obtain the value of the entire number:
+
+1 &amp;bull; 2&lt;sup&gt;7&lt;/sup&gt; + 0 &amp;bull; 2&lt;sup&gt;6&lt;/sup&gt; + 1 &amp;bull; 2&lt;sup&gt;5&lt;/sup&gt; + 1 &amp;bull; 2&lt;sup&gt;4&lt;/sup&gt; + 1 &amp;bull; 2&lt;sup&gt;3&lt;/sup&gt; + 0 &amp;bull; 2&lt;sup&gt;2&lt;/sup&gt; + 1 &amp;bull; 2&lt;sup&gt;1&lt;/sup&gt; + 0 &amp;bull; 2&lt;sup&gt;0&lt;/sup&gt; =&lt;br/&gt;
+128&lt;sub&gt;10&lt;/sub&gt; + 0&lt;sub&gt;10&lt;/sub&gt; + 32&lt;sub&gt;10&lt;/sub&gt; + 16&lt;sub&gt;10&lt;/sub&gt; + 8&lt;sub&gt;10&lt;/sub&gt; + 0&lt;sub&gt;10&lt;/sub&gt; + 2&lt;sub&gt;10&lt;/sub&gt; + 0&lt;sub&gt;10&lt;/sub&gt; =&lt;br/&gt;
+186&lt;sub&gt;10&lt;/sub&gt;
+
+
+&lt;noinclude&gt;{{MerlinMultipageExperienceNavBar}}&lt;/noinclude&gt;</text>
+      <sha1>oymua8mhrbr6x588kvhga8znge43689</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Number Systems/Conversions from Decimal</title>
+    <ns>0</ns>
+    <id>8564</id>
+    <revision>
+      <id>16709</id>
+      <parentid>16686</parentid>
+      <timestamp>2021-12-06T22:17:18Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <origin>16709</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2455" sha1="fbnj8iru5xjqmuyawewdec8pex73h8f" xml:space="preserve">To convert a decimal (base 10) number to any other base, we simply repeatedly divide by the base until we have a quotient of zero. Specifically, the dividend starts with the number that we want to convert, the divisor will always be the base. The remainder of each successive operation indicates the digit in the new base first at the right-most position and then moving left. The quotient of each step becomes the dividend of the subsequent step.
+
+Let’s first try converting the number 28&lt;sub&gt;10&lt;/sub&gt; to octal (base 8):
+
+The dividend is the decimal number that we want to convert, in this case 28.
+The divisor is the base to which we want to convert, in this case 8.
+The remainder indicates each successive digit. We stop the process when the quotient is 0.
+
+{| class="wikitable" style="text-align:right;"
+ ! Step !! Dividend !! Divisor !! Quotient !! Remainder
+ |-
+ | 1 || 28 || 8 || 3 || 4
+ |-
+ | 2 || 3 || 8 || 0 || 3
+ |}
+
+So, 28&lt;sub&gt;10&lt;/sub&gt; is 34&lt;sub&gt;8&lt;/sub&gt;. (Remember that we read the remainder from bottom to top.)
+
+Let’s try converting the number 567&lt;sub&gt;10&lt;/sub&gt; to octal:
+
+{| class="wikitable" style="text-align:right;"
+ ! Step !! Dividend !! Divisor !! Quotient !! Remainder
+ |-
+ | 1 || 567 || 8 || 70 || 7
+ |-
+ | 2 || 70 || 8 || 8 || 6
+ |-
+ | 3 || 8 || 8 || 1 || 0
+ |-
+ | 4 || 1 || 8 || 0 || 1
+ |}
+
+So, 567&lt;sub&gt;10&lt;/sub&gt; is 1067&lt;sub&gt;8&lt;/sub&gt;.
+
+Let’s try converting the number 63,215&lt;sub&gt;10&lt;/sub&gt; to hexadecimal:
+
+{| class="wikitable" style="text-align:right;"
+ ! Step !! Dividend !! Divisor !! Quotient !! Remainder
+ |-
+ | 1 || 63215 || 16 || 3950 || 15
+ |-
+ | 2 || 3950 || 16 || 246 || 14
+ |-
+ | 3 || 246 || 16 || 15 || 6
+ |-
+ | 4 || 15 || 16 || 0 || 15
+ |}
+
+So, 63,215&lt;sub&gt;10&lt;/sub&gt; is hexadecimal [15][6][14][15], or more conventionally, F6EF&lt;sub&gt;16&lt;/sub&gt;. &lt;br/&gt;
+(Remembering that in hexadecimal, we use the digit “F” for 15, “E” for 14, etc.) 
+
+Finally, let’s convert the number 53410 to binary:
+
+{| class="wikitable" style="text-align:right;"
+ ! Step !! Dividend !! Divisor !! Quotient !! Remainder
+ |-
+ | 1 || 534 || 2 || 267 || 0
+ |-
+ | 2 || 267 || 2 || 133 || 1
+ |-
+ | 3 || 133 || 2 || 66 || 1
+ |-
+ | 4 || 66 || 2 || 33 || 0
+ |-
+ | 5 || 33 || 2 || 16 || 1
+ |-
+ | 6 || 16 || 2 || 8 || 0
+ |-
+ | 7 || 8 || 2 || 4 || 0
+ |-
+ | 8 || 4 || 2 || 2 || 0
+ |-
+ | 9 || 2 || 2 || 1 || 0
+ |-
+ | 10 || 1 || 2 || 0 || 1
+ |}
+
+So, 534&lt;sub&gt;10&lt;/sub&gt; is 10 0001 0110&lt;sub&gt;2&lt;/sub&gt;
+
+
+&lt;noinclude&gt;{{MerlinMultipageExperienceNavBar}}&lt;/noinclude&gt;</text>
+      <sha1>fbnj8iru5xjqmuyawewdec8pex73h8f</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Number Systems/Customs</title>
+    <ns>0</ns>
+    <id>8565</id>
+    <revision>
+      <id>16710</id>
+      <parentid>16687</parentid>
+      <timestamp>2021-12-06T22:17:37Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <origin>16710</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="701" sha1="o33c6dsij7pd9cfewj1j7fvd6ver4d2" xml:space="preserve">* It is customary to separate groups of three '''decimal''' digits by commas.  For example:  123,456&lt;sub&gt;10&lt;/sub&gt;.
+* It is customary to separate groups to two '''hexadecimal''' digits by spaces and prefix a leading zero to what would otherwise be a single digit.  For example: 01 2F&lt;sub&gt;16&lt;/sub&gt;.
+* It is customary to separate groups of three '''octal''' digits by spaces and prefix leading zeros to pad to a three digit grouping.  For example: 001 237&lt;sub&gt;8&lt;/sub&gt;.
+* It is customary to separate groups of four '''binary''' digits by spaces and prefix leading zeroes to pad to a four digit grouping.  For example: 0001 1011 1100&lt;sub&gt;2&lt;/sub&gt;.
+
+&lt;noinclude&gt;{{MerlinMultipageExperienceNavBar}}&lt;/noinclude&gt;</text>
+      <sha1>o33c6dsij7pd9cfewj1j7fvd6ver4d2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Number Systems/Formal Representation</title>
+    <ns>0</ns>
+    <id>8563</id>
+    <revision>
+      <id>16708</id>
+      <parentid>16685</parentid>
+      <timestamp>2021-12-06T22:16:58Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <origin>16708</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="780" sha1="69e89rngsbx43hzzblfdxnzhh0u8e98" xml:space="preserve">Let x be a string of digits, such that:
+&lt;math&gt;x = x_{n}x_{n-1}x_{n-2} \cdots x_{0}&lt;/math&gt;
+
+Then, the value of &lt;math&gt;x&lt;/math&gt; in any particular base, &lt;math&gt;b&lt;/math&gt;, is calculated as:
+&lt;math&gt;\sum_{i=0}^{n} x_{i} \cdot b^i&lt;/math&gt;
+
+The rightmost digit, &lt;math&gt;x_{0}&lt;/math&gt; is referred to as the '''least significant digit''', or '''LSD'''.  It is ''least significant'' because in terms of the overall value of the entire number, this digit will always have the least impact.  Conversely, the leftmost digit, &lt;math&gt;x_{n}&lt;/math&gt; is referred to as the '''most significant digit''', or '''MSD'''.  It is ''most significant'' because in terms of the overall value of the entire number, this digit will always have the most impact.
+
+&lt;noinclude&gt;{{MerlinMultipageExperienceNavBar}}&lt;/noinclude&gt;</text>
+      <sha1>69e89rngsbx43hzzblfdxnzhh0u8e98</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Number Systems/Positional Notation</title>
+    <ns>0</ns>
+    <id>8561</id>
+    <revision>
+      <id>16706</id>
+      <parentid>16683</parentid>
+      <timestamp>2021-12-06T22:16:12Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <origin>16706</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1849" sha1="iw5awt6hvvdz9u5uwkbmq77eitdqypu" xml:space="preserve">'''Positional notation''' (sometimes called '''place-value notation''') is a method of encoding numbers. It differs from other notations (such as Roman numerals) in that it uses the same symbol for different orders of magnitude depending on its position. For example, consider the number 23. The “3” indicates 3 ''ones'', because it is in the ''ones'' position. The “2”, however, indicates 2 ''tens'', because it is in the ''tens'' position. We know the value of a position by its location within the number. As we move ''left'' in a number, each position is valued at ten times the prior position. It might help if we label each position using power notation. Consider the number 123:
+
+[[File:Positional Notation.png]]
+
+The “3” is the right-most, and therefore the lowest-valued position, representing “ones” with a position multiplier of 10&lt;sup&gt;0&lt;/sup&gt; (that is, 10 raised to the zero power, or 1). The “2” is located one position to the left, so we multiply by 10 again giving us a position multiplier of 10&lt;sup&gt;1&lt;/sup&gt; (that is, 10 raised to the first power, or 10). Finally, the “1” is located one position to the left, so we again multiply by 10 giving us a position multiplier of 10&lt;sup&gt;2&lt;/sup&gt; (that is, 10 raised to the second power, or 100). By multiplying each digit by its corresponding position multiplier, we can obtain the value of the entire number:
+
+1 * 10&lt;sup&gt;2&lt;/sup&gt; + 2 * 10&lt;sup&gt;1&lt;/sup&gt; + 3 * 10&lt;sup&gt;0&lt;/sup&gt; =&lt;br /&gt;
+100 + 20 + 3 =&lt;br /&gt; 
+123&lt;br /&gt;
+
+While we generally understand the mechanics of this process in the decimal system, thinking about how it actually works will enable us to consider other systems.
+
+{{MerlinVideoPlayer|videoID=sEb5M2zyCxQ02de00E4bYrotYH3dsd016u01DlBYQw00hOfo|videoTitle=Interpreting nubers based on their position}}
+
+&lt;noinclude&gt;{{MerlinMultipageExperienceNavBar}}&lt;/noinclude&gt;</text>
+      <sha1>iw5awt6hvvdz9u5uwkbmq77eitdqypu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Number Systems/Shortcut Conversions</title>
+    <ns>0</ns>
+    <id>8566</id>
+    <revision>
+      <id>16711</id>
+      <parentid>16688</parentid>
+      <timestamp>2021-12-06T22:17:59Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>30524</id>
+      </contributor>
+      <origin>16711</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3261" sha1="rtekkab5qgq8e5o5zu510xcyaro27tz" xml:space="preserve">Because both the octal and hexadecimal bases contain &lt;math&gt;2^3&lt;/math&gt; and &lt;math&gt;2^4&lt;/math&gt; possible digits, respectively, and the binary base contains &lt;math&gt;2^1&lt;/math&gt; possible digits, we're able to utilize a shortcut when converting between these systems.  Note that each octal digit is comprised of three binary digits and each hexadecimal digit is comprised of four binary digits.  We can therefore establish (and '''memorize''') the following table:
+
+{| class="wikitable"
+!Decimal
+!Binary
+!Octal
+!Hexadecimal
+|-
+|00
+|0000
+|00
+|0
+|-
+|01
+|0001
+|01
+|1
+|-
+|02
+|0010
+|02
+|2
+|-
+|03
+|0011
+|03
+|3
+|-
+|04
+|0100
+|04
+|4
+|-
+|05
+|0101
+|05
+|5
+|-
+|06
+|0110
+|06
+|6
+|-
+|07
+|0111
+|07
+|7
+|-
+|08
+|1000
+|10
+|8
+|-
+|09
+|1001
+|11
+|9
+|-
+|10
+|1010
+|12
+|A
+|-
+|11
+|1011
+|13
+|B
+|-
+|12
+|1100
+|14
+|C
+|-
+|13
+|1101
+|15
+|D
+|-
+|14
+|1110
+|16
+|E
+|-
+|15
+|1111
+|17
+|F
+|}
+
+The shortcut is very straight-forward yet a significant time saver and based on the above information.  When converting between binary, octal, and hexadecimal, there's no need to use an intermediate, decimal step.  
+
+=== Binary to Hexadecimal ===
+Group the binary number in sets of four digits, from right to left.  Each binary set represents a single hexadecimal digit.  (It's sometimes helpful to pad the final set with zeroes.)  For example, given the number &lt;math&gt;11000111\;\;00100101_{2}&lt;/math&gt;, regroup the binary digits in sets of four:&lt;br/&gt; 
+&lt;math&gt;11000111\;\;00100101_{2}&lt;/math&gt;&lt;br/&gt;
+&lt;math&gt;\color{Orange}1100\color{Blue}0111\;\;\color{Orange}0010\color{Blue}0101\color{Black}_{2}&lt;/math&gt;&lt;br/&gt;
+&lt;math&gt;\color{Orange}1100\;\;\color{Blue}0111\;\;\color{Orange}0010\;\;\color{Blue}0101\color{Black}_{2}&lt;/math&gt;.&lt;br/&gt;
+
+Then, use the memorized table to translate each set of four binary digits to a single hexadecimal digit:
+
+{| class="wikitable"
+| 1100
+| 0111
+| 0010
+| 0101
+|-
+| C 
+| 7   
+| 2 
+| 5
+|}
+
+=== Hexadecimal to Binary ===
+Simply follow the above procedure in reverse.  Use the memorized table to convert each hexadecimal digit to a set of four binary digits.
+
+=== Binary to Octal ===
+Group the binary number in sets of three digits, from right to left.  Each binary set represents a single octal digit.  (It's sometimes helpful to pad the final set with zeroes.)  For example, given the number &lt;math&gt;11000111\;\;00100101_{2}&lt;/math&gt;, regroup the binary digits in sets of three:&lt;br/&gt; 
+&lt;math&gt;11000111\;\;00100101_{2}&lt;/math&gt;&lt;br/&gt;
+&lt;math&gt;\color{Orange}1\color{Blue}100\color{Orange}011\color{Blue}1\;\;00\color{Orange}100\color{Blue}101\color{Black}_{2}&lt;/math&gt;&lt;br/&gt;
+&lt;math&gt;00\color{Orange}1\;\;\color{Blue}100\;\;\color{Orange}011\;\;\color{Blue}100\;\;\color{Orange}100\;\;\color{Blue}101\color{Black}_{2}&lt;/math&gt;.&lt;br/&gt; 
+
+Then, use the memorized table to translate each set of three binary digits to a single octal digit:
+
+{| class="wikitable"
+| 001
+| 100 
+| 011 
+| 100 
+| 100 
+| 101
+|-
+| 1  
+| 4  
+| 3  
+| 4   
+| 4 
+| 5
+|}
+
+=== Octal to Binary ===
+Simply follow the above procedure in reverse.  Use the memorized table to convert each octal digit to a set of three binary digits.
+
+=== Octal to Hexadecimal (and vice versa) ===
+This requires slightly more work.  Convert the number in the source base to binary, and then convert from binary to the target base.
+
+
+&lt;noinclude&gt;{{MerlinMultipageExperienceNavBar}}&lt;/noinclude&gt;</text>
+      <sha1>rtekkab5qgq8e5o5zu510xcyaro27tz</sha1>
+    </revision>
+  </page>
+</mediawiki>
