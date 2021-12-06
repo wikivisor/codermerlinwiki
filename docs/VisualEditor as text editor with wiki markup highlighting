@@ -26,7 +26,7 @@ $wgHiddenPrefs[] = 'visualeditor-betatempdisable';
 wfLoadExtension( 'VisualEditor' );
 ```
 
-Install CodeMirror:
+Install CodeMirror for highlighting:
 ```php
 git clone https://github.com/wikimedia/mediawiki-extensions-CodeMirror.git --branch REL1_35 extensions/CodeMirror
 ```
