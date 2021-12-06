@@ -41,9 +41,9 @@ Run one of the following commands in your shell depending on the way you impleme
 php composer update --no-dev
 ```
 ## Import pages
-* Save [this file](import/Coder+Merlin-20211202151301.xml) locally.
+* Save [files in import directory](import) locally.
 * Navigate in your browser under your wiki admin rights to https://www.codermerlin.com/wiki/index.php/Special:Import.
-* Import the downloaded file with the default settings. Put `merlin` or something as wiki prefix in the import form.
+* Import the downloaded files with the default settings. Put `merlin` or something as wiki prefix in the import form.
 
 See the [description of imported pages](#pages-description).
 
