@@ -41,7 +41,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
       </row>
    </grid>
    <!-- navbar -->
-   <component type="NavbarHorizontal" class="navbar-dark py-0 px-1 sticky" collapsible="yes">
+   <component type="NavbarHorizontal" class="navbar-dark py-0 px-1" collapsible="yes">
       <!-- we want to use chameleon menus instead of <component type="NavMenu"/> -->
       <component type="Menu" message="secondary-menu" />
       <component type="Toolbox" flatten="no" class="dropdown" />

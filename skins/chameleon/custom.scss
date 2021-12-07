@@ -167,6 +167,7 @@ a:visited {
   top: 0;
   min-height: 49px;
   background-color: $primary-accent;
+  z-index: 1;
   .navbar-collapse {
     order: 1;
     .navbar-nav {
@@ -283,6 +284,7 @@ a:visited {
 #p-search {
   z-index: 0;
   position: relative;
+  visibility: hidden;
 }
 #non-mainpage-search-wrapper {
   #p-search {
@@ -327,18 +329,15 @@ a:visited {
     @extend .mb-5;
     #searchform {
       @extend .w-100;
-      @extend .px-3;
-      @extend .py-2;
-//   @extend .shadow;
+      @extend .p-1;
       @extend .rounded;
-//      @extend .border;
       @extend .border-0;
-//      @extend .border-light;
       @extend .bg-white;
       border-bottom: 4px solid $secondary-accent !important;
     }
     #searchInput {
-      @extend .mr-3;
+//      @extend .mr-3;
+	@extend .rounded;
     }
     #searchInput,
     #searchGoButton {
@@ -347,6 +346,9 @@ a:visited {
       background-image: none;
     }
     .searchGoButton {
+      position: absolute;
+      margin-left: -40px;
+      z-index: 3;
       &:before {
         color: rgba(0, 0, 0, 0.5);
       }
