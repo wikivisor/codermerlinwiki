@@ -25,7 +25,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 -->
 <structure xmlns="https://ProfessionalWiki.github.io/chameleon/schema/3.2/layout.rng">
 	<!-- banner -->
-	<grid mode="fluid" class="">
+	<grid mode="fluid" class="banner-wrapper">
       <row>
          <cell class="w-100 banner-merlin py-3">
             <row>

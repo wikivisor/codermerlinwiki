@@ -1,10 +1,10 @@
-// $primary-accent: #9e00e0;
 $primary-accent: #7063a7;
 $primary-inverted: #8f9b57;
 
-// $secondary-accent: #6610f2;
 $secondary-accent: #4f3f8a;
 $secondary-inverted: #afc074;
+
+$contrast-accent: #efb73e;
 
 @mixin awesome {
   font-family: "Font Awesome 5 Free";
@@ -72,19 +72,6 @@ a:visited {
     &:visited {
       color: $primary-inverted;
     }
-  }
-}
-
-// BANNER
-.banner-merlin {
-  background-color: $secondary-accent;
-  z-index: 1;
-  order: 0;
-}
-.dark-theme {
-  .banner-merlin {
-    background-color: $secondary-inverted;
-    filter: hue-rotate(150deg);
   }
 }
 
@@ -200,9 +187,17 @@ a:visited {
       color: #e0e0e0 !important;
     }
   }
-  .dropdown-menu > div > a:first-child:last-child {
-    &:active, &:focus {
-      background-color: $secondary-accent;
+  .dropdown-menu {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background: rgb(195, 188, 223) none repeat scroll 0% 0%;
+    border: 0px none;
+    margin-top: 4px;
+    &> div > a:first-child:last-child {
+      &:active, &:focus {
+        background-color: $contrast-accent;
+        color: $secondary-accent;
+      }
     }
   }
 }
@@ -411,6 +406,12 @@ a:visited {
       background: none;
       border: 0;
       padding-top: 0.75rem;
+     .root {
+       .fancytree-title {
+         padding-left: 1rem;
+         font-weight: bold;
+       }
+      }
       ul.fancytree-container {
         background-color: transparent;
         border: 0;
@@ -709,4 +710,50 @@ kbd {
 }
 .bg-plyr {
   background-color: $primary-accent !important;
+}
+
+// PERSONAL MENU STYLED
+#p-personal, .p-personal-tools li {
+  font-family: monospace;
+  font-size: 9pt;
+  color: #efb73e; 
+}
+#p-personal::before {
+    content: "personal => [";
+}
+#p-personal::after {
+    content: "];";
+}
+#p-personal li::after {
+  content: ","
+}
+.p-personal-tools {
+  padding-left: 2rem !important;
+}
+@media all and ( max-width: 576px ){
+  #p-personal ul {
+    display: flex;
+    flex-direction: column;  
+  }
+  #p-personal ul li {
+    width: 100% !important
+  }
+}
+.dark-theme {
+  #p-personal, .p-personal-tools li {
+    filter: invert(1);
+  }
+}
+
+// BANNER
+.banner-merlin {
+  background-color: $secondary-accent;
+  z-index: 1;
+  order: 0;
+}
+.dark-theme {
+  .banner-merlin {
+    background-color: $secondary-inverted;
+    filter: hue-rotate(150deg);
+  }
 }
