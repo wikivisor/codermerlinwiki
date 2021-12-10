@@ -392,6 +392,7 @@ a:visited {
   #sidebar-left {
     height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     scrollbar-width: thin;
@@ -439,6 +440,7 @@ a:visited {
   #sidebar-right {
     height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     scrollbar-width: thin;
@@ -712,6 +714,7 @@ kbd {
   background-color: $primary-accent !important;
 }
 
+/**
 // PERSONAL MENU STYLED
 #p-personal, .p-personal-tools li {
   font-family: monospace;
@@ -744,6 +747,7 @@ kbd {
     filter: invert(1);
   }
 }
+**/
 
 // BANNER
 .banner-merlin {
