@@ -1,0 +1,109 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Coder Merlin</sitename>
+    <dbname>merlin</dbname>
+    <base>https://merlin.wikivisor.com/w/index.php/Welcome_to_Coder_Merlin</base>
+    <generator>MediaWiki 1.35.4</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Project</namespace>
+      <namespace key="5" case="first-letter">Project talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="106" case="first-letter">Form</namespace>
+      <namespace key="107" case="first-letter">Form talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="112" case="first-letter">smw/schema</namespace>
+      <namespace key="113" case="first-letter">smw/schema talk</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="274" case="first-letter">Widget</namespace>
+      <namespace key="275" case="first-letter">Widget talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Welcome to Coder Merlin</title>
+    <ns>0</ns>
+    <id>1</id>
+    <revision>
+      <id>16968</id>
+      <parentid>16966</parentid>
+      <timestamp>2021-12-10T11:30:27Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>16968</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2161" sha1="5ezazozmve0k1l98viwq49tpn1j7zuf" xml:space="preserve">&lt;!-- {{MerlinHeader}} --&gt;
+&lt;div class="card-deck"&gt;
+{{Card
+|header  = Our Mission
+|image   = 
+|title   = Coder Merlin is dedicated to providing students of all ages the opportunity to learn, study, and practice Computer Science.
+|tclasses= lead font-weight-bold
+|content = Through the lessons provided on this wiki and the accompanying exercises available on the Coder Merlin Server, students may practice their skills in [[Why Swift|Swift]] without the need for any special software or hardware.
+
+Coder Merlin continues to grow through the thoughtful dedication of students, teachers and donors like you.  
+
+&lt;p class="mb-0"&gt;[[Merlin_Shell_Access_Application|&lt;span class="btn btn-warning text-dark text-decoration-none font-weight-bold w-100"&gt;Join us!&lt;/span&gt;]]&lt;/p&gt;
+|bclasses= d-flex flex-column justify-content-between
+|classes = shadow
+}}
+{{Card
+|header  = What We Believe
+|content = &lt;ul&gt;
+&lt;li class="mb-3"&gt;We believe that '''imagination''' and '''self-discovery''' drive inspiration and genuine learning.&lt;/li&gt;
+&lt;li class="mb-3"&gt;We believe '''everyone''' deserves and is entitled to study Computer Science.&lt;/li&gt;
+&lt;li class="mb-3"&gt;We believe that the skills acquired in the study of Computer Science are valuable, regardless of a student's ultimate field of study.&lt;/li&gt;
+&lt;li class="mb-3"&gt;We believe that studying Computer Science can help bring equity to the disadvantaged.&lt;/li&gt;
+&lt;li class="mb-3"&gt;We believe that the best learning is '''fun'''.&lt;/li&gt;
+&lt;li class="mb-3"&gt;We're committed to act on these beliefs.&lt;/li&gt;
+&lt;/ul&gt;
+|classes = pb-0 shadow
+}}
+{{Card
+|header  = Who We Are
+|image   = MerlinFlatLogo.png
+|ihalf   = 1
+|ilink   = Special:Preferences
+|content = Coder Merlin is a community effort.  Details about how you can help may be found [[How Can I Help?|here]].
+
+The use of this wiki is available free of charge for all.  For the best coding experience, we strongly recommend a shell account.  
+
+[[CoderMerlin Services|&lt;span class="btn btn-warning text-dark text-decoration-none font-weight-bold w-100"&gt;More info&lt;/span&gt;]]
+|bclasses= py-0
+|classes = shadow
+}}
+&lt;/div&gt;
+{{MerlinBlurbs}}
+&lt;!-- {{MerlinTwitterFeed}} --&gt;
+&lt;div id="move-to-right-bar"&gt;{{MerlinQuotes}}&lt;/div&gt;</text>
+      <sha1>5ezazozmve0k1l98viwq49tpn1j7zuf</sha1>
+    </revision>
+  </page>
+</mediawiki>

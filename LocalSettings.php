@@ -30,7 +30,7 @@ $egChameleonEnableExternalLinkIcons = true;
 wfLoadExtension( 'Gadgets' );
 wfLoadExtension( 'SemanticResultFormats' );
 wfLoadExtension( 'TreeAndMenu' );
-wfLoadExtension( 'Variables' );
+# wfLoadExtension( 'Variables' );
 
 // Allow string functions
 $wgPFEnableStringFunctions = true;
@@ -55,12 +55,12 @@ $wgHooks['OutputPageBodyAttributes'][] = function ( OutputPage $out, Skin $skin,
    }
 };
 
-// TwitterFeed
-$wgHooks['BeforePageDisplay'][] = function( OutputPage &$out, Skin &$skin ) {
-     $code = <<<'START_END_MARKER'
-<!-- Twitter Feed -->
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-START_END_MARKER;
-     $out->addHeadItem( 'head-tags-load', $code );
-};
+// TwitterFeed - To be switched to ResourceLoader
+#$wgHooks['BeforePageDisplay'][] = function( OutputPage &$out, Skin &$skin ) {
+#     $code = <<<'START_END_MARKER'
+#<!-- Twitter Feed -->
+#<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+#START_END_MARKER;
+#     $out->addHeadItem( 'head-tags-load', $code );
+#};
 
