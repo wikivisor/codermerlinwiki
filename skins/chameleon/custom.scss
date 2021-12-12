@@ -844,11 +844,15 @@ kbd {
     @extend .my-0;
     @extend .text-left;
     white-space: pre-line;
+    hyphens: none;
     &:nth-of-type(1) {
-      @extend .pt-1;
+//      @extend .pt-1;
     }
     &:nth-last-of-type(1) {
-      @extend .pb-1;
+//      @extend .pb-1;
     }
+  }
+  br {
+    @extend .d-none;
   }
 }
