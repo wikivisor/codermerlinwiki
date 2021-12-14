@@ -8,7 +8,8 @@ $wgAllowSiteCSSOnRestrictedPages = true;
 $wgRestrictDisplayTitle = false;
 
 // We want logo to be defined here along with other branding settings
-$wgLogos = [ '1x' => "$wgResourceBasePath/resources/assets/MerlinRoundIcon.png" ];
+# $wgLogos = [ '1x' => "$wgResourceBasePath/resources/assets/MerlinRoundIcon.png" ];
+$wgLogos = [ '1x' => "$wgResourceBasePath/extensions/wikivisor/assets/MerlinNewLogo.png" ];
 
 // Skin
 wfLoadSkin( 'chameleon' );
@@ -56,11 +57,9 @@ $wgHooks['OutputPageBodyAttributes'][] = function ( OutputPage $out, Skin $skin,
 };
 
 // TwitterFeed - To be switched to ResourceLoader
-#$wgHooks['BeforePageDisplay'][] = function( OutputPage &$out, Skin &$skin ) {
-#     $code = <<<'START_END_MARKER'
-#<!-- Twitter Feed -->
-#<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-#START_END_MARKER;
-#     $out->addHeadItem( 'head-tags-load', $code );
-#};
+$wgHooks['BeforePageDisplay'][] = function( OutputPage &$out, Skin &$skin ) {
+     $code = <<<'START_END_MARKER'
+START_END_MARKER;
+     $out->addHeadItem( 'head-tags-load', $code );
+};
 

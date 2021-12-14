@@ -66,7 +66,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
    <!-- back to top -->
    <component type="Html"><![CDATA[<div id="back-to-top" style="visibility: hidden"><i class="fas fa-angle-double-up fa-2x"></i></div>]]></component>
    <!-- footer -->
-   <row id="footer-merlin" class="flex-column flex-md-row mx-auto container py-5 px-4 rounded-top">
+   <row id="footer-merlin" class="flex-column flex-md-row mx-auto container py-5 px-4 rounded mb-5">
       <cell class="d-flex flex-column justify-content-between align-items-center align-items-md-start">
          <component type="Container" class="d-flex mb-5 social-icons">
             <component type="Menu" message="footer-icons" />
@@ -80,15 +80,14 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
             <component type="Html"><![CDATA[Designed with pride in Silicon Valley, CA, USA]]></component>
          </component>
       </cell>
-   </row><!-- left sidebar 
-   --><component type="Html"><![CDATA[<div id="sidebar-left-wrapper" class="sidebar flex-fill position-fixed">
-<div id="sidebar-left">]]></component>
+   </row>
+   <component type="Html"><![CDATA[<div id="sidebar-left-wrapper" class="sidebar flex-fill position-absolute">
+<div id="sidebar-left" class="">]]></component>
    <component type="NavMenu" flatten="navigation" />
    <component type="Html"><![CDATA[</div>
 </div>]]></component>
-   <!-- right sidebar -->
-   <component type="Html"><![CDATA[<div id="sidebar-right-wrapper" class="sidebar flex-fill position-fixed">
-<div id="sidebar-right"></div></div>]]></component><!-- left sidebar toggler 
---><component type="Html"><![CDATA[<span id="sidebar-left-toggler" class="nav-item order-0"><i class="nav-link far fa-plus-square text-white"></i></span>]]></component><!-- 
-right sidebar toggler --><component type="Html"><![CDATA[<span id="sidebar-right-toggler" class="nav-item order-0"><i class="nav-link far fa-plus-square text-white"></i></span>]]></component>
+   <component type="Html"><![CDATA[<div id="sidebar-right-wrapper" class="sidebar flex-fill position-absolute">
+<div id="sidebar-right" class=""></div></div>]]></component><!-- left sidebar toggler 
+--><component type="Html"><![CDATA[<span id="sidebar-left-toggler" class="nav-item order-0" data-toggle="offcanvas-left"><i class="nav-link far fa-plus-square text-white"></i></span>]]></component><!-- 
+right sidebar toggler --><component type="Html"><![CDATA[<span id="sidebar-right-toggler" class="nav-item order-0" data-toggle="offcanvas-right"><i class="nav-link far fa-plus-square text-white"></i></span>]]></component>
 </structure>

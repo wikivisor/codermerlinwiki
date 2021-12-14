@@ -65,9 +65,9 @@ php maintenance/importDump.php < extensions/wikivisor/import/MultipageNavigation
 The first one is mandatory. The second contains the proposed mainpage layout (optional). The last one contains data structure and workflow for the multipage navigation (optional). 
 See the [description of imported pages](#pages-description) for details.
 
-If the mainpage is imported, then add pictures by running:
+If the mainpage is imported, then add a Merlin picture by running:
 ```php
-php maintenance/importImages.php extensions/wikivisor/images/ 
+php maintenance/importImages.php extensions/wikivisor/images/MerlinFlatLogo.png
 ```
 ## Done
 At this point everything should be in place, use `Ctrl+F5` and/or `Ctrl+Shift+r` to purge the page cache and to enjoy your new wiki layout.
@@ -96,18 +96,18 @@ This is a description of the [Coder+Merlin-20211202151301.xml](import/Coder+Merl
 * **Template:Bquote‎** provides styled quotes / citations divs.
 
 The following **existing** templates contain design elements re-touched / adapted for use with the Bootstrap and the design under development:
-* Template:CM
+* Template:CM‎‎
 * Template:CommandPlaceholder
-* Template:Command
+* Template:Command‎‎
 * Template:ConsoleLine
 * Template:ConsoleLines
-* Template:Hint
-* Template:Key
+* Template:Hint‎
+* Template:Key‎
 * Template:MerlinBlurbs
-* Template:MerlinQuotes
+* Template:MerlinQuotes‎
 * Template:MerlinRecommends
-* Template:MerlinVideoPlayer
-* Template:SpecialKey
+* Template:MerlinVideoPlayer‎
+* Template:SpecialKey‎
 * Template:VerySpecialKey
 
 Templates are work in progress.

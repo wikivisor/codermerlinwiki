@@ -1,0 +1,1420 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Coder Merlin</sitename>
+    <dbname>wiki</dbname>
+    <base>https://dev.codermerlin.com/wiki/index.php/Welcome_to_Coder_Merlin</base>
+    <generator>MediaWiki 1.35.3</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Coder Merlin</namespace>
+      <namespace key="5" case="first-letter">Coder Merlin talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="106" case="first-letter">Form</namespace>
+      <namespace key="107" case="first-letter">Form talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="112" case="first-letter">smw/schema</namespace>
+      <namespace key="113" case="first-letter">smw/schema talk</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="274" case="first-letter">Widget</namespace>
+      <namespace key="275" case="first-letter">Widget talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+      <namespace key="3000" case="first-letter">Invigilators</namespace>
+      <namespace key="3001" case="first-letter">Invigilators talk</namespace>
+      <namespace key="3002" case="first-letter">Guides</namespace>
+      <namespace key="3003" case="first-letter">Guides talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>MediaWiki:Chameleon.css</title>
+    <ns>8</ns>
+    <id>8588</id>
+    <revision>
+      <id>16813</id>
+      <timestamp>2021-12-11T22:33:06Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16813</origin>
+      <model>css</model>
+      <format>text/css</format>
+      <text bytes="498" sha1="ha0pgwpkyhaxskqr7nyys3q03s070pl" xml:space="preserve">h1, h2 {
+    border-bottom: 0 !important;
+}
+
+/** 
+ * TREE
+ **/
+span.fancytree-selected span.fancytree-title, span.fancytree-active span.fancytree-title {
+    background-color: #7063a71c;
+}
+.fancytree-treefocus span.fancytree-active span.fancytree-title {
+    background: #7063a71c !important;
+    color: var(--dark);
+}
+span.fancytree-title {
+    border-radius: 3px;
+}
+span.fancytree-title a {
+	color: #20164a !important;
+}
+span.fancytree-focused span.fancytree-title {
+    outline: 0 !important;
+}
+</text>
+      <sha1>ha0pgwpkyhaxskqr7nyys3q03s070pl</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Chameleon.js</title>
+    <ns>8</ns>
+    <id>8589</id>
+    <revision>
+      <id>16994</id>
+      <parentid>16993</parentid>
+      <timestamp>2021-12-14T22:51:07Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16994</origin>
+      <model>javascript</model>
+      <format>text/javascript</format>
+      <text bytes="3628" sha1="ohgcl8u2qz5n3ei0kljtphzp2lglg15" xml:space="preserve">$(function() {
+	moveSearchOnMain();
+	moveSearchOnSmall();
+	miniNavbar();
+	moveTOC();
+	moveNsHeader();
+	toggleSidebar();
+	cleanFooterIcons();
+	moveSidebarTogglers();
+	backToTop();
+});
+
+const mq = window.matchMedia("(max-width: 1105px)");
+const sb = window.matchMedia("(min-width: 1740px)");
+const sel = $('.sidebar');
+
+$(window).resize(function() {
+	moveSearchOnSmall();
+	miniNavbar();
+	if (sb.matches) {
+		$('.sidebar').removeClass('on-canvas');
+	}
+});
+
+$( window ).scroll(function() {
+    var fromTop = $(window).scrollTop();
+    var offset = 240;
+    
+    if ($(this).scrollTop()) {
+		$('#back-to-top').css('visibility', 'visible');
+	} else {
+		$('#back-to-top').css('visibility', 'hidden');
+	}
+
+	function setToWindowHeight(sel) {
+		if(fromTop &lt; 180 ){ 
+			offset = 240 - fromTop;
+		} else { 
+			offset = 60; 
+		}
+		sel.animate({'min-height':  $(window).innerHeight(), 'bottom': 0, 'top': fromTop + 'px' }, 0, "easeOutExpo");
+		$('#hf-nsheader-, #move-to-right-bar, #toc').animate({'top': offset + 'px'}, 600, "easeInOutQuad");
+	}
+	clearTimeout($.data(this, 'scrollTimer'));
+    $.data(this, 'scrollTimer', setTimeout(function() {
+		setToWindowHeight(sel);
+	}, 150));
+
+});
+
+
+function moveSearchOnSmall() {
+	var mp = mw.config.get( 'wgIsMainPage' );
+	if (mq.matches) {
+		$('#mainpage-search-wrapper').prepend($('#p-search'));
+	} else {
+		if (mp) { 
+		} else {
+			$('#non-mainpage-search-wrapper').prepend($('#p-search'));
+		}
+	}
+	$('#p-search').css({'visibility':'visible'});
+}
+function miniNavbar() {
+	if (mq.matches) {
+		$('#mw-navigation').addClass('mini');
+	} else {
+		$('#mw-navigation').removeClass('mini');
+	}
+}
+function moveSearchOnMain() {
+        var mp = mw.config.get( 'wgIsMainPage' );
+        if (mp) { 
+             $('#mainpage-search-wrapper').detach().prependTo('#bodyContent').prepend($('#p-search'));
+        }
+        $('#p-search').css({'visibility':'visible'});
+}
+function moveTOC(){
+	if($('#toc').length &gt; 0){
+		var toctitle = '&lt;div class="nav-item"&gt;&lt;div id="ttitle" class="nav-link px-3"&gt;Contents&lt;/div&gt;&lt;/div&gt;';
+		$('#toc').prepend(toctitle).detach().prependTo('#sidebar-right');
+	}
+	if($('#move-to-right-bar').length &gt; 0){
+		$('#move-to-right-bar').detach().appendTo('#sidebar-right');
+	}
+}
+function miniDropdown(){
+	if (mq.matches) {
+		$('#mw-navigation.mini .dropdown-toggle').click( function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var activemenu = $(this).parent('div').find('.dropdown-menu');
+			$(activemenu).toggle();
+			$('#mw-navigation.mini .dropdown-menu').not(activemenu).hide();
+		});
+	} 
+}
+function toggleSidebar(){
+	$('#sidebar-right-toggler').bind('click', function() {
+		$('#sidebar-right-wrapper').toggleClass('on-canvas');
+		$(this).find('i').toggleClass('fa-plus-square fa-minus-square');
+	});
+	$('#sidebar-left-toggler').bind('click', function() {
+		$('#sidebar-left-wrapper').toggleClass('on-canvas');
+		$(this).find('i').toggleClass('fa-plus-square fa-minus-square');
+	});
+}
+function moveNsHeader(){
+	$('#hf-nsheader-').detach().prependTo('#sidebar-left');
+}
+function cleanFooterIcons(){
+	$('#footer-merlin .nav-link').text("");
+	$('#footer-merlin').css('display','flex');
+}
+function moveSidebarTogglers(){
+	var wrapper = $('#mw-navigation');
+	$('#sidebar-left-toggler').detach().prependTo(wrapper);
+	$('#sidebar-right-toggler').detach().appendTo(wrapper);
+}
+function backToTop() {
+$('#back-to-top').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+                scrollTop: "0"
+        });
+});
+}</text>
+      <sha1>ohgcl8u2qz5n3ei0kljtphzp2lglg15</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-Back-to-top.css</title>
+    <ns>8</ns>
+    <id>8591</id>
+    <revision>
+      <id>16914</id>
+      <parentid>16817</parentid>
+      <timestamp>2021-12-13T00:14:47Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16914</origin>
+      <model>css</model>
+      <format>text/css</format>
+      <text bytes="371" sha1="hqpl2kip9p1gmui9zbb5qpnz5bbufu0" xml:space="preserve">#back-to-top {
+	background: var(--dark);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	position: fixed;
+	width: 64px;
+	height: 64px;
+	cursor: pointer;
+	right: 20px;
+	bottom: 160px;
+	z-index: 2000;
+        opacity: .7;
+}
+#back-to-top:hover {
+	box-shadow: 0 8px 24px rgba(0, 0, 0, .16) !important;
+        opacity: 1;
+}</text>
+      <sha1>hqpl2kip9p1gmui9zbb5qpnz5bbufu0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-Back-to-top.js</title>
+    <ns>8</ns>
+    <id>8592</id>
+    <revision>
+      <id>16915</id>
+      <parentid>16818</parentid>
+      <timestamp>2021-12-13T00:27:10Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <comment>Blanked the page</comment>
+      <origin>16915</origin>
+      <model>javascript</model>
+      <format>text/javascript</format>
+      <text bytes="0" sha1="phoiac9h4m842xq45sp7s6u21eteeq1" xml:space="preserve" />
+      <sha1>phoiac9h4m842xq45sp7s6u21eteeq1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Hf-nsheader-</title>
+    <ns>8</ns>
+    <id>6190</id>
+    <revision>
+      <id>16824</id>
+      <parentid>10348</parentid>
+      <timestamp>2021-12-11T20:20:08Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16824</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1092" sha1="0hngy7qzf488i67p0z89wisku47kz08" xml:space="preserve">{{bquote|quote=Within these castle walls be forged Mavens of Computer Science ...|cite=Merlin, The Coder|class=mt-1 mb-4}}
+
+&lt;!-- DISABLED
+{{#arraydefine: levels|{{#ask: [[Category:Knowledge and skills]]|limit=5000|?Knowledge and skills level|sort=Knowledge and skills level|order=asc|format=array|sep=^|mainlabel=-|headers=hide}}|^|unique}}
+{{#tree: extensions=["persist"] | root=Sample Tree Menu|
+{{#arraymap:{{#arrayprint: levels|^}}
+  |^
+  |@
+  |* Level @ {{#arraydefine: topics|{{#ask: [[Category:Knowledge and skills]][[Knowledge and skills level::@]]|limit=5000|?Topic area|format=array|headers=hide|sep=^|manysep=^|mainlabel=-|sort=Topic area|order=asc}}|^|unique}}
+{{#arraymap: {{#arrayprint: topics|^}}
+  |^
+  |%%
+  |** %% {{#arraydefine: skills|{{#ask: [[Category:Knowledge and skills]][[Knowledge and skills level::@]][[Topic area::%%]]|limit=5000|?Knowledge and skills description|format=array|headers=hide|sep=^|manysep=;|propsep=// }}|^}}
+{{#arraymap: {{#arrayprint: skills|^}}
+  |^
+  |$$$
+  |*** [[{{#explode:$$$|//|0}}]] {{#explode:$$$|//|1}}
+  |\n
+}}
+  |\n
+}}
+  |\n
+}}
+}}
+--&gt;</text>
+      <sha1>0hngy7qzf488i67p0z89wisku47kz08</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Sidebar</title>
+    <ns>8</ns>
+    <id>51</id>
+    <revision>
+      <id>16861</id>
+      <parentid>16828</parentid>
+      <timestamp>2021-12-12T19:16:01Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16861</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="12" sha1="jixkyh0thi2b5pbphzdla2xk6cxh0te" xml:space="preserve">* navigation</text>
+      <sha1>jixkyh0thi2b5pbphzdla2xk6cxh0te</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Bquote</title>
+    <ns>10</ns>
+    <id>8600</id>
+    <revision>
+      <id>16829</id>
+      <timestamp>2021-12-11T18:51:51Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16829</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="579" sha1="n85wh58h3tzta0lsrzk34fbue5gyzdv" xml:space="preserve">&lt;includeonly&gt;&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;&lt;!-- 
+&lt;div class="d-flex align-items-end text-primary fa-2x font-weight-bold px-3"&gt;&lt;i class="fas fa-quote-left"&gt;&lt;/i&gt;&lt;/div&gt; 
+--&gt;
+&lt;div class="w-100"&gt;
+&lt;div class="pb-3 pl-4 font-weight-bold"&gt;{{{quote|}}}&lt;/div&gt;&lt;!--
+--&gt;{{#if: {{{cite|}}}|
+      &lt;div class="text-right small text-muted font-style-italic"&gt;&amp;mdash; {{{cite|}}}&lt;/div&gt;
+    }}
+&lt;/div&gt;
+&lt;div class="d-flex align-items-start text-primary fa-2x font-weight-bold px-3"&gt;&lt;i class="fas fa-quote-right"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/includeonly&gt;</text>
+      <sha1>n85wh58h3tzta0lsrzk34fbue5gyzdv</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:CM</title>
+    <ns>10</ns>
+    <id>5759</id>
+    <revision>
+      <id>16830</id>
+      <parentid>11516</parentid>
+      <timestamp>2021-12-11T00:25:47Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16830</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="69" sha1="nsqvrymxa9ba7my8bxm7p1rjaggg4i6" xml:space="preserve">&lt;span class="badge chameleon"&gt;&amp;nbsp;Coder&amp;nbsp;Merlin™&amp;nbsp;&lt;/span&gt;</text>
+      <sha1>nsqvrymxa9ba7my8bxm7p1rjaggg4i6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ConsoleLines</title>
+    <ns>10</ns>
+    <id>1052</id>
+    <revision>
+      <id>16989</id>
+      <parentid>16988</parentid>
+      <timestamp>2021-12-14T22:44:23Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16989</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="4974" sha1="h655fhomqztwp0wca4svobg51zhhunz" xml:space="preserve">&lt;noinclude&gt;
+== Purpose ==
+Mimics console input / output.
+
+== Implementation approach ==
+The template is targeted to merge functionality of [[Template:ConsoleLine]] and [[Template:ConsoleLines]]. The template allows the injection of [[Help:Bootstrap classes|bootstrap classes]], primarily to add rounded corners and some padding to the single template instance or to the first and last instances of the template call series.
+
+Editors are encouraged to replace / edit all instances of both templates eventually using the proposed syntax / parameters.
+
+== Usage ==
+The first unnamed parameter contains the console input/output and it is the only mandatory parameter. 
+
+There are the optional named parameters:
+&lt;pre&gt;
+prompt   # The console prompt.
+classes  # Names of CSS classes which apply to the block.
+&lt;/pre&gt;
+;Example
+&lt;pre&gt;
+{{ConsoleLines
+|classes=rounded py-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+&lt;/pre&gt;
+;Result
+{{ConsoleLines
+|classes=rounded py-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+{{hint|class=mt-4|
+# Use one template for a single command prompt.
+# Use &lt;code&gt;rounded py-2&lt;/code&gt; classes to add border radius and some vertical padding.
+# Do not use &lt;code&gt;&lt;nowiki&gt;&lt;br/&gt;&lt;/nowiki&gt;&lt;/code&gt; to insert a line break, just start typing on the new line.
+# Use a number of subsequent instances of the template to build a block of console lines with multiple command prompts. In this case you might want:
+#* to add rounded corners only to the top of the first instance and to the bottom of the last instance 
+#* not to use padding between console lines blocks.
+# Play with &lt;code&gt;rounded-top&lt;/code&gt;, &lt;code&gt;rounded-bottom&lt;/code&gt;, &lt;code&gt;pt-2&lt;/code&gt;, &lt;code&gt;pb-2&lt;/code&gt; to achieve the desired layout. 
+# In complex cases when the console output fails to appear correctly (for example, when it contains the reserved characrters like &lt;code&gt;&lt;nowiki&gt;=&lt;/nowiki&gt;&lt;/code&gt;), wrap it into &lt;code&gt;&lt;nowiki&gt;&lt;nowiki&gt;&lt;/nowiki&gt;&lt;/code&gt; tag.
+}}
+;Example
+&lt;pre&gt;
+{{ConsoleLines
+|classes=rounded-top pt-2 &lt;!-- first prompt (top block) --&gt;
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+{{ConsoleLines
+|classes= &lt;!-- second prompt (middle block) --&gt;
+|prompt=john-williams@codermerlin:~$
+|&lt;nowiki&gt;&lt;nowiki&gt;&lt;/nowiki&gt;ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=19.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=19.5 ms
+^C
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 19.453/19.573/19.671/0.091 ms&lt;nowiki&gt;&lt;/nowiki&gt;&lt;/nowiki&gt;
+}}
+{{ConsoleLines
+|classes=rounded-bottom pb-2 &lt;!-- third prompt (bottom block) --&gt;
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+&lt;/pre&gt;
+;Result
+{{ConsoleLines
+|classes=rounded-top pt-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+{{ConsoleLines
+|classes=
+|prompt=john-williams@codermerlin:~$
+|&lt;nowiki&gt;ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=19.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=19.5 ms
+^C
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 19.453/19.573/19.671/0.091 ms&lt;/nowiki&gt;
+}}
+{{ConsoleLines
+|classes=rounded-bottom pb-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+
+== Variations ==
+There are two additional colour flavours of this template:
+* [[Template:ConsoleLinesLight]] and
+* [[Template:ConsoleLinesDark]] 
+; Light
+{{ConsoleLinesLight
+|classes=rounded py-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+; Dark
+{{ConsoleLinesDark
+|classes=rounded py-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+&lt;/noinclude&gt;&lt;includeonly&gt;&lt;div class="bg-dark px-3 text-monospace border-0 {{{classes|}}}" style="color: #edeaff;"&gt;{{#tag:poem|{{#if: {{{prompt|}}}|&lt;span class="font-weight-bold text-warning"&gt;{{{prompt|}}}&amp;nbsp;&lt;/span&gt;}}{{{1|}}}|compact}}&lt;/div&gt;&lt;/includeonly&gt;</text>
+      <sha1>h655fhomqztwp0wca4svobg51zhhunz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ConsoleLine</title>
+    <ns>10</ns>
+    <id>1051</id>
+    <revision>
+      <id>16834</id>
+      <parentid>3338</parentid>
+      <timestamp>2021-12-11T20:10:26Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16834</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="190" sha1="6n0scvlqwyvbvvvege5d0cecci5rdwt" xml:space="preserve">&lt;div class="bg-dark px-3 py-1 text-monospace font-weight-bold {{{classes|}}}"&gt;&lt;poem&gt;
+&lt;span class="text-warning"&gt;{{{1}}}&amp;nbsp;&lt;/span&gt;&lt;span style="color: #edeaff;"&gt;{{{2}}}&lt;/span&gt;
+&lt;/poem&gt;&lt;/div&gt;</text>
+      <sha1>6n0scvlqwyvbvvvege5d0cecci5rdwt</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Hint</title>
+    <ns>10</ns>
+    <id>768</id>
+    <revision>
+      <id>16996</id>
+      <parentid>16965</parentid>
+      <timestamp>2021-12-14T23:08:05Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16996</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="521" sha1="i6fvxudeg4h680kz189zpshicccets2" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2-off pb-md-3 rounded bg-light-off mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;[[File:Hint.png|class=m-auto d-none d-md-inline-block|link=|150px]]&lt;!--
+   --&gt;&lt;span class="badge badge-success mt-2 mb-2" style="font-size:1rem"&gt;Helpful Hint&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>i6fvxudeg4h680kz189zpshicccets2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:KeySequence</title>
+    <ns>10</ns>
+    <id>8061</id>
+    <revision>
+      <id>16866</id>
+      <parentid>16865</parentid>
+      <timestamp>2021-12-12T19:56:18Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16866</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="938" sha1="tvvd2v3jof255b77t07wzrjzki9kjxa" xml:space="preserve">&lt;includeonly&gt;&lt;div class="px-3 text-monospace font-weight-bold border-0 {{{classes|bg-light text-dark}}}"&gt;&lt;poem&gt;
+{{{1}}}
+&lt;/poem&gt;&lt;/div&gt;&lt;/includeonly&gt;&lt;noinclude&gt;
+The first unnamed parameter provides the key sequence / any other content.
+;Named parameters
+&lt;pre&gt;
+classes   # Names of additional CSS classes
+&lt;/pre&gt;
+;Example
+&lt;pre&gt;
+{{KeySequence
+|{{SpecialKey|M|x}} lsp-workspace-folders-remove {{Key|RETURN}} {{Key|RETURN}} 
+|classes=rounded py-2 bg-light text-dark mb-3
+}}
+&lt;/pre&gt;
+;Result
+{{KeySequence
+|{{SpecialKey|M|x}} lsp-workspace-folders-remove {{Key|RETURN}} {{Key|RETURN}} 
+|classes=rounded py-2 bg-light text-dark mb-3
+}}
+
+;Example
+&lt;pre&gt;
+{{KeySequence
+|{{SpecialKey|M|x}} lsp-workspace-folders-remove {{Key|RETURN}} {{Key|RETURN}} 
+|classes=rounded py-2 bg-warning mb-3
+}}
+&lt;/pre&gt;
+;Result
+{{KeySequence
+|{{SpecialKey|M|x}} lsp-workspace-folders-remove {{Key|RETURN}} {{Key|RETURN}} 
+|classes=rounded py-2 bg-warning mb-3
+}}
+&lt;/noinclude&gt;</text>
+      <sha1>tvvd2v3jof255b77t07wzrjzki9kjxa</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:KeyConcepts</title>
+    <ns>10</ns>
+    <id>788</id>
+    <revision>
+      <id>16875</id>
+      <parentid>3354</parentid>
+      <timestamp>2021-12-12T12:17:04Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16875</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="518" sha1="qyevl5rl90bdjd8vjnigp720qlu3zyx" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded bg-primary mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;&lt;span class="badge badge-light mt-2 mb-2" style="font-size:1rem"&gt;Key Concepts&lt;/span&gt;&lt;!--
+   --&gt;[[File:KeyConceptsIcon.png|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>qyevl5rl90bdjd8vjnigp720qlu3zyx</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:MerlinBlurbs</title>
+    <ns>10</ns>
+    <id>8102</id>
+    <revision>
+      <id>16869</id>
+      <parentid>16868</parentid>
+      <timestamp>2021-12-12T20:21:05Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16869</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="4424" sha1="td6vg0ilgpg1n4tjdus6ri8w0xhrib3" xml:space="preserve">{{Sitenotice|
+&lt;choose uncached&gt;
+        &lt;option&gt;CoderMerlin.&amp;nbsp;&amp;nbsp;&lt;span style="font-style: italic;"&gt;It's realistic because it's real.&lt;/span&gt;&amp;nbsp;&amp;nbsp;Real coding.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.&amp;nbsp;&amp;nbsp;&lt;span style="font-style: italic;"&gt;It's realistic because it's real.&lt;/span&gt;&amp;nbsp;&amp;nbsp;Real Linux.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.&amp;nbsp;&amp;nbsp;&lt;span style="font-style: italic;"&gt;It's realistic because it's real.&lt;/span&gt;&amp;nbsp;&amp;nbsp;Real Git.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.&amp;nbsp;&amp;nbsp;&lt;span style="font-style: italic;"&gt;It's realistic because it's real.&lt;/span&gt;&amp;nbsp;&amp;nbsp;Real GitHub.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.&amp;nbsp;&amp;nbsp;&lt;span style="font-style: italic;"&gt;It's realistic because it's real.&lt;/span&gt;&amp;nbsp;&amp;nbsp;Real Emacs.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.&amp;nbsp;&amp;nbsp;&lt;span style="font-style: italic;"&gt;It's realistic because it's real.&lt;/span&gt;&amp;nbsp;&amp;nbsp;Real command line.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.&amp;nbsp;&amp;nbsp;&lt;span style="font-style: italic;"&gt;It's realistic because it's real.&lt;/span&gt;&amp;nbsp;&amp;nbsp;Real graphics.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.&amp;nbsp;&amp;nbsp;&lt;span style="font-style: italic;"&gt;It's realistic because it's real.&lt;/span&gt;&amp;nbsp;&amp;nbsp;Real collaboration.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.&amp;nbsp;&amp;nbsp;&lt;span style="font-style: italic;"&gt;It's realistic because it's real.&lt;/span&gt;&amp;nbsp;&amp;nbsp;Real community.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.&amp;nbsp;&amp;nbsp;&lt;span style="font-style: italic;"&gt;It's realistic because it's real.&lt;/span&gt;&amp;nbsp;&amp;nbsp;Real skills.&lt;/option&gt;
+        &lt;option&gt;Learning computer science takes dedication. Let's get started.&lt;/option&gt;
+        &lt;option&gt;Learning computer science takes perseverance. Let's get started.&lt;/option&gt;
+        &lt;option&gt;Learning computer science takes time. Let's get started.&lt;/option&gt;
+        &lt;option&gt;Love CoderMerlin? &amp;nbsp; [http://swift-server.com ''swift-server.com''] &amp;nbsp; is even better!&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  Serving &lt;span style="font-style: italic;"&gt;fresh&lt;/span&gt; Swift every morning.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  The original Swift-Server.  Proudly serving Swift since 2017.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  Proudly serving coders since 2013.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  No artificial sweeteners.  Get real.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  No artificial colors.  Get real.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  No artificial flavors.  Get real.&lt;/option&gt;
+        &lt;option&gt;Real coding.  Real CoderMerlin.  Get real.&lt;/option&gt;
+        &lt;option&gt;Real Linux.  Real CoderMerlin.  Get real.&lt;/option&gt;
+        &lt;option&gt;Real Git.  Real CoderMerlin.  Get real.&lt;/option&gt;
+        &lt;option&gt;Real GitHub.  Real CoderMerlin.  Get real.&lt;/option&gt;
+        &lt;option&gt;Real emacs.  Real CoderMerlin.  Get real.&lt;/option&gt;
+        &lt;option&gt;Real graphics.  Real CoderMerlin.  Get real.&lt;/option&gt;
+        &lt;option&gt;Real collaboration.  Real CoderMerlin.  Get real.&lt;/option&gt;
+        &lt;option&gt;&lt;span style="font-style: italic;"&gt;Not&lt;/span&gt; a "boot camp".  Real CoderMerlin.  Real learning.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin ≠ "boot camp"&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  &lt;span style="font-style: italic;"&gt;Coder&lt;/span&gt; Cool.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  &lt;span style="font-style: italic;"&gt;Coder&lt;/span&gt; Collaboration.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  &lt;span style="font-style: italic;"&gt;Coder&lt;/span&gt; Community.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  &lt;span style="font-style: italic;"&gt;Merlin&lt;/span&gt; Magic.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  The choice of professionals.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  The choice of champions.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  The choice of experts.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  By students.  For students.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  Beyond the requirements.&lt;/option&gt;
+        &lt;option&gt;The Few.  The Proud.  The Mavens.&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  Coding &lt;3&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  Coding 411&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  Coding 4EVA&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  Coding rn&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  Coding A3&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  1NAM&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  Never AAK&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  ACC&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  ADIP&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  Never AFC&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  AWESO&lt;/option&gt;
+        &lt;option&gt;CoderMerlin.  CYO&lt;/option&gt;
+&lt;/choose&gt;|dark|fa-2x}}</text>
+      <sha1>td6vg0ilgpg1n4tjdus6ri8w0xhrib3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:MerlinMultipageExperienceSubpages</title>
+    <ns>10</ns>
+    <id>8606</id>
+    <revision>
+      <id>16900</id>
+      <parentid>16883</parentid>
+      <timestamp>2021-12-12T21:33:02Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16900</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1678" sha1="oikiq5ip8tcz4d4qz5693d8yhn9urey" xml:space="preserve">&lt;includeonly&gt;&lt;div class="d-none"&gt;
+{{#set:Sequenced subpages={{{Pages|}}}}}
+{{#arraydefine: slides
+  |{{{Pages|}}}
+  |;
+}}
+{{#arrayprint: slides
+  |
+  |@
+  |{{#subobject:@
+     |Course page={{FULLPAGENAME}}/@
+     |Course page number={{#expr:0{{#arraysearch:slides|@}}+1}}
+   }}
+}}
+&lt;/div&gt;
+{{#arrayprint: slides
+  |
+  |@@@@
+  |&lt;nowiki/&gt;
+* [[{{PAGENAME}}/@@@@|@@@@]]
+}}
+&lt;div class="plainlinks mt-4 {{#ifeq: {{#titleparts:{{FULLPAGENAME}}||-1}}|All|d-none}}"&gt;&lt;!--
+
+--&gt;[[{{FULLPAGENAME}}/{{#arrayindex: slides|0}}|&lt;span class="btn btn-lg btn-dark text-white"&gt;{{{1|Start}}}&lt;/span&gt;]] &lt;!--
+
+--&gt;{{#if: {{#ask: [[{{FULLPAGENAME}}/All]][[Modification date::+]] }}
+     |[[{{FULLPAGENAME}}/All|&lt;span class="btn btn-lg btn-link"&gt;One page&lt;/span&gt;]]
+     |[{{fullurl:{{FULLPAGENAME}}/All|action=edit&amp;preload=Template:MerlinMultipageExperienceAllPreload}} &lt;span class="btn btn-lg btn-link"&gt;One page&lt;/span&gt;]
+   }}
+&lt;/div&gt;__NOTOC__ {{#arrayreset: slides}}
+&lt;/includeonly&gt;
+&lt;noinclude&gt;
+Converts a page into a cover page of an education course.
+
+;Usage
+&lt;pre class="linenum"&gt;
+{{MerlinMultipageExperienceSubpages
+|Pages = # the ordered list of subpages delimited by a semicolon
+|        # the first unnamed parameter is used as the start button label (default = Start)
+}}&lt;/pre&gt;
+;Example
+&lt;pre class="linenum"&gt;
+{{MerlinMultipageExperienceSubpages
+|Pages=Sample Course/Student Welcome;
+Merlin History;
+Merlin Video;
+Merlin
+|Start training
+}}&lt;/pre&gt;
+; Related stuff
+:Properties
+:* [[Property:Course page]]
+:* [[Property:Course page number]]
+:Templates
+:* [[Template:MerlinMultipageExperienceAll]]
+:* [[Template:MerlinMultipageExperienceAllPreload]]
+:* [[Template:MerlinMultipageExperienceNavBar]]
+&lt;/noinclude&gt;</text>
+      <sha1>oikiq5ip8tcz4d4qz5693d8yhn9urey</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:MerlinMultipageExperience</title>
+    <ns>10</ns>
+    <id>8537</id>
+    <revision>
+      <id>16898</id>
+      <parentid>16327</parentid>
+      <timestamp>2021-12-12T21:24:01Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16898</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="376" sha1="53bo544aoujnfnwn3wx0lm1zsfqhvgp" xml:space="preserve">This is a multi-page experience, consisting of the following pages.  Be sure to visit them all in sequence.  A navigation bar at the bottom of each page is available to assist you.
+{{#arraydefine:subpages|{{#ask: [[{{PAGENAME}}]]|?Sequenced subpages|mainlabel=-|headers=hide}}|;|}}
+{{#arrayprint:subpages||@@@@|&lt;nowiki/&gt;
+* [[{{PAGENAME}}/@@@@|@@@@]]
+}}{{#arrayreset:subpages}}</text>
+      <sha1>53bo544aoujnfnwn3wx0lm1zsfqhvgp</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Observe</title>
+    <ns>10</ns>
+    <id>771</id>
+    <revision>
+      <id>16908</id>
+      <parentid>16906</parentid>
+      <timestamp>2021-12-12T21:41:45Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16908</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="606" sha1="sva57k2k3k804endz52gla0t1n9igfi" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded alert-primary mr-0 mr-md-4 w-auto" title="Observe, Ponder and Journal"&gt;&lt;!--
+   --&gt;&lt;span class="badge badge-primary mt-2 mb-2" style="font-size:1rem"&gt;Observe&lt;/span&gt;&lt;!--
+   --&gt;[[File:ObserveIcon.png|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100 mt-3"&gt;Observe, Ponder, and Journal: &lt;b&gt;{{{1|}}}&lt;/b&gt;
+{{{2|}}}
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>sva57k2k3k804endz52gla0t1n9igfi</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Card</title>
+    <ns>10</ns>
+    <id>8601</id>
+    <revision>
+      <id>16831</id>
+      <timestamp>2021-12-07T19:56:39Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16831</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3840" sha1="a5yxvvfhmsvd73yyxflqsbonwtyqji4" xml:space="preserve">&lt;includeonly&gt;&lt;div class="card rounded mb-3 mb-md-4 {{{classes|}}}" style="min-width: 20rem;"&gt;&lt;!--
+
+--&gt;{{#if: {{{header|}}}
+     |&lt;div class="card-header {{{hclasses|}}} h4"&gt;{{{header|The Cell}}}&lt;/div&gt;
+   }}&lt;!--
+
+--&gt;{{#if: {{{image|}}}
+     |&lt;div class="{{#if: {{{header|}}}||card-img-top}} {{#switch:{{{ihalf|}}}|y|Y|Yes|yes|true|True|1=card-img-half}} d-block user-select-none bg-dark"&gt;[[File:{{PAGENAME:{{{image|}}}}}|class=w-100 h-auto|link={{{ilink|}}}]]&lt;/div&gt;
+   }}&lt;!--
+
+--&gt;{{#if: {{{preface|}}}{{{title|}}}{{{content|}}}
+     |&lt;div class="card-body {{{bclasses|}}}"&gt;&lt;!--
+
+--&gt;{{#if: {{{preface|}}}
+     |&lt;div class="card-subtitle text-muted small"&gt;{{{preface|}}}&lt;/div&gt;
+   }}&lt;!--
+
+--&gt;{{#if: {{{title|}}}
+     |&lt;div class="card-title mt-3 {{{tclasses|}}}"&gt;{{{title|}}}&lt;/div&gt;
+   }}
+&lt;div class="card-text"&gt;
+{{{content|}}}
+&lt;/div&gt;
+&lt;/div&gt;
+}}&lt;!--
+
+--&gt;{{#if: {{{footer|}}}
+     |&lt;div id="cardfooter" class="card-footer d-flex w-100 {{{fclasses|}}}"&gt;{{{footer|}}}&lt;/div&gt;
+   }}
+&lt;/div&gt;&lt;/includeonly&gt;&lt;noinclude&gt;
+&lt;pre class="linenum"&gt;
+{{Card
+|header  = 
+|hclasses= # CSS class names for the header
+|image   =
+|ilink   = # image click target
+|ihalf   = # limit the image height [ Y|y|Yes|yes|True|true|1 ]
+|preface =
+|title   = # CSS class names for the title
+|tclasses=
+|content =
+|footer  =
+|fclasses= # CSS class names for the footer
+|classes = # CSS class names for the card
+}}&lt;/pre&gt;
+== Elementary Cards ==
+{{Card
+|header  = Header
+|hclasses= 
+|image   = 
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to The Cell may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+|classes = 
+}}
+{{Card
+|header  = Header
+|image   = 
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+|classes = bg-light
+}}
+{{MerlinVideoPlayer
+|videoID=sEb5M2zyCxQ02de00E4bYrotYH3dsd016u01DlBYQw00hOfo
+|videoTitle=Interpreting nubers based on their position
+}}
+{{Card
+|header  = 
+|image   = MerlinAtDesk.jpg
+|ilink   = Special:Preferences
+|ihalf   = 1
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = 
+}}
+== Card Deck ==
+For a wall of cards wrap some of them into &lt;code&gt;&lt;nowiki&gt;&lt;div class="card-deck"&gt; ... &lt;/div&gt;&lt;/nowiki&gt;&lt;/code&gt;.
+&lt;div class="card-deck"&gt;
+{{Card
+|header  = Header
+|hclasses= bg-dark
+|image   = 
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+|fclasses= bg-dark
+|classes = bg-dark text-white
+}}
+{{Card
+|header  = Header
+|hclasses= bg-primary text-white
+|image   = 
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+|classes = bg-light
+}}
+{{Card
+|header  = 
+|image   = MerlinAtDesk.jpg
+|ilink   = Special:Preferences
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+}}
+
+&lt;/div&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>a5yxvvfhmsvd73yyxflqsbonwtyqji4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Caution</title>
+    <ns>10</ns>
+    <id>1045</id>
+    <revision>
+      <id>16870</id>
+      <parentid>3355</parentid>
+      <timestamp>2021-12-12T14:13:36Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16870</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="509" sha1="dezqhkjgctlc1k847wydsxz4cneom6i" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded alert-danger mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;&lt;span class="badge badge-danger mt-2 mb-2" style="font-size:1rem"&gt;Caution&lt;/span&gt;&lt;!--
+   --&gt;[[File:WarnIcon.png|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>dezqhkjgctlc1k847wydsxz4cneom6i</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Exercises</title>
+    <ns>10</ns>
+    <id>772</id>
+    <revision>
+      <id>16874</id>
+      <parentid>15162</parentid>
+      <timestamp>2021-12-12T14:14:03Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16874</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="518" sha1="2k0svks1ybupq53ehz1gsy6q4przn16" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded alert-success mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;&lt;span class="badge badge-success mt-2 mb-2" style="font-size:1rem"&gt;Exercises&lt;/span&gt;&lt;!--
+   --&gt;[[File:ExercisesIcon.png|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>2k0svks1ybupq53ehz1gsy6q4przn16</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:MerlinQuotes</title>
+    <ns>10</ns>
+    <id>8602</id>
+    <revision>
+      <id>16839</id>
+      <timestamp>2021-12-07T19:11:29Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16839</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1342" sha1="q53tl7t3zhyj9m1f5pjbd9pm8c0iyu5" xml:space="preserve">&lt;choose uncached&gt;
+        &lt;option&gt;{{bquote|quote=Imagination is more important than knowledge.|cite=Albert Einstein|class=mt-3}}&lt;/option&gt;
+        &lt;option&gt;{{bquote|quote=The only kind of learning which significantly influences behavior is self-discovered or self-appropriated learning - truth that has been assimilated in experience.|cite=Carl Rogers|class=mt-3}}&lt;/option&gt;
+        &lt;option&gt;{{bquote|quote=The greatest enemy of knowledge is not ignorance, it is the illusion of knowledge.|cite=Stephen Hawking|class=mt-3}}&lt;/option&gt;
+        &lt;option&gt;{{bquote|quote=Doubt is an uncomfortable condition, but certainty is absurd.|cite=Voltaire|class=mt-3}}&lt;/option&gt;
+        &lt;option&gt;{{bquote|quote=Students should be made to think, to doubt, to communicate, to question, to learn from their mistakes, and most importantly have fun in their learning.|cite=Professor Richard Feynman|class=mt-3}}&lt;/option&gt;
+        &lt;option&gt;{{bquote|quote=The best teachers are not the ones who provide you all the answers. They're the ones who get deeply excited by the questions they cannot answer, the ones who teach how to question and doubt the things you learn.|cite=Professor Richard Feynman|class=mt-3}}&lt;/option&gt;
+        &lt;option&gt;{{bquote|quote=We do not learn from experience...we learn from reflecting on experience.|cite=John Dewey|class=mt-3}}&lt;/option&gt;
+&lt;/choose&gt;</text>
+      <sha1>q53tl7t3zhyj9m1f5pjbd9pm8c0iyu5</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Question</title>
+    <ns>10</ns>
+    <id>770</id>
+    <revision>
+      <id>16878</id>
+      <parentid>1928</parentid>
+      <timestamp>2021-12-12T14:23:47Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16878</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="527" sha1="sb1rby9hbytn58i2otz17dvukrjxhfo" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded alert-info mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;&lt;span class="badge badge-info mt-2 mb-2" style="font-size:1rem"&gt;Question&lt;/span&gt;&lt;!--
+   --&gt;[[File:Question Mark Icon - Blue Box.svg|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>sb1rby9hbytn58i2otz17dvukrjxhfo</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Sitenotice</title>
+    <ns>10</ns>
+    <id>8603</id>
+    <revision>
+      <id>16842</id>
+      <timestamp>2021-12-07T23:20:04Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16842</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1026" sha1="riuzg5tvxv280kejerdzskqrko9ih57" xml:space="preserve">{{card
+|footer={{{1|This is a site notice }}}
+|fclasses=alert alert-{{{2|primary}}} font-weight-bold mb-0 justify-content-center flex-column flex-md-row rounded
+|classes=w-100 p-1 sitenotice-alert plainlinks border-0 {{{3|}}}
+}}
+&lt;noinclude&gt;
+;Code
+&lt;pre class="linenum"&gt;
+{{Sitenotice
+|&lt;anything&gt;             # Your message goes here ...
+|&lt;optional&gt;             # Bootstrap coloring classes names [ info, secondary, warning, success, etc ]
+}}&lt;/pre&gt;
+;Example
+&lt;pre class="linenum"&gt;
+{{Sitenotice}}&lt;/pre&gt;
+;Result
+{{Sitenotice}}
+;Example
+&lt;pre class="linenum"&gt;
+{{Sitenotice|The wiki is under maintenance. Keep quiet.|info|fa-2x}}&lt;/pre&gt;
+;Result
+{{Sitenotice|The wiki is under maintenance. Keep quiet.|info|fa-2x}}
+;Example
+&lt;pre class="linenum"&gt;
+{{Sitenotice|Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors.|warning}}&lt;/pre&gt;
+;Result
+{{Sitenotice|Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors.|warning}}
+
+&lt;/noinclude&gt;</text>
+      <sha1>riuzg5tvxv280kejerdzskqrko9ih57</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:SpecialKey</title>
+    <ns>10</ns>
+    <id>1056</id>
+    <revision>
+      <id>16843</id>
+      <parentid>3411</parentid>
+      <timestamp>2021-12-06T10:26:49Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16843</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="74" sha1="h13la9b7mhxq6bdozzk5txwcajx93z1" xml:space="preserve">&lt;span class="key text-nowrap"&gt;&lt;kbd&gt;{{{1}}}&lt;/kbd&gt;-&lt;kbd&gt;{{{2}}}&lt;/kbd&gt;&lt;/span&gt;</text>
+      <sha1>h13la9b7mhxq6bdozzk5txwcajx93z1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:VerySpecialKey</title>
+    <ns>10</ns>
+    <id>1137</id>
+    <revision>
+      <id>16844</id>
+      <parentid>3412</parentid>
+      <timestamp>2021-12-06T10:27:04Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16844</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="93" sha1="5mg0aijw9k92zp95vunwpuphsm119hb" xml:space="preserve">&lt;span class="key text-nowrap"&gt;&lt;kbd&gt;{{{1}}}&lt;/kbd&gt;-&lt;kbd&gt;{{{2}}}&lt;/kbd&gt;-&lt;kbd&gt;{{{3}}}&lt;/kbd&gt;&lt;/span&gt;</text>
+      <sha1>5mg0aijw9k92zp95vunwpuphsm119hb</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Key</title>
+    <ns>10</ns>
+    <id>1049</id>
+    <revision>
+      <id>16837</id>
+      <parentid>3410</parentid>
+      <timestamp>2021-12-06T10:27:56Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16837</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="43" sha1="gma51l0smwynifpcegykr21qxiezs34" xml:space="preserve">&lt;span class="key"&gt;&lt;kbd&gt;{{{1}}}&lt;/kbd&gt;&lt;/span&gt;</text>
+      <sha1>gma51l0smwynifpcegykr21qxiezs34</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Widget:MerlinVideoPlayer</title>
+    <ns>274</ns>
+    <id>8558</id>
+    <revision>
+      <id>16997</id>
+      <parentid>16371</parentid>
+      <timestamp>2021-12-14T23:10:39Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16997</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2414" sha1="2f0mru9isz9thnjvhzkkwlckdvqiky7" xml:space="preserve">&lt;!-- Reference: https://github.com/video-dev/hls.js/blob/master/docs/API.md#first-step-setup-and-support --&gt;
+&lt;div style="width: &lt;!--{$width|validate:int}--&gt;px;"&gt;
+&lt;video id="&lt;!--{$videoID}--&gt;" poster="https://image.mux.com/&lt;!--{$videoID}--&gt;/thumbnail.png?time=&lt;!--{$posterTime|validate:float}--&gt;&amp;width=&lt;!--{$width|validate:int}--&gt;" controls crossorigin&gt;&lt;/video&gt;
+&lt;script&gt;
+  window.addEventListener('load', (event) =&gt; {
+    // Initialize HLS
+    if (Hls.isSupported()) {
+      var video = document.getElementById('&lt;!--{$videoID}--&gt;');
+      var hls = new Hls();
+      // bind them together
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+        hls.loadSource('https://stream.mux.com/&lt;!--{$videoID}--&gt;.m3u8');
+        hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+          console.log('manifest loaded, found ' + data.levels.length + ' quality level');
+        });
+      });
+
+      // Handle errors
+      hls.on(Hls.Events.ERROR, function (event, data) {
+        if (data.fatal) {
+          switch (data.type) {
+            case Hls.ErrorTypes.NETWORK_ERROR:
+              // try to recover network error
+              console.log('fatal network error encountered, try to recover');
+              hls.startLoad();
+              break;
+            case Hls.ErrorTypes.MEDIA_ERROR:
+              console.log('fatal media error encountered, try to recover');
+              hls.recoverMediaError();
+              break;
+            default:
+              // cannot recover
+              hls.destroy();
+              break;
+          }
+        }
+      });
+
+      // Initialize Plyr
+      const player = new Plyr($("#&lt;!--{$videoID}--&gt;"), {
+          "previewThumbnails": { enabled: true, src: 'https://image.mux.com/&lt;!--{$videoID}--&gt;/storyboard.vtt' }
+      });
+
+      // Initialize mux monitoring
+      if (typeof mux !== 'undefined') {
+          mux.monitor('#&lt;!--{$videoID}--&gt;', {
+              debug: false,
+              data: {
+                 env_key: 'ojbg7i3guecslk149fmaqj2ev', 
+                 player_init_time: Date.now(),
+
+                 video_id: '&lt;!--{$videoID}--&gt;',
+                 video_title: '&lt;!--{$videoTitle}--&gt;',
+                 player_name: 'HLS Plyr',
+                 viewer_user_id: '&lt;!--{$userID}--&gt;'
+              }
+          });
+       } // if typeof mix
+    } // if (Hls.isSupported())
+  }); // window.addEventListener
+&lt;/script&gt;
+&lt;/div&gt;</text>
+      <sha1>2f0mru9isz9thnjvhzkkwlckdvqiky7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:BestPractice</title>
+    <ns>10</ns>
+    <id>7176</id>
+    <revision>
+      <id>17001</id>
+      <parentid>17000</parentid>
+      <timestamp>2021-12-14T23:23:11Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>17001</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="578" sha1="17ppz2cpswd44pxjonmik26dcm7h8j1" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded bg-warning mr-0 mr-md-4 w-auto" title="Observe, Ponder and Journal"&gt;&lt;!--
+   --&gt;&lt;span class="badge badge-info mt-2 mb-2" style="font-size:1rem"&gt;Best Practice&lt;/span&gt;&lt;!--
+   --&gt;[[File:HintIcon.png|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100 mt-3"&gt;👍 &lt;b&gt;#{{{1}}}&lt;/b&gt;
+{{{2|}}}
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>17ppz2cpswd44pxjonmik26dcm7h8j1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Excursion</title>
+    <ns>10</ns>
+    <id>1648</id>
+    <revision>
+      <id>16998</id>
+      <parentid>4166</parentid>
+      <timestamp>2021-12-14T23:18:14Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16998</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="545" sha1="1d5li1ilt0y22xgs48ncnmwyfrkrhqt" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded bg-info mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;&lt;span class="badge badge-warning text-dark mt-2 mb-2" style="font-size:1rem"&gt;Excursions&lt;/span&gt;&lt;!--
+   --&gt;[[File:101 138 Boeheimkirchen 070430.jpg|class=m-auto d-none d-md-inline-block|link=|150px]]
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>1d5li1ilt0y22xgs48ncnmwyfrkrhqt</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:GoingDeeper</title>
+    <ns>10</ns>
+    <id>1199</id>
+    <revision>
+      <id>16999</id>
+      <parentid>3905</parentid>
+      <timestamp>2021-12-14T23:19:32Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16999</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="517" sha1="8y7852e02m3sfls13mbe8i7yb8rpx55" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded bg-primary mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;&lt;span class="badge badge-dark mt-2 mb-2" style="font-size:1rem"&gt;Going Deeper&lt;/span&gt;&lt;!--
+   --&gt;[[File:GoingDeeperIcon.png|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>8y7852e02m3sfls13mbe8i7yb8rpx55</sha1>
+    </revision>
+  </page>
+    <page>
+    <title>Property:Course page</title>
+    <ns>102</ns>
+    <id>8604</id>
+    <revision>
+      <id>16846</id>
+      <timestamp>2021-12-06T17:27:11Z</timestamp>
+      <contributor>
+        <username>imported&gt;Anton-krom</username>
+        <id>0</id>
+      </contributor>
+      <comment>Created a property of type Page</comment>
+      <origin>16846</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="46" sha1="jk9aupditbfg4coza27xh6berm5n0sp" xml:space="preserve">This is a property of type [[Has type::Page]].</text>
+      <sha1>jk9aupditbfg4coza27xh6berm5n0sp</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:Course page number</title>
+    <ns>102</ns>
+    <id>8605</id>
+    <revision>
+      <id>16847</id>
+      <timestamp>2021-12-06T17:26:55Z</timestamp>
+      <contributor>
+        <username>imported&gt;Anton-krom</username>
+        <id>0</id>
+      </contributor>
+      <comment>Created a property of type Number</comment>
+      <origin>16847</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="48" sha1="id8gn0keu2a1u84x5rhv7b3oxwkgls6" xml:space="preserve">This is a property of type [[Has type::Number]].</text>
+      <sha1>id8gn0keu2a1u84x5rhv7b3oxwkgls6</sha1>
+    </revision>
+  </page>
+</mediawiki>

@@ -30,7 +30,7 @@
 $primary-accent: #7063a7;
 $primary-inverted: #8f9b57;
 
-$secondary-accent: #4f3f8a;
+$secondary-accent: #4c3484; // #4f3f8a;
 $secondary-inverted: #afc074;
 
 $primary-dark: #3d404f;
@@ -60,6 +60,7 @@ html {
   min-width: 280px;
   background-color: #fff;
   scroll-behavior: smooth;
+  scroll-snap-type: y;
 }
 body {
   background-image: none;
@@ -179,7 +180,8 @@ a:visited {
 // LOGO
 #p-logo {
   img {
-    width: 150px;
+//    width: 150px;
+    width: 130px;
     height: auto;
   }
 }
@@ -460,6 +462,7 @@ a:visited {
   width: 284px;
   z-index: 0;
   top: 0;
+  bottom: 0;
   background: #f4f6ff;
 }
 #sidebar-left-wrapper {
@@ -481,6 +484,7 @@ a:visited {
     #hf-nsheader- {
       position: relative;
       top: 240px;
+//      top: 60px;
       background: none;
       border: 0;
       padding-top: 0.75rem;
@@ -531,6 +535,7 @@ a:visited {
       display: table;
       position: relative;
       top: 240px;
+//      top: 60px;
       background: none;
       border: 0;
       @extend .pr-3;
@@ -811,11 +816,14 @@ kbd {
 **/
 
 // BANNER
+.snap-step {
+  scroll-snap-align: start;
+}
 .banner-merlin {
   background-color: $secondary-accent;
   z-index: 1;
   order: 0;
-  background-image: url(/w/extensions/wikivisor/assets/fire-reverse.gif);
+  background-image: url(extensions/wikivisor/assets/fire-reverse.gif);
   background-position: center -160px;
   background-repeat: no-repeat;
   background-blend-mode: screen;
@@ -856,3 +864,8 @@ kbd {
     @extend .d-none;
   }
 }
+
+#rufous-sandbox {
+  bottom: 0;
+}
+
