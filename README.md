@@ -42,7 +42,7 @@ Run one of the following commands in your shell depending on the way you impleme
 php composer update --no-dev
 ```
 ### Gadgets
-Make sure that Gadgets extension is in the `extensions` directory. It should be bundled wiki MediaWiki.
+Make sure that Gadgets extension is in the `extensions` directory. It should be bundled with MediaWiki.
 
 ## Clone this repo
 Create a local copy of this repo in the right place:
@@ -58,16 +58,16 @@ Some notes may be found in the added [LocalSettings.php](LocalSettings.php) file
 ## Import pages
 * Import [files in import directory](import):
 ```php
-php maintenance/importDump.php < extensions/wikivisor/import/TemplatesAndSystemMessages.xml
+php maintenance/importDump.php < extensions/wikivisor/import/TemplateMediawikiWidgetPropertyNS-20211214232549.xml
 php maintenance/importDump.php < extensions/wikivisor/import/WelcomeToCodeMerlin.xml
 php maintenance/importDump.php < extensions/wikivisor/import/MultipageNavigation.xml
 ```
-The first one is mandatory. The second contains the proposed mainpage layout (optional). The last one contains data structure and workflow for the multipage navigation (optional). 
+The first one is mandatory. The second contains the proposed mainpage layout (optional). The last one contains data structure and workflow for the multipage navigation. Shell and Number systems multipage experiences included. (optional). 
 See the [description of imported pages](#pages-description) for details.
 
-If the mainpage is imported, then add a Merlin picture by running:
+Import images used in templates:
 ```php
-php maintenance/importImages.php extensions/wikivisor/images/MerlinFlatLogo.png
+php maintenance/importImages.php extensions/wikivisor/images/ png
 ```
 ## Done
 At this point everything should be in place, use `Ctrl+F5` and/or `Ctrl+Shift+r` to purge the page cache and to enjoy your new wiki layout.
@@ -93,29 +93,37 @@ This is a description of the [Coder+Merlin-20211202151301.xml](import/Coder+Merl
 * **MediaWiki:Sidebar** is an empty version of the navigation content which is now controlled via `Mediawiki:Secondary-menu`.
 * **Template:Card** provides a code and guidance for easy cards creation.
 * **Template:Sitenotice** provides a code and guidance for easy banners creation.
-* **Template:Bquote‎** provides styled quotes / citations divs.
+* **Template:Bquote** provides styled quotes / citations divs.
 
-The following **existing** templates contain design elements re-touched / adapted for use with the Bootstrap and the design under development:
-* Template:CM‎‎
+The following **existing** templates and widgets contain design elements re-touched / adapted for use with the Bootstrap and the design under development:
+
+* Template:BestPractice
+* Template:CM
 * Template:CommandPlaceholder
-* Template:Command‎‎
-* Template:ConsoleLine
+* Template:Command
+* Template:Caution
 * Template:ConsoleLines
-* Template:Hint‎
-* Template:Key‎
+* Template:ConsoleLine
+* Template:Excursion
+* Template:Exercises
+* Template:GoingDeeper
+* Template:Hint
+* Template:Key
+* Template:KeyConcepts
+* Template:KeySequence
 * Template:MerlinBlurbs
-* Template:MerlinQuotes‎
+* Template:MerlinQuotes
 * Template:MerlinRecommends
-* Template:MerlinVideoPlayer‎
-* Template:SpecialKey‎
+* Template:MerlinVideoPlayer
+* Template:Observe
+* Template:Question
+* Template:SpecialKey
 * Template:VerySpecialKey
+* Widget:MerlinVideoPlayer
 
 Templates are work in progress.
 
 ## ToDo
 At this stage, only the layout and a couple of templates for inline elements are implemented, we expect the following to be delivered soon and included into this repo:
-* Top banner
-* Merlin character concept (re-touched)
-* Porting other important themplates
 * Complete Dark theme
 * Provide styling guidance
