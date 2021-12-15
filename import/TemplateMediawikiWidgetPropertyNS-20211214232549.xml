@@ -1417,4 +1417,364 @@ For a wall of cards wrap some of them into &lt;code&gt;&lt;nowiki&gt;&lt;div cla
       <sha1>id8gn0keu2a1u84x5rhv7b3oxwkgls6</sha1>
     </revision>
   </page>
+ <page>
+    <title>Template:CommandPlaceholder</title>
+    <ns>10</ns>
+    <id>5867</id>
+    <revision>
+      <id>16832</id>
+      <parentid>9844</parentid>
+      <timestamp>2021-12-05T01:26:07Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16832</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="109" sha1="ef1pngh7y2hxl0o7jg29eem8nt8sjqk" xml:space="preserve">&lt;kbd style="background:#000 !important;color: #4de317 !important;" class="border-0"&gt;&amp;nbsp;{{{1}}}&amp;nbsp;&lt;/kbd&gt;</text>
+      <sha1>ef1pngh7y2hxl0o7jg29eem8nt8sjqk</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Command</title>
+    <ns>10</ns>
+    <id>5866</id>
+    <revision>
+      <id>16833</id>
+      <parentid>9843</parentid>
+      <timestamp>2021-12-05T01:25:51Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16833</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="109" sha1="ef1pngh7y2hxl0o7jg29eem8nt8sjqk" xml:space="preserve">&lt;kbd style="background:#000 !important;color: #4de317 !important;" class="border-0"&gt;&amp;nbsp;{{{1}}}&amp;nbsp;&lt;/kbd&gt;</text>
+      <sha1>ef1pngh7y2hxl0o7jg29eem8nt8sjqk</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:MerlinRecommends</title>
+    <ns>10</ns>
+    <id>6184</id>
+    <revision>
+      <id>16840</id>
+      <parentid>15867</parentid>
+      <timestamp>2021-12-07T20:11:06Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16840</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1119" sha1="fu6e13klj32o0qak1r1bovkmbuagfq2" xml:space="preserve">{{Card
+|content=&lt;div&gt;'''CoderMerlin™ proudly recommends:'''&lt;/div&gt;&lt;choose uncached&gt;
+&lt;option&gt;{{AmazonAd|Swift Vapor|Books}}&lt;/option&gt;
+&lt;option&gt;{{AmazonAd|Technology and Ethics|Books}}&lt;/option&gt;
+&lt;option&gt;{{AmazonAd|Git|Books}}&lt;/option&gt;
+&lt;option&gt;{{AmazonAd|Github|Books}}&lt;/option&gt;
+&lt;option&gt;{{AmazonAd|REST API|Books}}&lt;/option&gt;
+&lt;option&gt;{{AmazonAd|JSON|Books}}&lt;/option&gt;
+&lt;option&gt;{{AmazonAd|Algorithms Illuminated|Books}}&lt;/option&gt;
+&lt;option&gt;{{AmazonAd|Design Patterns in Swift|Books}}&lt;/option&gt;
+&lt;option&gt;{{AmazonAd|Data Structures and Algorithms in Swift|Books}}&lt;/option&gt;
+&lt;option&gt;{{AmazonAd|Mastering Swift|Books}}&lt;/option&gt;
+&lt;option&gt;{{AmazonAd|Linux Bible|Books}}&lt;/option&gt;
+&lt;option&gt;{{AmazonAd|Discrete Mathematics for Computer Science|Books}}&lt;/option&gt;
+&lt;/choose&gt;
+|footer =&lt;div class="d-flex w-100 align-items-center"&gt;[[File:HintIcon.png|link=|class=float-left h-50 w-auto mr-4]] &lt;div&gt;Your purchase via these links helps keep {{CM}}'s orbuculum ablaze. As an Amazon Associate we earn from qualifying purchases.  '''Thank you for your support!'''&lt;/div&gt;&lt;/div&gt;
+|bclasses=rounded-top
+|fclasses=py-0 d-flex w-100
+|classes=rounded mt-4 shadow
+}}</text>
+      <sha1>fu6e13klj32o0qak1r1bovkmbuagfq2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:MerlinVideoPlayer</title>
+    <ns>10</ns>
+    <id>8560</id>
+    <revision>
+      <id>16841</id>
+      <parentid>16373</parentid>
+      <timestamp>2021-12-06T12:54:04Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16841</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="304" sha1="ql2cdbzi7rrpp7zwgbyghmvw143w4v1" xml:space="preserve">{{Card
+|header={{{videoTitle|Video}}}
+|hclasses=text-white bg-dark
+|bclasses=py-0 
+|content={{#widget:MerlinVideoPlayer|videoID={{{videoID}}}|videoTitle={{{videoTitle|{{PAGENAME}}}}}|userID={{{userID|{{#USERNAME:}}}}}|width={{{width|100%}}}|posterTime={{{posterTime|5}}} }}
+|classes=bg-plyr bg-primary
+}}</text>
+      <sha1>ql2cdbzi7rrpp7zwgbyghmvw143w4v1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Footer-icons</title>
+    <ns>8</ns>
+    <id>8590</id>
+    <revision>
+      <id>16816</id>
+      <timestamp>2021-11-30T16:49:19Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16816</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="371" sha1="cypq0mfumkjja4tzg9zjxz5nssdnfkw" xml:space="preserve">** https://www.facebook.com/Coder-Merlin-101592328319584/ ||fab fa-facebook fa-2x
+** https://teesprin.com/stores/coder-merlin ||fas fa-tshirt fa-2x
+** https://twitter.com/codermerlin ||fab fa-twitter fa-2x
+** https://discord.gg/Hj7mTVtMbH ||fab fa-discord fa-2x
+** https://discourse.codermerlin.com/ ||fab fa-discourse fa-2x
+** https://openbadges.org/ ||fas fa-cube fa-2x</text>
+      <sha1>cypq0mfumkjja4tzg9zjxz5nssdnfkw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadgets-definition</title>
+    <ns>8</ns>
+    <id>8596</id>
+    <revision>
+      <id>16822</id>
+      <timestamp>2021-12-04T12:07:04Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16822</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="119" sha1="2sjg66kl4ni0z48hsxmqn5gyk2yuzu4" xml:space="preserve">* Dark-theme[ResourceLoader]|Dark-theme.css
+* Back-to-top[ResourceLoader|default|hidden]|Back-to-top.js|Back-to-top.css</text>
+      <sha1>2sjg66kl4ni0z48hsxmqn5gyk2yuzu4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-Back-to-top.css</title>
+    <ns>8</ns>
+    <id>8591</id>
+    <revision>
+      <id>16914</id>
+      <parentid>16817</parentid>
+      <timestamp>2021-12-13T00:14:47Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16914</origin>
+      <model>css</model>
+      <format>text/css</format>
+      <text bytes="371" sha1="hqpl2kip9p1gmui9zbb5qpnz5bbufu0" xml:space="preserve">#back-to-top {
+	background: var(--dark);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	position: fixed;
+	width: 64px;
+	height: 64px;
+	cursor: pointer;
+	right: 20px;
+	bottom: 160px;
+	z-index: 2000;
+        opacity: .7;
+}
+#back-to-top:hover {
+	box-shadow: 0 8px 24px rgba(0, 0, 0, .16) !important;
+        opacity: 1;
+}</text>
+      <sha1>hqpl2kip9p1gmui9zbb5qpnz5bbufu0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-Back-to-top.js</title>
+    <ns>8</ns>
+    <id>8592</id>
+    <revision>
+      <id>16915</id>
+      <parentid>16818</parentid>
+      <timestamp>2021-12-13T00:27:10Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <comment>Blanked the page</comment>
+      <origin>16915</origin>
+      <model>javascript</model>
+      <format>text/javascript</format>
+      <text bytes="0" sha1="phoiac9h4m842xq45sp7s6u21eteeq1" xml:space="preserve" />
+      <sha1>phoiac9h4m842xq45sp7s6u21eteeq1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-Back-to-top</title>
+    <ns>8</ns>
+    <id>8593</id>
+    <revision>
+      <id>16819</id>
+      <timestamp>2021-11-29T17:28:10Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <comment>Created page with "Scroll Top Button"</comment>
+      <origin>16819</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="17" sha1="4fidpfdglqz4rrx90i5otsx8wggu127" xml:space="preserve">Scroll Top Button</text>
+      <sha1>4fidpfdglqz4rrx90i5otsx8wggu127</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-Dark-theme.css</title>
+    <ns>8</ns>
+    <id>8594</id>
+    <revision>
+      <id>16820</id>
+      <timestamp>2021-12-10T20:50:39Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <comment>Replaced content with "/** CoderMerlin, The Dark **/"</comment>
+      <origin>16820</origin>
+      <model>css</model>
+      <format>text/css</format>
+      <text bytes="29" sha1="0b2a9zm92bcrc4q4o37db2tvr1o65ts" xml:space="preserve">/** CoderMerlin, The Dark **/</text>
+      <sha1>0b2a9zm92bcrc4q4o37db2tvr1o65ts</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-Dark-theme</title>
+    <ns>8</ns>
+    <id>8595</id>
+    <revision>
+      <id>16821</id>
+      <timestamp>2021-11-29T00:43:22Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <comment>Created page with "Dark Theme"</comment>
+      <origin>16821</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="10" sha1="3u0qnd8w2sf4kcuy8cqor7z1bhuxqpx" xml:space="preserve">Dark Theme</text>
+      <sha1>3u0qnd8w2sf4kcuy8cqor7z1bhuxqpx</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Hf-nsfooter-</title>
+    <ns>8</ns>
+    <id>6191</id>
+    <revision>
+      <id>16823</id>
+      <parentid>15672</parentid>
+      <timestamp>2021-12-06T21:01:29Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16823</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="20" sha1="juvq4fi7w84va3yzvpars2x44um5wjd" xml:space="preserve">{{MerlinRecommends}}</text>
+      <sha1>juvq4fi7w84va3yzvpars2x44um5wjd</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Newsletter-label</title>
+    <ns>8</ns>
+    <id>8597</id>
+    <revision>
+      <id>16825</id>
+      <timestamp>2021-11-30T15:26:40Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <comment>Created page with "Subscribe to the Newsletter"</comment>
+      <origin>16825</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="27" sha1="f7piyj6r31amnrkiiet9pfeze70wcs6" xml:space="preserve">Subscribe to the Newsletter</text>
+      <sha1>f7piyj6r31amnrkiiet9pfeze70wcs6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Newsletter-url</title>
+    <ns>8</ns>
+    <id>8598</id>
+    <revision>
+      <id>16826</id>
+      <timestamp>2021-11-30T15:26:12Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <comment>Created page with "{{fullurl:Newsletter Subscribe}}"</comment>
+      <origin>16826</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="32" sha1="4fib32ozgvgey6u8s0j0h1cwhz2qty8" xml:space="preserve">{{fullurl:Newsletter Subscribe}}</text>
+      <sha1>4fib32ozgvgey6u8s0j0h1cwhz2qty8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Secondary-menu</title>
+    <ns>8</ns>
+    <id>8599</id>
+    <revision>
+      <id>16827</id>
+      <timestamp>2021-11-29T15:28:49Z</timestamp>
+      <contributor>
+        <username>imported&gt;WikiVisor</username>
+        <id>0</id>
+      </contributor>
+      <origin>16827</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="822" sha1="rnjvdpd89xmzrzaave981d7zf3fx658" xml:space="preserve">* My Tools
+** Merlin_Proficiency_Progress|Proficiency Progress
+** {{#invoke:MerlinAPI|guacamoleURL}}|Shell
+** {{#invoke:MerlinAPI|igisURL}}|IGIS
+** Code_Explorer|Code Explorer
+** Code_Explorer_Group_ID|CEG-ID
+* Keys and Commands
+** Emacs_Keys|Emacs Keys
+** Magit_Keys|Magit Keys
+** Screen_Keys|Screen Keys
+** LLDB_Commands|LLDB Commands
+* Overviews
+** Experiences_Overview|Experiences Overview
+** Experiences_Explorer|Experiences Explorer
+** Topic_Explorer|Topic Explorer
+** Curricula_Assistant|Curricula Assistant
+** Contributors_to_Computer_Science|Trailblazers
+* References
+** Glossary|Glossary
+** Common_Errors|Common Errors
+** References|References
+** Code_Snippets|Code Snippets
+* Navigation
+** Google_Search|Google
+* Support
+** https://ticket.codermerlin.com|Open Ticket
+* Authors
+** Articles_Wanted|Articles Wanted</text>
+      <sha1>rnjvdpd89xmzrzaave981d7zf3fx658</sha1>
+    </revision>
+  </page>
 </mediawiki>
