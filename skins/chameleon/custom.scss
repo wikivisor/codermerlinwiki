@@ -147,8 +147,11 @@ body {
     .key {
       kbd {
         filter: invert(1) contrast(.78) hue-rotate(-100deg);
-        border-color: #8dbfbf;
+        border-color: #bfbfbf !important;
       }
+    }
+    pre {
+      filter: invert(1) contrast(.65);
     }
     .chameleon {
       background: #cad5c6;
