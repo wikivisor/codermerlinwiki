@@ -120,7 +120,10 @@ body {
 body {
   &.dark-theme {
     background: #121212;
-    color: rgba(255,255,255,.87);
+    color: rgba(255,255,255,.55);
+    h1, h2, h3, h4, h5 {
+	    color: rgba(255,255,255,.40);
+    }
     .chameleon {
       background: #cad5c6;
       border-color: #bcc6b1;
