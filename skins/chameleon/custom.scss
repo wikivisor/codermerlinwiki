@@ -132,7 +132,10 @@ body {
       }
     }
     a:not(.new) {
-     color: #7063a7 !important;
+      color: #7063a7 !important;
+      &:visited {
+        color: #7053a9 !important;
+      }
     }
     .chameleon {
       background: #cad5c6;
