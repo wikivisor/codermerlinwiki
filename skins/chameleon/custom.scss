@@ -159,6 +159,9 @@ body {
     [class^="oo-ui"] input {
       filter: invert(1) contrast(.65);
     }
+    .bg-dark {
+      background-color: #393642 !important;
+    }
     .chameleon {
       background: #cad5c6;
       border-color: #bcc6b1;
