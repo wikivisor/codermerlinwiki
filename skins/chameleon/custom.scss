@@ -153,6 +153,9 @@ body {
     pre {
       filter: invert(1) contrast(.65);
     }
+    .wikiEditor-ui {
+      filter: invert(1) contrast(.65) hue-rotate(-180deg);
+    }
     .chameleon {
       background: #cad5c6;
       border-color: #bcc6b1;
