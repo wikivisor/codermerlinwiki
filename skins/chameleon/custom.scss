@@ -31,7 +31,7 @@ $primary-accent: #7063a7;
 $primary-inverted: #8f9b57;
 
 $secondary-accent: #4c3484; // #4f3f8a;
-$secondary-inverted: #afc074;
+$secondary-inverted: #433e51;
 
 $primary-dark: #3d404f;
 $secondary-dark: #333853;
@@ -667,7 +667,7 @@ a:visited {
 }
 .dark-theme {
   #footer-merlin {
-//    background-color: $secondary-dark;
+    background-color: $secondary-inverted;
   }
 }
 
