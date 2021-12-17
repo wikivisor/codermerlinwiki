@@ -141,6 +141,15 @@ body {
       border: 1px solid rgba(255,255,255,.07) !important;
       background-color: #353742 !important;
     }
+    code {
+      filter: invert(1) contrast(.78) hue-rotate(-100deg);
+    }
+    .key {
+      kbd {
+        filter: invert(1) contrast(.78) hue-rotate(-100deg);
+        border-color: #8dbfbf;
+      }
+    }
     .chameleon {
       background: #cad5c6;
       border-color: #bcc6b1;
