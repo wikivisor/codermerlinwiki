@@ -124,6 +124,13 @@ body {
     h1, h2, h3, h4, h5 {
 	    color: rgba(255,255,255,.40);
     }
+    .card {
+      filter: invert(1) contrast(.75);
+      color: rgba(0,0,0,.4);
+      img {
+        filter: invert(1) contrast(1);
+      }
+    }
     .chameleon {
       background: #cad5c6;
       border-color: #bcc6b1;
