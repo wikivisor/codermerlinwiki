@@ -139,10 +139,10 @@ body {
     }
   }
   #content {
-    filter: invert(1) contrast(.65) !important;
-    background: #fff !important;
+//    filter: invert(1) contrast(.65) !important;
+    background: #121212 !important;
     img, .btn-warning {
-      filter: invert(1) contrast(1);
+//      filter: invert(1) contrast(1);
     }
   }
   #mw-navigation {
@@ -157,12 +157,12 @@ body {
     }
   }
   .mw-mmv-image-wrapper {
-    filter: invert(0);
+ //   filter: invert(0);
     background: #eee;
   }
   .mw-mmv-download-button, .mw-mmv-reuse-button, .mw-mmv-options-button, 
   .mw-mmv-close, .mw-mmv-fullscreen, .mw-mmv-next-image, .mw-mmv-prev-image {
-    filter: invert(1);
+//    filter: invert(1);
   }
 
   /* fix FF */
@@ -561,9 +561,9 @@ a:visited {
 
 .dark-theme {
   #sidebar-left-wrapper, #sidebar-right-wrapper {
-    background: #292a2a;
+    background: #121212;
     #sidebar-left, #sidebar-right {
-      filter: invert(1) contrast(.65);
+//      filter: invert(1) contrast(.65);
     }
   }
 }
