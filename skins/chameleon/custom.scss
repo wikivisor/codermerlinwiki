@@ -131,6 +131,9 @@ body {
         filter: invert(1) contrast(1);
       }
     }
+    a:not(.new) {
+     color: #7063a7 !important;
+    }
     .chameleon {
       background: #cad5c6;
       border-color: #bcc6b1;
