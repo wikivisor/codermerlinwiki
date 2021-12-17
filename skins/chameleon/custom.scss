@@ -152,7 +152,8 @@ body {
     box-shadow: unset !important;
   }
   #mainpage-search-wrapper #p-search #searchform {
-    border-bottom: 4px solid $primary-heading !important;
+    filter: invert(1) contrast(.65);
+    border-bottom: 4px solid #8f9d7e !important;
   }
   #content, .sidebar {
     a, .toctogglelabel {	
