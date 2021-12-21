@@ -1,0 +1,297 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Coder Merlin</sitename>
+    <dbname>wiki</dbname>
+    <base>https://dev.codermerlin.com/wiki/index.php/Welcome_to_Coder_Merlin</base>
+    <generator>MediaWiki 1.35.3</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Coder Merlin</namespace>
+      <namespace key="5" case="first-letter">Coder Merlin talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="106" case="first-letter">Form</namespace>
+      <namespace key="107" case="first-letter">Form talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="112" case="first-letter">smw/schema</namespace>
+      <namespace key="113" case="first-letter">smw/schema talk</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="274" case="first-letter">Widget</namespace>
+      <namespace key="275" case="first-letter">Widget talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+      <namespace key="3000" case="first-letter">Invigilators</namespace>
+      <namespace key="3001" case="first-letter">Invigilators talk</namespace>
+      <namespace key="3002" case="first-letter">Guides</namespace>
+      <namespace key="3003" case="first-letter">Guides talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Template:RunProgram</title>
+    <ns>10</ns>
+    <id>766</id>
+    <revision>
+      <id>17007</id>
+      <parentid>17004</parentid>
+      <timestamp>2021-12-21T21:39:32Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>17007</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="386" sha1="o4zv8k9ldep4jywsgjsz81s15yc9bbw" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 my-2 align-items-center bg-success" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column justify-content-center mx-2 w-auto"&gt;&lt;!--
+    --&gt;[[File:Start button green arrow.svg|class=m-auto d-none d-md-inline-block|link=|32px|Start button green arrow]]
+  &lt;/div&gt;
+  &lt;div class="w-100 py-1 text-white"&gt;{{{1|Run the program.}}}&lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>o4zv8k9ldep4jywsgjsz81s15yc9bbw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:StopProgram</title>
+    <ns>10</ns>
+    <id>765</id>
+    <revision>
+      <id>17006</id>
+      <parentid>17003</parentid>
+      <timestamp>2021-12-21T21:39:21Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>17006</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="384" sha1="fxuyuzv7g6tsai1syrjgzgj65ft9xym" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 my-2 align-items-center bg-danger" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column justify-content-center mx-2 w-auto"&gt;&lt;!--
+    --&gt;[[File:Cute-Ball-Stop-icon.png|class=m-auto d-none d-md-inline-block|link=|32px|Stop button red ex|]]
+  &lt;/div&gt;
+  &lt;div class="w-100 py-1 text-white"&gt;{{{1|Stop the running program.}}}&lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>fxuyuzv7g6tsai1syrjgzgj65ft9xym</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:NewProject</title>
+    <ns>10</ns>
+    <id>769</id>
+    <revision>
+      <id>17008</id>
+      <parentid>1922</parentid>
+      <timestamp>2021-12-21T21:41:19Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>17008</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="372" sha1="jueybqbesqkka5kp8iiswxwl9b9iza0" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 my-2 align-items-center bg-info" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column justify-content-center mx-2 w-auto"&gt;&lt;!--
+    --&gt;[[File:Breathe-document-new.svg|class=m-auto d-none d-md-inline-block|link=|32px|New document]]
+  &lt;/div&gt;
+  &lt;div class="w-100 py-1 text-white"&gt;{{{1|Create a new project.}}}&lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>jueybqbesqkka5kp8iiswxwl9b9iza0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Bquote</title>
+    <ns>10</ns>
+    <id>8600</id>
+    <revision>
+      <id>17012</id>
+      <parentid>16829</parentid>
+      <timestamp>2021-12-21T21:59:22Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>17012</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="451" sha1="6fyulmx5daq1641wn49sw9cox47m5d8" xml:space="preserve">&lt;includeonly&gt;&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;&lt;div class="w-100"&gt;
+&lt;div class="pb-3 pl-4 font-weight-bold"&gt;{{{quote|}}}&lt;/div&gt;&lt;!--
+--&gt;{{#if: {{{cite|}}}|
+      &lt;div class="text-right small text-muted font-style-italic"&gt;&amp;mdash; {{{cite|}}}&lt;/div&gt;
+    }}
+&lt;/div&gt;
+&lt;div class="d-flex align-items-start text-primary fa-2x font-weight-bold px-3"&gt;&lt;i class="fas fa-quote-right"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/includeonly&gt;</text>
+      <sha1>6fyulmx5daq1641wn49sw9cox47m5d8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Chameleon.js</title>
+    <ns>8</ns>
+    <id>8589</id>
+    <revision>
+      <id>16994</id>
+      <parentid>16993</parentid>
+      <timestamp>2021-12-14T22:51:07Z</timestamp>
+      <contributor>
+        <username>Anton-krom</username>
+        <id>32224</id>
+      </contributor>
+      <origin>16994</origin>
+      <model>javascript</model>
+      <format>text/javascript</format>
+      <text bytes="3628" sha1="ohgcl8u2qz5n3ei0kljtphzp2lglg15" xml:space="preserve">$(function() {
+	moveSearchOnMain();
+	moveSearchOnSmall();
+	miniNavbar();
+	moveTOC();
+	moveNsHeader();
+	toggleSidebar();
+	cleanFooterIcons();
+	moveSidebarTogglers();
+	backToTop();
+	$("pre.linenum").html(function (index, html) {
+		return html.replace(/^(.*)$/mg, "&lt;span class=\"line\"&gt;$1&lt;/span&gt;");
+	});
+});
+
+const mq = window.matchMedia("(max-width: 1105px)");
+const sb = window.matchMedia("(min-width: 1740px)");
+const sel = $('.sidebar');
+
+$(window).resize(function() {
+	moveSearchOnSmall();
+	miniNavbar();
+	if (sb.matches) {
+		$('.sidebar').removeClass('on-canvas');
+	}
+});
+
+$( window ).scroll(function() {
+    var fromTop = $(window).scrollTop();
+    var offset = 240;
+    
+    if ($(this).scrollTop()) {
+		$('#back-to-top').css('visibility', 'visible');
+	} else {
+		$('#back-to-top').css('visibility', 'hidden');
+	}
+
+	function setToWindowHeight(sel) {
+		if(fromTop &lt; 180 ){ 
+			offset = 240 - fromTop;
+		} else { 
+			offset = 60; 
+		}
+		sel.animate({'min-height':  $(window).innerHeight(), 'bottom': 0, 'top': fromTop + 'px' }, 0, "easeOutExpo");
+		$('#hf-nsheader-, #move-to-right-bar, #toc').animate({'top': offset + 'px'}, 600, "easeInOutQuad");
+	}
+	clearTimeout($.data(this, 'scrollTimer'));
+    $.data(this, 'scrollTimer', setTimeout(function() {
+		setToWindowHeight(sel);
+	}, 150));
+
+});
+
+
+function moveSearchOnSmall() {
+	var mp = mw.config.get( 'wgIsMainPage' );
+	if (mq.matches) {
+		$('#mainpage-search-wrapper').prepend($('#p-search'));
+	} else {
+		if (mp) { 
+		} else {
+			$('#non-mainpage-search-wrapper').prepend($('#p-search'));
+		}
+	}
+	$('#p-search').css({'visibility':'visible'});
+}
+function miniNavbar() {
+	if (mq.matches) {
+		$('#mw-navigation').addClass('mini');
+	} else {
+		$('#mw-navigation').removeClass('mini');
+	}
+}
+function moveSearchOnMain() {
+        var mp = mw.config.get( 'wgIsMainPage' );
+        if (mp) { 
+             $('#mainpage-search-wrapper').detach().prependTo('#bodyContent').prepend($('#p-search'));
+        }
+        $('#p-search').css({'visibility':'visible'});
+}
+function moveTOC(){
+	if($('#toc').length &gt; 0){
+		var toctitle = '&lt;div class="nav-item"&gt;&lt;div id="ttitle" class="nav-link px-3"&gt;Contents&lt;/div&gt;&lt;/div&gt;';
+		$('#toc').prepend(toctitle).detach().prependTo('#sidebar-right');
+	}
+	if($('#move-to-right-bar').length &gt; 0){
+		$('#move-to-right-bar').detach().appendTo('#sidebar-right');
+	}
+}
+function miniDropdown(){
+	if (mq.matches) {
+		$('#mw-navigation.mini .dropdown-toggle').click( function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var activemenu = $(this).parent('div').find('.dropdown-menu');
+			$(activemenu).toggle();
+			$('#mw-navigation.mini .dropdown-menu').not(activemenu).hide();
+		});
+	} 
+}
+function toggleSidebar(){
+	$('#sidebar-right-toggler').bind('click', function() {
+		$('#sidebar-right-wrapper').toggleClass('on-canvas');
+		$(this).find('i').toggleClass('fa-plus-square fa-minus-square');
+	});
+	$('#sidebar-left-toggler').bind('click', function() {
+		$('#sidebar-left-wrapper').toggleClass('on-canvas');
+		$(this).find('i').toggleClass('fa-plus-square fa-minus-square');
+	});
+}
+function moveNsHeader(){
+	$('#hf-nsheader-').detach().prependTo('#sidebar-left');
+}
+function cleanFooterIcons(){
+	$('#footer-merlin .nav-link').text("");
+	$('#footer-merlin').css('display','flex');
+}
+function moveSidebarTogglers(){
+	var wrapper = $('#mw-navigation');
+	$('#sidebar-left-toggler').detach().prependTo(wrapper);
+	$('#sidebar-right-toggler').detach().appendTo(wrapper);
+}
+function backToTop() {
+$('#back-to-top').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+                scrollTop: "0"
+        });
+});
+}</text>
+      <sha1>ohgcl8u2qz5n3ei0kljtphzp2lglg15</sha1>
+    </revision>
+  </page>
+</mediawiki>
