@@ -59,6 +59,7 @@ Some notes may be found in the added [LocalSettings.php](LocalSettings.php) file
 * Import [files in import directory](import):
 ```php
 php maintenance/importDump.php < extensions/wikivisor/import/TemplateMediawikiWidgetPropertyNS-20211214232549.xml
+php maintenance/importDump.php < extensions/wikivisor/import/TemplateExamplesDescriptions-20211227171148.xml
 php maintenance/importDump.php < extensions/wikivisor/import/WelcomeToCodeMerlin.xml
 php maintenance/importDump.php < extensions/wikivisor/import/MultipageNavigation.xml
 ```
