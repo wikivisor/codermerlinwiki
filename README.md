@@ -56,9 +56,10 @@ require_once( "$IP/extensions/wikivisor/LocalSettings.php" );
 Some notes may be found in the added [LocalSettings.php](LocalSettings.php) file.
 
 ## Import pages
-* Import [files in import directory](import):
+* Import [files in import directory](import) in the following order:
 ```php
 php maintenance/importDump.php < extensions/wikivisor/import/TemplateMediawikiWidgetPropertyNS-20211214232549.xml
+php maintenance/importDump.php < extensions/wikivisor/import/Templates-20211221221345.xml
 php maintenance/importDump.php < extensions/wikivisor/import/TemplateExamplesDescriptions-20211227171148.xml
 php maintenance/importDump.php < extensions/wikivisor/import/WelcomeToCodeMerlin.xml
 php maintenance/importDump.php < extensions/wikivisor/import/MultipageNavigation.xml
