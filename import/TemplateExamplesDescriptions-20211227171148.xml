@@ -1,0 +1,2522 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Coder Merlin</sitename>
+    <dbname>merlin</dbname>
+    <base>https://merlin.wikivisor.com/w/index.php/Welcome_to_Coder_Merlin</base>
+    <generator>MediaWiki 1.35.4</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Project</namespace>
+      <namespace key="5" case="first-letter">Project talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="106" case="first-letter">Form</namespace>
+      <namespace key="107" case="first-letter">Form talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="112" case="first-letter">smw/schema</namespace>
+      <namespace key="113" case="first-letter">smw/schema talk</namespace>
+      <namespace key="114" case="first-letter">Rule</namespace>
+      <namespace key="115" case="first-letter">Rule talk</namespace>
+      <namespace key="274" case="first-letter">Widget</namespace>
+      <namespace key="275" case="first-letter">Widget talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Template:BestPractice</title>
+    <ns>10</ns>
+    <id>7176</id>
+    <revision>
+      <id>17239</id>
+      <parentid>17165</parentid>
+      <timestamp>2021-12-25T13:03:26Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>17239</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1274" sha1="9ilhwvo8w21f3iqzjg3sght1iju4d74" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded {{{bclass|bg-warning}}} mr-0 mr-md-4 w-auto" title="Observe, Ponder and Journal"&gt;&lt;!--
+   --&gt;&lt;span class="badge {{{lclass|badge-info}}} mt-2 mb-2" style="font-size:1rem"&gt;Best Practice&lt;/span&gt;&lt;!--
+   --&gt;[[File:HintIcon.png|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100 mt-3"&gt;👍 &lt;b&gt;#{{{1|}}}&lt;/b&gt;
+{{{2|}}}
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;noinclude&gt;
+Inserts a block with the best practice description.
+;Syntax
+{{ConsoleLinesLight|&lt;pre class="bg-transparent"&gt;{{BestPractice
+|1      = The first unnamed parameter contains the heading text (goes right after the thumb-up icon)
+|2      = The second unnamed parameter contains the best practice description
+|class  = Contains names of bootstrap classes to paint the best practice block. Is empty by default.
+|bclass = Contains names of bootstrap classes to paint the best practice badge. Defaults to "bg-warning".
+|lclass = Contains names of bootstrap classes to paint the best practice badge label. Defaults to "bg-info".
+}}&lt;/pre&gt;|classes=rounded}}
+&lt;/noinclude&gt;</text>
+      <sha1>9ilhwvo8w21f3iqzjg3sght1iju4d74</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Card</title>
+    <ns>10</ns>
+    <id>8592</id>
+    <revision>
+      <id>16954</id>
+      <parentid>16844</parentid>
+      <timestamp>2021-12-07T19:56:39Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>16954</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3840" sha1="a5yxvvfhmsvd73yyxflqsbonwtyqji4" xml:space="preserve">&lt;includeonly&gt;&lt;div class="card rounded mb-3 mb-md-4 {{{classes|}}}" style="min-width: 20rem;"&gt;&lt;!--
+
+--&gt;{{#if: {{{header|}}}
+     |&lt;div class="card-header {{{hclasses|}}} h4"&gt;{{{header|The Cell}}}&lt;/div&gt;
+   }}&lt;!--
+
+--&gt;{{#if: {{{image|}}}
+     |&lt;div class="{{#if: {{{header|}}}||card-img-top}} {{#switch:{{{ihalf|}}}|y|Y|Yes|yes|true|True|1=card-img-half}} d-block user-select-none bg-dark"&gt;[[File:{{PAGENAME:{{{image|}}}}}|class=w-100 h-auto|link={{{ilink|}}}]]&lt;/div&gt;
+   }}&lt;!--
+
+--&gt;{{#if: {{{preface|}}}{{{title|}}}{{{content|}}}
+     |&lt;div class="card-body {{{bclasses|}}}"&gt;&lt;!--
+
+--&gt;{{#if: {{{preface|}}}
+     |&lt;div class="card-subtitle text-muted small"&gt;{{{preface|}}}&lt;/div&gt;
+   }}&lt;!--
+
+--&gt;{{#if: {{{title|}}}
+     |&lt;div class="card-title mt-3 {{{tclasses|}}}"&gt;{{{title|}}}&lt;/div&gt;
+   }}
+&lt;div class="card-text"&gt;
+{{{content|}}}
+&lt;/div&gt;
+&lt;/div&gt;
+}}&lt;!--
+
+--&gt;{{#if: {{{footer|}}}
+     |&lt;div id="cardfooter" class="card-footer d-flex w-100 {{{fclasses|}}}"&gt;{{{footer|}}}&lt;/div&gt;
+   }}
+&lt;/div&gt;&lt;/includeonly&gt;&lt;noinclude&gt;
+&lt;pre class="linenum"&gt;
+{{Card
+|header  = 
+|hclasses= # CSS class names for the header
+|image   =
+|ilink   = # image click target
+|ihalf   = # limit the image height [ Y|y|Yes|yes|True|true|1 ]
+|preface =
+|title   = # CSS class names for the title
+|tclasses=
+|content =
+|footer  =
+|fclasses= # CSS class names for the footer
+|classes = # CSS class names for the card
+}}&lt;/pre&gt;
+== Elementary Cards ==
+{{Card
+|header  = Header
+|hclasses= 
+|image   = 
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to The Cell may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+|classes = 
+}}
+{{Card
+|header  = Header
+|image   = 
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+|classes = bg-light
+}}
+{{MerlinVideoPlayer
+|videoID=sEb5M2zyCxQ02de00E4bYrotYH3dsd016u01DlBYQw00hOfo
+|videoTitle=Interpreting nubers based on their position
+}}
+{{Card
+|header  = 
+|image   = MerlinAtDesk.jpg
+|ilink   = Special:Preferences
+|ihalf   = 1
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = 
+}}
+== Card Deck ==
+For a wall of cards wrap some of them into &lt;code&gt;&lt;nowiki&gt;&lt;div class="card-deck"&gt; ... &lt;/div&gt;&lt;/nowiki&gt;&lt;/code&gt;.
+&lt;div class="card-deck"&gt;
+{{Card
+|header  = Header
+|hclasses= bg-dark
+|image   = 
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+|fclasses= bg-dark
+|classes = bg-dark text-white
+}}
+{{Card
+|header  = Header
+|hclasses= bg-primary text-white
+|image   = 
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+|classes = bg-light
+}}
+{{Card
+|header  = 
+|image   = MerlinAtDesk.jpg
+|ilink   = Special:Preferences
+|preface = Preface text
+|title   = Title
+|content = Content: Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you do not want your writing to be edited mercilessly, then do not submit it here.
+|footer  = Footer
+}}
+
+&lt;/div&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>a5yxvvfhmsvd73yyxflqsbonwtyqji4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Caution</title>
+    <ns>10</ns>
+    <id>1045</id>
+    <revision>
+      <id>17242</id>
+      <parentid>17240</parentid>
+      <timestamp>2021-12-25T13:08:14Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>17242</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1074" sha1="gau90q6jd9pck5lbqmb7jbu1qoovb17" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded {{{bclass|alert-danger}}} mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;&lt;span class="badge {{{lclass|badge-danger}}} mt-2 mb-2" style="font-size:1rem"&gt;Caution&lt;/span&gt;&lt;!--
+   --&gt;[[File:WarnIcon.png|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;noinclude&gt;
+Inserts a block with the caution description.
+;Syntax
+{{ConsoleLinesLight|&lt;pre class="bg-transparent"&gt;{{Caution
+|1      = The first unnamed parameter contains the caution description
+|class  = Contains names of bootstrap classes to paint the caution block. Is empty by default.
+|bclass = Contains names of bootstrap classes to paint the caution badge. Defaults to "alert-danger".
+|lclass = Contains names of bootstrap classes to paint the caution badge label. Defaults to "badge-danger".
+}}&lt;/pre&gt;|classes=rounded}}
+&lt;/noinclude&gt;</text>
+      <sha1>gau90q6jd9pck5lbqmb7jbu1qoovb17</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ComingSoon</title>
+    <ns>10</ns>
+    <id>1164</id>
+    <revision>
+      <id>17241</id>
+      <parentid>17170</parentid>
+      <timestamp>2021-12-25T13:07:45Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>17241</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1108" sha1="461qqwliw05v1ed5emsyymow4mcaswn" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded {{{bclass|bg-dark}}} mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;&lt;span class="badge {{{lclass|badge-dark}}} mt-2 mb-2" style="font-size:1rem"&gt;Coming Soon&lt;/span&gt;&lt;!--
+   --&gt;[[File:ComingSoonIcon.png|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;noinclude&gt;
+Inserts a block with the upcoming event description.
+;Syntax
+{{ConsoleLinesLight|&lt;pre class="bg-transparent"&gt;{{ComingSoon
+|1      = The first unnamed parameter contains the upcoming event description
+|class  = Contains names of bootstrap classes to paint the upcoming event block. Is empty by default.
+|bclass = Contains names of bootstrap classes to paint the upcoming event badge. Defaults to "bg-dark".
+|lclass = Contains names of bootstrap classes to paint the upcoming event badge label. Defaults to "badge-dark".
+}}&lt;/pre&gt;|classes=rounded}}
+&lt;/noinclude&gt;</text>
+      <sha1>461qqwliw05v1ed5emsyymow4mcaswn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ConsoleLines</title>
+    <ns>10</ns>
+    <id>1052</id>
+    <revision>
+      <id>17149</id>
+      <parentid>17148</parentid>
+      <timestamp>2021-12-15T00:24:25Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported</comment>
+      <origin>17148</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="4974" sha1="h655fhomqztwp0wca4svobg51zhhunz" xml:space="preserve">&lt;noinclude&gt;
+== Purpose ==
+Mimics console input / output.
+
+== Implementation approach ==
+The template is targeted to merge functionality of [[Template:ConsoleLine]] and [[Template:ConsoleLines]]. The template allows the injection of [[Help:Bootstrap classes|bootstrap classes]], primarily to add rounded corners and some padding to the single template instance or to the first and last instances of the template call series.
+
+Editors are encouraged to replace / edit all instances of both templates eventually using the proposed syntax / parameters.
+
+== Usage ==
+The first unnamed parameter contains the console input/output and it is the only mandatory parameter. 
+
+There are the optional named parameters:
+&lt;pre&gt;
+prompt   # The console prompt.
+classes  # Names of CSS classes which apply to the block.
+&lt;/pre&gt;
+;Example
+&lt;pre&gt;
+{{ConsoleLines
+|classes=rounded py-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+&lt;/pre&gt;
+;Result
+{{ConsoleLines
+|classes=rounded py-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+{{hint|class=mt-4|
+# Use one template for a single command prompt.
+# Use &lt;code&gt;rounded py-2&lt;/code&gt; classes to add border radius and some vertical padding.
+# Do not use &lt;code&gt;&lt;nowiki&gt;&lt;br/&gt;&lt;/nowiki&gt;&lt;/code&gt; to insert a line break, just start typing on the new line.
+# Use a number of subsequent instances of the template to build a block of console lines with multiple command prompts. In this case you might want:
+#* to add rounded corners only to the top of the first instance and to the bottom of the last instance 
+#* not to use padding between console lines blocks.
+# Play with &lt;code&gt;rounded-top&lt;/code&gt;, &lt;code&gt;rounded-bottom&lt;/code&gt;, &lt;code&gt;pt-2&lt;/code&gt;, &lt;code&gt;pb-2&lt;/code&gt; to achieve the desired layout. 
+# In complex cases when the console output fails to appear correctly (for example, when it contains the reserved characrters like &lt;code&gt;&lt;nowiki&gt;=&lt;/nowiki&gt;&lt;/code&gt;), wrap it into &lt;code&gt;&lt;nowiki&gt;&lt;nowiki&gt;&lt;/nowiki&gt;&lt;/code&gt; tag.
+}}
+;Example
+&lt;pre&gt;
+{{ConsoleLines
+|classes=rounded-top pt-2 &lt;!-- first prompt (top block) --&gt;
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+{{ConsoleLines
+|classes= &lt;!-- second prompt (middle block) --&gt;
+|prompt=john-williams@codermerlin:~$
+|&lt;nowiki&gt;&lt;nowiki&gt;&lt;/nowiki&gt;ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=19.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=19.5 ms
+^C
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 19.453/19.573/19.671/0.091 ms&lt;nowiki&gt;&lt;/nowiki&gt;&lt;/nowiki&gt;
+}}
+{{ConsoleLines
+|classes=rounded-bottom pb-2 &lt;!-- third prompt (bottom block) --&gt;
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+&lt;/pre&gt;
+;Result
+{{ConsoleLines
+|classes=rounded-top pt-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+{{ConsoleLines
+|classes=
+|prompt=john-williams@codermerlin:~$
+|&lt;nowiki&gt;ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=19.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=19.5 ms
+^C
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 19.453/19.573/19.671/0.091 ms&lt;/nowiki&gt;
+}}
+{{ConsoleLines
+|classes=rounded-bottom pb-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+
+== Variations ==
+There are two additional colour flavours of this template:
+* [[Template:ConsoleLinesLight]] and
+* [[Template:ConsoleLinesDark]] 
+; Light
+{{ConsoleLinesLight
+|classes=rounded py-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+; Dark
+{{ConsoleLinesDark
+|classes=rounded py-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+&lt;/noinclude&gt;&lt;includeonly&gt;&lt;div class="bg-dark px-3 text-monospace border-0 {{{classes|}}}" style="color: #edeaff;"&gt;{{#tag:poem|{{#if: {{{prompt|}}}|&lt;span class="font-weight-bold text-warning"&gt;{{{prompt|}}}&amp;nbsp;&lt;/span&gt;}}{{{1|}}}|compact}}&lt;/div&gt;&lt;/includeonly&gt;</text>
+      <sha1>h655fhomqztwp0wca4svobg51zhhunz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ConsoleLinesLight</title>
+    <ns>10</ns>
+    <id>8624</id>
+    <revision>
+      <id>17111</id>
+      <parentid>17110</parentid>
+      <timestamp>2021-12-12T12:47:06Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>17111</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="4079" sha1="cyzammqkzbwojzzs9xjwto6c5098hk8" xml:space="preserve">&lt;noinclude&gt;
+== Usage ==
+The first unnamed parameter contains the console input/output and it is the only mandatory parameter. 
+
+There are the optional named parameters:
+&lt;pre&gt;
+prompt   # The console prompt.
+classes  # Names of CSS classes which apply to the block.
+&lt;/pre&gt;
+;Example
+&lt;pre&gt;
+{{ConsoleLinesLight
+|classes=rounded py-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+&lt;/pre&gt;
+;Result
+{{ConsoleLinesLight
+|classes=rounded py-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+{{hint|class=mt-4|
+# Use one template for a single command prompt.
+# Use &lt;code&gt;rounded py-2&lt;/code&gt; classes to add border radius and some vertical padding.
+# Do not use &lt;code&gt;&lt;nowiki&gt;&lt;br/&gt;&lt;/nowiki&gt;&lt;/code&gt; to insert a line break, just start typing on the new line.
+# Use a number of subsequent instances of the template to build a block of console lines with multiple command prompts. In this case you might want:
+#* to add rounded corners only to the top of the first instance and to the bottom of the last instance 
+#* not to use padding between console lines blocks.
+# Play with &lt;code&gt;rounded-top&lt;/code&gt;, &lt;code&gt;rounded-bottom&lt;/code&gt;, &lt;code&gt;pt-2&lt;/code&gt;, &lt;code&gt;pb-2&lt;/code&gt; to achieve the desired layout. See [{{fullurl: Merlin_Maven_Engagement|type=revision&amp;diff=17101&amp;oldid=12145}} how to port existing templates].
+# In complex cases when the console output fails to appear correctly (for example, when it contains the reserved characrters like &lt;code&gt;&lt;nowiki&gt;=&lt;/nowiki&gt;&lt;/code&gt;), wrap it into &lt;code&gt;&lt;nowiki&gt;&lt;nowiki&gt;&lt;/nowiki&gt;&lt;/code&gt; tag.
+}}
+;Example
+&lt;pre&gt;
+{{ConsoleLinesLight
+|classes=rounded-top pt-2 &lt;!-- first prompt (top block) --&gt;
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+{{ConsoleLinesLight
+|classes= &lt;!-- second prompt (middle block) --&gt;
+|prompt=john-williams@codermerlin:~$
+|&lt;nowiki&gt;&lt;nowiki&gt;&lt;/nowiki&gt;ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=19.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=19.5 ms
+^C
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 19.453/19.573/19.671/0.091 ms&lt;nowiki&gt;&lt;/nowiki&gt;&lt;/nowiki&gt;
+}}
+{{ConsoleLinesLight
+|classes=rounded-bottom pb-2 &lt;!-- third prompt (bottom block) --&gt;
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+&lt;/pre&gt;
+;Result
+{{ConsoleLinesLight
+|classes=rounded-top pt-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+{{ConsoleLinesLight
+|classes=
+|prompt=john-williams@codermerlin:~$
+|&lt;nowiki&gt;ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=19.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=19.5 ms
+^C
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 19.453/19.573/19.671/0.091 ms&lt;/nowiki&gt;
+}}
+{{ConsoleLinesLight
+|classes=rounded-bottom pb-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+&lt;/noinclude&gt;&lt;includeonly&gt;&lt;div class="px-3 text-monospace border-0 {{{classes|}}}" style="color: #222;background-color:#f0f0f0;border-left: 6px solid #4f3f8a !important;"&gt;{{#tag:poem|{{#if: {{{prompt|}}}|&lt;span class="font-weight-bold text-dark"&gt;{{{prompt|}}}&amp;nbsp;&lt;/span&gt;}}{{{1|}}}|compact}}&lt;/div&gt;&lt;/includeonly&gt;</text>
+      <sha1>cyzammqkzbwojzzs9xjwto6c5098hk8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:ConsoleLinesDark</title>
+    <ns>10</ns>
+    <id>8626</id>
+    <revision>
+      <id>17115</id>
+      <timestamp>2021-12-12T13:05:38Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <comment>Created page with "&lt;noinclude&gt; == Usage == The first unnamed parameter contains the console input/output and it is the only mandatory parameter.   There are the optional named parameters: &lt;pre&gt;..."</comment>
+      <origin>17115</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3999" sha1="ky5v63dlgjk4qfyrxeg1syrksb9mfx6" xml:space="preserve">&lt;noinclude&gt;
+== Usage ==
+The first unnamed parameter contains the console input/output and it is the only mandatory parameter. 
+
+There are the optional named parameters:
+&lt;pre&gt;
+prompt   # The console prompt.
+classes  # Names of CSS classes which apply to the block.
+&lt;/pre&gt;
+;Example
+&lt;pre&gt;
+{{ConsoleLines
+|classes=rounded py-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+&lt;/pre&gt;
+;Result
+{{ConsoleLines
+|classes=rounded py-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+{{hint|class=mt-4|
+# Use one template for a single command prompt.
+# Use &lt;code&gt;rounded py-2&lt;/code&gt; classes to add border radius and some vertical padding.
+# Do not use &lt;code&gt;&lt;nowiki&gt;&lt;br/&gt;&lt;/nowiki&gt;&lt;/code&gt; to insert a line break, just start typing on the new line.
+# Use a number of subsequent instances of the template to build a block of console lines with multiple command prompts. In this case you might want:
+#* to add rounded corners only to the top of the first instance and to the bottom of the last instance 
+#* not to use padding between console lines blocks.
+# Play with &lt;code&gt;rounded-top&lt;/code&gt;, &lt;code&gt;rounded-bottom&lt;/code&gt;, &lt;code&gt;pt-2&lt;/code&gt;, &lt;code&gt;pb-2&lt;/code&gt; to achieve the desired layout. See [{{fullurl: Merlin_Maven_Engagement|type=revision&amp;diff=17101&amp;oldid=12145}} how to port existing templates].
+# In complex cases when the console output fails to appear correctly (for example, when it contains the reserved characrters like &lt;code&gt;&lt;nowiki&gt;=&lt;/nowiki&gt;&lt;/code&gt;), wrap it into &lt;code&gt;&lt;nowiki&gt;&lt;nowiki&gt;&lt;/nowiki&gt;&lt;/code&gt; tag.
+}}
+;Example
+&lt;pre&gt;
+{{ConsoleLines
+|classes=rounded-top pt-2 &lt;!-- first prompt (top block) --&gt;
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+{{ConsoleLines
+|classes= &lt;!-- second prompt (middle block) --&gt;
+|prompt=john-williams@codermerlin:~$
+|&lt;nowiki&gt;&lt;nowiki&gt;&lt;/nowiki&gt;ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=19.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=19.5 ms
+^C
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 19.453/19.573/19.671/0.091 ms&lt;nowiki&gt;&lt;/nowiki&gt;&lt;/nowiki&gt;
+}}
+{{ConsoleLines
+|classes=rounded-bottom pb-2 &lt;!-- third prompt (bottom block) --&gt;
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+&lt;/pre&gt;
+;Result
+{{ConsoleLines
+|classes=rounded-top pt-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+{{ConsoleLines
+|classes=
+|prompt=john-williams@codermerlin:~$
+|&lt;nowiki&gt;ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=19.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=19.7 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=19.5 ms
+^C
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 19.453/19.573/19.671/0.091 ms&lt;/nowiki&gt;
+}}
+{{ConsoleLines
+|classes=rounded-bottom pb-2
+|prompt=john-williams@codermerlin:~$
+|sudo systemctl status apache2
+[sudo] password for john-williams:           
+Unit apache2.service could not be found.
+}}
+&lt;/noinclude&gt;&lt;includeonly&gt;&lt;div class="px-3 text-monospace border-0 {{{classes|}}}" style="color: #edeaff;background-color:#333"&gt;{{#tag:poem|{{#if: {{{prompt|}}}|&lt;span class="font-weight-bold text-warning"&gt;{{{prompt|}}}&amp;nbsp;&lt;/span&gt;}}{{{1|}}}|compact}}&lt;/div&gt;&lt;/includeonly&gt;</text>
+      <sha1>ky5v63dlgjk4qfyrxeg1syrksb9mfx6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Excursion</title>
+    <ns>10</ns>
+    <id>1648</id>
+    <revision>
+      <id>17244</id>
+      <parentid>17167</parentid>
+      <timestamp>2021-12-25T13:17:07Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>17244</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1118" sha1="r9ufp5w3ksm3yql492mqi0pgznxtce5" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded {{{bclass|bg-info}}} mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;&lt;span class="badge {{{lclass|badge-warning}}} text-dark mt-2 mb-2" style="font-size:1rem"&gt;Excursions&lt;/span&gt;&lt;!--
+   --&gt;[[File:101 138 Boeheimkirchen 070430.jpg|class=m-auto d-none d-md-inline-block|link=|150px]]
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;noinclude&gt;
+Inserts a block with the excursion description.
+;Syntax
+{{ConsoleLinesLight|&lt;pre class="bg-transparent"&gt;{{Excursion
+|1      = The first unnamed parameter contains the excursion description
+|class  = Contains names of bootstrap classes to paint the excursion block. Is empty by default.
+|bclass = Contains names of bootstrap classes to paint the excursion badge. Defaults to "bg-info".
+|lclass = Contains names of bootstrap classes to paint the excursion badge label. Defaults to "badge-warning".
+}}&lt;/pre&gt;|classes=rounded}}
+&lt;/noinclude&gt;</text>
+      <sha1>r9ufp5w3ksm3yql492mqi0pgznxtce5</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Exercises</title>
+    <ns>10</ns>
+    <id>772</id>
+    <revision>
+      <id>17245</id>
+      <parentid>17243</parentid>
+      <timestamp>2021-12-25T13:17:18Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>17245</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1097" sha1="0ynk08zrjhvh9mur1xuk5g9h84nfc5d" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded {{{bclass|alert-success}}} mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;&lt;span class="badge {{{lclass|badge-success}}} mt-2 mb-2" style="font-size:1rem"&gt;Exercises&lt;/span&gt;&lt;!--
+   --&gt;[[File:ExercisesIcon.png|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;noinclude&gt;
+Inserts a block with the exercises description.
+;Syntax
+{{ConsoleLinesLight|&lt;pre class="bg-transparent"&gt;{{Exercises
+|1      = The first unnamed parameter contains the exercises description
+|class  = Contains names of bootstrap classes to paint the exercises block. Is empty by default.
+|bclass = Contains names of bootstrap classes to paint the exercises badge. Defaults to "alert-success".
+|lclass = Contains names of bootstrap classes to paint the exercises badge label. Defaults to "badge-success".
+}}&lt;/pre&gt;|classes=rounded}}
+&lt;/noinclude&gt;</text>
+      <sha1>0ynk08zrjhvh9mur1xuk5g9h84nfc5d</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:GoingDeeper</title>
+    <ns>10</ns>
+    <id>1199</id>
+    <revision>
+      <id>17246</id>
+      <parentid>17169</parentid>
+      <timestamp>2021-12-25T13:20:19Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>17246</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1137" sha1="7734rytk4d7yyfoxcnjqf0a82fu8pac" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded {{{bclass|bg-primary}}} mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;&lt;span class="badge {{{lclass|badge-dark}}} mt-2 mb-2" style="font-size:1rem"&gt;Going Deeper&lt;/span&gt;&lt;!--
+   --&gt;[[File:GoingDeeperIcon.png|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;noinclude&gt;
+Inserts a block with the detailed knowledge description.
+;Syntax
+{{ConsoleLinesLight|&lt;pre class="bg-transparent"&gt;{{GoingDeeper
+|1      = The first unnamed parameter contains the detailed knowledge description
+|class  = Contains names of bootstrap classes to paint the detailed knowledge block. Is empty by default.
+|bclass = Contains names of bootstrap classes to paint the detailed knowledge badge. Defaults to "bg-primary".
+|lclass = Contains names of bootstrap classes to paint the detailed knowledge badge label. Defaults to "badge-dark".
+}}&lt;/pre&gt;|classes=rounded}}
+&lt;/noinclude&gt;</text>
+      <sha1>7734rytk4d7yyfoxcnjqf0a82fu8pac</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Observe</title>
+    <ns>10</ns>
+    <id>771</id>
+    <revision>
+      <id>17247</id>
+      <parentid>17161</parentid>
+      <timestamp>2021-12-25T13:25:13Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>17247</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1307" sha1="n333fcimvxh9vom18zydnvqsmi0tggu" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded {{{bclass|alert-primary}}} mr-0 mr-md-4 w-auto" title="Observe, Ponder and Journal"&gt;&lt;!--
+   --&gt;&lt;span class="badge {{{lclass|badge-primary}}} mt-2 mb-2" style="font-size:1rem"&gt;Observe&lt;/span&gt;&lt;!--
+   --&gt;[[File:ObserveIcon.png|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100 mt-3"&gt;Observe, Ponder, and Journal: &lt;b&gt;{{{1|}}}&lt;/b&gt;
+{{{2|}}}
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;noinclude&gt;
+Inserts a block with the detailed knowledge description.
+;Syntax
+{{ConsoleLinesLight|&lt;pre class="bg-transparent"&gt;{{Observe
+|1      = The first unnamed parameter contains the detailed knowledge heading
+|2      = The second unnamed parameter contains the detailed knowledge description
+|class  = Contains names of bootstrap classes to paint the detailed knowledge block. Is empty by default.
+|bclass = Contains names of bootstrap classes to paint the detailed knowledge badge. Defaults to "alert-primary".
+|lclass = Contains names of bootstrap classes to paint the detailed knowledge badge label. Defaults to "badge-primary".
+}}&lt;/pre&gt;|classes=rounded}}
+&lt;/noinclude&gt;</text>
+      <sha1>n333fcimvxh9vom18zydnvqsmi0tggu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Question</title>
+    <ns>10</ns>
+    <id>770</id>
+    <revision>
+      <id>17248</id>
+      <parentid>17124</parentid>
+      <timestamp>2021-12-25T14:02:46Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>17248</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1104" sha1="6fij81zvu4v4576c9ohbahpagz3a73d" xml:space="preserve">&lt;div class="d-flex flex-row rounded py-1 {{{class|}}}" style="min-width: 280px;flex:1"&gt;
+  &lt;div class="d-flex flex-column flex-md-row w-100 align-items-start"&gt;
+    &lt;div class="d-flex flex-column justify-content-center px-4 py-2 pb-md-3 rounded {{{bclass|alert-info}}} mr-0 mr-md-4 w-auto"&gt;&lt;!--
+   --&gt;&lt;span class="badge {{{lclass|badge-info}}} mt-2 mb-2" style="font-size:1rem"&gt;Question&lt;/span&gt;&lt;!--
+   --&gt;[[File:Question Mark Icon - Blue Box.svg|class=m-auto d-none d-md-inline-block|link=]]
+    &lt;/div&gt;
+    &lt;div class="w-100"&gt;{{{1|}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;noinclude&gt;
+Inserts a block with the question description.
+;Syntax
+{{ConsoleLinesLight|&lt;pre class="bg-transparent"&gt;{{Question
+|1      = The first unnamed parameter contains the detailed knowledge description
+|class  = Contains names of bootstrap classes to paint the question block. Is empty by default.
+|bclass = Contains names of bootstrap classes to paint the question badge. Defaults to "alert-info".
+|lclass = Contains names of bootstrap classes to paint the question badge label. Defaults to "badge-info".
+}}&lt;/pre&gt;|classes=rounded}}
+&lt;/noinclude&gt;</text>
+      <sha1>6fij81zvu4v4576c9ohbahpagz3a73d</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Sitenotice</title>
+    <ns>10</ns>
+    <id>8591</id>
+    <revision>
+      <id>16967</id>
+      <parentid>16909</parentid>
+      <timestamp>2021-12-07T23:20:04Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>16967</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1026" sha1="riuzg5tvxv280kejerdzskqrko9ih57" xml:space="preserve">{{card
+|footer={{{1|This is a site notice }}}
+|fclasses=alert alert-{{{2|primary}}} font-weight-bold mb-0 justify-content-center flex-column flex-md-row rounded
+|classes=w-100 p-1 sitenotice-alert plainlinks border-0 {{{3|}}}
+}}
+&lt;noinclude&gt;
+;Code
+&lt;pre class="linenum"&gt;
+{{Sitenotice
+|&lt;anything&gt;             # Your message goes here ...
+|&lt;optional&gt;             # Bootstrap coloring classes names [ info, secondary, warning, success, etc ]
+}}&lt;/pre&gt;
+;Example
+&lt;pre class="linenum"&gt;
+{{Sitenotice}}&lt;/pre&gt;
+;Result
+{{Sitenotice}}
+;Example
+&lt;pre class="linenum"&gt;
+{{Sitenotice|The wiki is under maintenance. Keep quiet.|info|fa-2x}}&lt;/pre&gt;
+;Result
+{{Sitenotice|The wiki is under maintenance. Keep quiet.|info|fa-2x}}
+;Example
+&lt;pre class="linenum"&gt;
+{{Sitenotice|Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors.|warning}}&lt;/pre&gt;
+;Result
+{{Sitenotice|Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors.|warning}}
+
+&lt;/noinclude&gt;</text>
+      <sha1>riuzg5tvxv280kejerdzskqrko9ih57</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Help:Using Bootstrap classes</title>
+    <ns>12</ns>
+    <id>8630</id>
+    <revision>
+      <id>17259</id>
+      <parentid>17258</parentid>
+      <timestamp>2021-12-27T16:55:00Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <comment>/* Examples */</comment>
+      <origin>17259</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="11286" sha1="8ygxoc7rewejew936sjghszyyctobei" xml:space="preserve">== General approach ==
+# Avoid excessive styling. Most of text and page elements go with nice default formatting. Look at [[project:Bootstrap|examples]].
+# Avoid using inline styling (eg. &lt;code&gt;style="border: 1px solid lightgray"&lt;/code&gt;).
+# Try to keep to the built-in Bootstrap classes.
+# Classes may be hardcoded in the template for easy usage and unified look of the elements.
+# Classes may be passed to the template as parameters for easy ustomization of element instances.
+# Custom classes can be defined on [[Mediawiki:Common.css]].
+
+Many templates provide &lt;code&gt;class&lt;/code&gt; (&lt;code&gt;{prefix}class&lt;/code&gt;) or &lt;code&gt;classes&lt;/code&gt; (&lt;code&gt;{prefix}classes&lt;/code&gt;) parameters mostly to position and to paint content elements. In theory, parameters can accept any of [https://getbootstrap.com/docs/5.1/getting-started/introduction/ bootstrap] or [[Mediawiki:Common.css|custom]]  CSS classes names. In this guidance we'll mention some starightforward and useful classes only.
+
+== Templates ==
+Read more about how to use some important templates:
+* [[Template:BestPractice‎]]
+* [[Template:Card]]
+* [[Template:Caution‎‎]]
+* [[Template:ComingSoon‎]]
+* [[Template:ConsoleLines]]
+** [[Template:ConsoleLinesLight]]
+** [[Template:ConsoleLinesDark]]
+* [[Template:Excursion‎]]
+* [[Template:Exercises‎‎]]
+* [[Template:GoingDeeper‎]]
+* [[Template:Observe‎]]
+* [[Template:Question]]
+* [[Template:Sitenotice]]
+
+== Margin and padding ==
+This group of classes allows define the outer and the inner spacing of the element.
+
+There are prefixes that allow to explain to the browser what space is to be modified:
+* &lt;code&gt;m-&lt;/code&gt; - margin
+* &lt;code&gt;p-&lt;/code&gt; - padding
+* &lt;code&gt;my-&lt;/code&gt; - vertical margin
+* &lt;code&gt;py-&lt;/code&gt; - vertical padding
+* &lt;code&gt;mx-&lt;/code&gt; - horizontal margin
+* &lt;code&gt;px-&lt;/code&gt; - horizontal padding
+* &lt;code&gt;mt-&lt;/code&gt; - top margin
+* &lt;code&gt;mb-&lt;/code&gt; - bottom margin
+* &lt;code&gt;ml-&lt;/code&gt; - left margin
+* &lt;code&gt;mr-&lt;/code&gt; - right margin
+* &lt;code&gt;pt-&lt;/code&gt; - top padding
+* &lt;code&gt;pb-&lt;/code&gt; - bottom padding
+* &lt;code&gt;pl-&lt;/code&gt; - left padding
+* &lt;code&gt;pr-&lt;/code&gt; - right padding
+
+There is a scale of shortcuts to define the amount of space to be added:
+* &lt;code&gt;5&lt;/code&gt; - 3rem
+* &lt;code&gt;4&lt;/code&gt; - 1.5rem
+* &lt;code&gt;3&lt;/code&gt; - 1rem
+* &lt;code&gt;2&lt;/code&gt; - 0.5rem
+* &lt;code&gt;1&lt;/code&gt; - 0.25rem
+* &lt;code&gt;0&lt;/code&gt; - 0
+
+Margins can be negative:
+* &lt;code&gt;n1&lt;/code&gt; - (-0.25rem)
+* &lt;code&gt;n2&lt;/code&gt; - (-0.5rem)
+* &lt;code&gt;n3&lt;/code&gt; - (-1rem)
+* &lt;code&gt;n4&lt;/code&gt; - (-1.5rem)
+* &lt;code&gt;n5&lt;/code&gt; - (-3rem)
+
+There is an &lt;code&gt;auto&lt;/code&gt; shortcut that sets the correspondent dimension value to &lt;code&gt;"auto"&lt;/code&gt;.
+
+=== Examples ===
+&lt;pre class="linenum mt-3"&gt;
+{{BSExample
+|outer-classes=bg-success d-inline-block
+|inner-classes=m-4 d-inline-block
+|inner-content=This adds 1.5rem outer space for the inner white div on all sides
+}}
+&lt;/pre&gt;
+{{BSExample
+|outer-classes=bg-success d-inline-block
+|inner-classes=bg-white m-4
+|inner-content=This adds 1.5rem outer space for the inner div on all sides
+}}
+&lt;pre class="linenum mt-3"&gt;
+{{BSExample
+|outer-classes=bg-success d-inline-block
+|inner-classes=bg-white my-3 mr-2
+|inner-content=This adds 1rem vertical outer space and 0.5rem right outer space for the inner div
+}}
+&lt;/pre&gt;
+{{BSExample
+|outer-classes=bg-success d-inline-block
+|inner-classes=bg-white my-3 mr-2
+|inner-content=This adds 1rem vertical outer space and 0.5rem right outer space for the inner div
+}}
+&lt;pre class="linenum mt-3"&gt;
+{{BSExample
+|outer-classes=bg-success d-inline-block
+|inner-classes=bg-white my-3 mr-2 p-2
+|inner-content=This adds 1rem vertical outer space and 0.5rem right outer space for the inner div + 0.5rem inner space (padding)
+}}
+&lt;/pre&gt;
+{{BSExample
+|outer-classes=bg-success d-inline-block
+|inner-classes=bg-white my-3 mr-2 p-2
+|inner-content=This adds 1rem vertical outer space and 0.5rem right outer space for the inner div + 0.5rem inner space (padding)
+}}
+&lt;pre class="linenum mt-3"&gt;
+{{BSExample
+|outer-classes=bg-success d-inline-block p-3
+|inner-classes=bg-white p-3
+|inner-content=This adds 1rem padding to the outer and inner divs
+}}
+&lt;/pre&gt;
+{{BSExample
+|outer-classes=bg-success d-inline-block p-3
+|inner-classes=bg-white p-3
+|inner-content=This adds 1rem padding to the outer and inner divs
+}}
+&lt;pre class="linenum mt-3"&gt;
+{{BSExample
+|outer-classes=bg-success d-inline-block p-3 ml-n4
+|inner-classes=bg-white p-3
+|inner-content=This adds 1rem padding to the outer and inner divs and adds the negative 1.5rem margin on the left
+}}
+&lt;/pre&gt;
+{{BSExample
+|outer-classes=bg-success d-inline-block p-3 ml-n4
+|inner-classes=bg-white p-3
+|inner-content=This adds 1rem padding to the outer and inner divs and adds the negative 1.5rem margin on the left
+}}
+&lt;pre class="linenum mt-3"&gt;
+{{BSExample
+|outer-classes=bg-success d-flex w-100
+|inner-classes=bg-white p-3 mx-auto my-3
+|inner-content=This adds 1rem vertical margin and automatic horizontal margin to the inner div
+}}
+&lt;/pre&gt;
+{{BSExample
+|outer-classes=bg-success d-flex w-100
+|inner-classes=bg-white p-3 mx-auto my-3
+|inner-content=This adds 1rem vertical margin and automatic horizontal margin to the inner div
+}}
+
+== Background, Foreground, Border Colors ==
+Use prefixes:
+* &lt;code&gt;bg-&lt;/code&gt; to define the background color
+* &lt;code&gt;text-&lt;/code&gt; to define the foreground color
+* &lt;code&gt;border-&lt;/code&gt; to define the border color
+
+Use color codes to paint the text or the background:
+* &lt;code&gt;primary&lt;/code&gt;
+* &lt;code&gt;secondary&lt;/code&gt;
+* &lt;code&gt;success&lt;/code&gt;
+* &lt;code&gt;danger&lt;/code&gt;
+* &lt;code&gt;info&lt;/code&gt;
+* &lt;code&gt;warning&lt;/code&gt;
+* &lt;code&gt;dark&lt;/code&gt;
+* &lt;code&gt;light&lt;/code&gt;
+* &lt;code&gt;white&lt;/code&gt;
+=== Examples ===
+
+{{BSExample
+|outer-classes=bg-primary d-flex w-100 mb-2
+|inner-classes=bg-dark text-light p-3 mx-auto my-3
+|inner-content=Outer = bg-primary; Inner = bg-dark text-light
+}}
+{{BSExample
+|outer-classes=bg-light d-flex w-100 mb-2
+|inner-classes=bg-warning text-danger p-3 mx-auto my-3
+|inner-content=Outer = bg-light; Inner = bg-white text-danger
+}}
+{{BSExample
+|outer-classes=bg-warning border border-danger d-flex w-100 mb-2
+|inner-classes=bg-light text-muted p-3 mx-auto my-3
+|inner-content=Outer = bg-warning border border-danger; Inner = bg-light text-muted
+}}
+{{BSExample
+|outer-classes=bg-secondary d-flex w-100 mb-2
+|inner-classes=bg-info text-white p-3 mx-auto my-3
+|inner-content=Outer = bg-secondary; Inner = bg-info text-white
+}}
+{{BSExample
+|outer-classes=bg-white border border-dark d-flex w-100 mb-2
+|inner-classes=bg-success text-white border-info p-3 mx-auto my-3
+|inner-content=Outer = bg-white border border-dark; Inner = bg-success text-white
+}}
+
+=== Hints ===
+Please, note in the above examples:
+* To use border color class, the &lt;code&gt;border&lt;/code&gt; class must be added.
+* There is the &lt;code&gt;muted&lt;/code&gt; color shortcut available for the text (foreground) color.
+* Play combining the classes nicely.
+
+== Border Radius ==
+Use the following classes to add the standard border radius:
+* &lt;code&gt;rounded&lt;/code&gt;
+* &lt;code&gt;rounded-top&lt;/code&gt;
+* &lt;code&gt;rounded-bottom&lt;/code&gt;
+* &lt;code&gt;rounded-left&lt;/code&gt;
+* &lt;code&gt;rounded-right&lt;/code&gt;
+* &lt;code&gt;rounded-circle&lt;/code&gt;
+
+{{BSExample
+|outer-classes=bg-warning border border-danger d-flex w-100 mb-2 rounded-top
+|inner-classes=bg-light text-dark border border-danger p-3 mx-auto my-3 rounded-circle
+|inner-content=Outer = rounded-top; Inner = rounded-circle
+}}
+{{BSExample
+|outer-classes=bg-primary d-flex w-100 mb-2 rounded
+|inner-classes=bg-dark text-light p-3 mx-auto my-3 rounded-bottom
+|inner-content=Outer = rounded; Inner = rounded-bottom
+}}
+=== Hints ===
+As you may guess &lt;code&gt;rounded-0&lt;/code&gt; removes border-radius, if any.
+
+== Shadows ==
+Add shadows to your elements using classes:
+* &lt;code&gt;shadow-sm&lt;/code&gt;
+* &lt;code&gt;shadow&lt;/code&gt;
+* &lt;code&gt;shadow-lg&lt;/code&gt;
+
+{{BSExample
+|outer-classes=bg-white d-flex w-100 mb-2
+|inner-classes=bg-light border p-3 mx-auto my-3 shadow-sm
+|inner-content=Inner = shadow-sm
+}}
+{{BSExample
+|outer-classes=bg-white d-flex w-100 mb-2
+|inner-classes=bg-light border p-3 mx-auto my-3 shadow
+|inner-content=Inner = shadow
+}}
+{{BSExample
+|outer-classes=bg-white d-flex w-100 mb-2
+|inner-classes=bg-light border p-3 mx-auto my-3 shadow-lg
+|inner-content=Inner = shadow-lg
+}}
+== Display ==
+The most useful display classes are:
+* &lt;code&gt;d-block&lt;/code&gt; - makes the element act as a block container
+* &lt;code&gt;d-inline-block&lt;/code&gt; - makes the element act as an inline block container
+* &lt;code&gt;d-flex&lt;/code&gt; - makes the element act as a flexbox container
+* &lt;code&gt;d-none&lt;/code&gt; - makes the element disappear
+
+== Text Alignment or Flex Elements Distribution ==
+It is self-explanatory:
+* &lt;code&gt;text-left&lt;/code&gt;
+* &lt;code&gt;text-center&lt;/code&gt;
+* &lt;code&gt;text-right&lt;/code&gt;
+
+When using flexbox (&lt;code&gt;d-flex&lt;/code&gt;), inner (child) elements can be aligned using classes:
+* &lt;code&gt;justify-content-between&lt;/code&gt;
+* &lt;code&gt;justify-content-evenly&lt;/code&gt;
+* &lt;code&gt;justify-content-start&lt;/code&gt;
+* &lt;code&gt;justify-content-end&lt;/code&gt;
+* &lt;code&gt;align-items-start&lt;/code&gt;
+* &lt;code&gt;align-items-end&lt;/code&gt;
+* &lt;code&gt;align-items-center&lt;/code&gt;
+
+You can play with flex direction:
+* &lt;code&gt;flex-column&lt;/code&gt;
+* &lt;code&gt;flex-column-reverse&lt;/code&gt;
+* &lt;code&gt;flex-row&lt;/code&gt;
+* &lt;code&gt;flex-row-reverse&lt;/code&gt;
+
+=== Examples ===
+{{BSExample
+|outer-classes=p-2 bg-light mb-2
+|inner-classes=d-flex justify-content-evenly
+|inner-content=&lt;span class="d-inline-block p-2 border border-primary"&gt;We use &lt;/span&gt;&lt;span class="d-inline-block p-2 border border-primary"&gt;d-flex  &lt;/span&gt;&lt;span class="d-inline-block p-2 border border-primary"&gt;justify-content-evenly &lt;/span&gt;&lt;/div&gt;
+}}
+{{BSExample
+|outer-classes=p-2 bg-light mb-2
+|inner-classes=d-flex justify-content-between
+|inner-content=&lt;span class="d-inline-block p-2 border border-primary"&gt;We use &lt;/span&gt;&lt;span class="d-inline-block p-2 border border-primary"&gt;d-flex  &lt;/span&gt;&lt;span class="d-inline-block p-2 border border-primary"&gt;justify-content-between &lt;/span&gt;&lt;/div&gt;
+}}
+{{BSExample
+|outer-classes=p-2 bg-light mb-2
+|inner-classes=d-flex flex-column 
+|inner-content=&lt;span class="d-inline-block p-2 border border-primary"&gt;We use &lt;/span&gt;&lt;span class="d-inline-block p-2 border border-primary"&gt;d-flex  &lt;/span&gt;&lt;span class="d-inline-block p-2 border border-primary"&gt;flex-column &lt;/span&gt;&lt;/div&gt;
+}}
+{{BSExample
+|outer-classes=p-2 bg-light mb-2
+|inner-classes=d-flex flex-column align-items-center flex-column-reverse
+|inner-content=&lt;span class="d-inline-block p-2 border border-primary"&gt;We use &lt;/span&gt;&lt;span class="d-inline-block p-2 border border-primary"&gt;d-flex  &lt;/span&gt;&lt;span class="d-inline-block p-2 border border-primary"&gt;align-items-center &lt;/span&gt;&lt;span class="d-inline-block p-2 border border-primary"&gt;flex-column-reverse &lt;/span&gt;&lt;/div&gt;
+}}
+
+== Breakpoints ==
+There are suffixes to apply the class definition to the given screen size:
+* &lt;code&gt;-xs-&lt;/code&gt; - extra small, 0px and up 
+* &lt;code&gt;-sm-&lt;/code&gt; - small, 576px and up
+* &lt;code&gt;-md-&lt;/code&gt; - medium, 768 and up
+* &lt;code&gt;-lg-&lt;/code&gt; - large, 992px and up
+* &lt;code&gt;-cmln-&lt;/code&gt; - "chameleon", 1105px and up
+* &lt;code&gt;-xl-&lt;/code&gt; - extra large, 1900px and up
+
+=== Examples ===
+* &lt;code&gt;d-none d-lg-block&lt;/code&gt; - displays element on large screens
+* &lt;code&gt;mx-3 mx-cmln-auto&lt;/code&gt; - adds auto horizontal margins (centers the element across its parent) at 1105px and up, while keeping the horizontal margin equal to 1rem on smaller viewports
+* &lt;code&gt;flex-column flex-md-row&lt;/code&gt; - stack elements on small screens, otherwise keeping them in a row</text>
+      <sha1>8ygxoc7rewejew936sjghszyyctobei</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Widget:Bootstrap</title>
+    <ns>274</ns>
+    <id>8631</id>
+    <revision>
+      <id>17254</id>
+      <parentid>17252</parentid>
+      <timestamp>2021-12-26T19:52:14Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>17254</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="63097" sha1="4x3bcgziczh6pon4v8qtumwkwg66o61" xml:space="preserve"> &lt;style&gt; 
+h1, h2, h3 { color: inherit !important; border-bottom: 0 !important }
+ &lt;/style&gt;
+   &lt;div class="container"&gt;
+
+      &lt;!-- Navbar
+      ================================================== --&gt;
+      &lt;div class="bs-docs-section clearfix"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-12"&gt;
+            &lt;div class="page-header"&gt;
+              &lt;h1 id="navbars"&gt;Navbars&lt;/h1&gt;
+            &lt;/div&gt;
+
+            &lt;div class="bs-component"&gt;
+              &lt;nav class="navbar navbar-expand-lg navbar-dark bg-primary"&gt;
+                &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
+                &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"&gt;
+                  &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+
+                &lt;div class="collapse navbar-collapse" id="navbarColor01"&gt;
+                  &lt;ul class="navbar-nav mr-auto"&gt;
+                    &lt;li class="nav-item active"&gt;
+                      &lt;a class="nav-link" href="#"&gt;Home
+                        &lt;span class="sr-only"&gt;(current)&lt;/span&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="#"&gt;Features&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="#"&gt;Pricing&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="#"&gt;About&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item dropdown"&gt;
+                      &lt;a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"&gt;Dropdown&lt;/a&gt;
+                      &lt;div class="dropdown-menu"&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;
+                        &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;
+                      &lt;/div&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;form class="form-inline my-2 my-lg-0"&gt;
+                    &lt;input class="form-control mr-sm-2" type="text" placeholder="Search"&gt;
+                    &lt;button class="btn btn-secondary my-2 my-sm-0" type="submit"&gt;Search&lt;/button&gt;
+                  &lt;/form&gt;
+                &lt;/div&gt;
+              &lt;/nav&gt;
+            &lt;/div&gt;
+
+            &lt;div class="bs-component"&gt;
+              &lt;nav class="navbar navbar-expand-lg navbar-dark bg-dark"&gt;
+                &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
+                &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"&gt;
+                  &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+
+                &lt;div class="collapse navbar-collapse" id="navbarColor02"&gt;
+                  &lt;ul class="navbar-nav mr-auto"&gt;
+                    &lt;li class="nav-item active"&gt;
+                      &lt;a class="nav-link" href="#"&gt;Home
+                        &lt;span class="sr-only"&gt;(current)&lt;/span&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="#"&gt;Features&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="#"&gt;Pricing&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="#"&gt;About&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item dropdown"&gt;
+                      &lt;a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"&gt;Dropdown&lt;/a&gt;
+                      &lt;div class="dropdown-menu"&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;
+                        &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;
+                      &lt;/div&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;form class="form-inline my-2 my-lg-0"&gt;
+                    &lt;input class="form-control mr-sm-2" type="text" placeholder="Search"&gt;
+                    &lt;button class="btn btn-secondary my-2 my-sm-0" type="submit"&gt;Search&lt;/button&gt;
+                  &lt;/form&gt;
+                &lt;/div&gt;
+              &lt;/nav&gt;
+            &lt;/div&gt;
+
+            &lt;div class="bs-component"&gt;
+              &lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+                &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
+                &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"&gt;
+                  &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+
+                &lt;div class="collapse navbar-collapse" id="navbarColor03"&gt;
+                  &lt;ul class="navbar-nav mr-auto"&gt;
+                    &lt;li class="nav-item active"&gt;
+                      &lt;a class="nav-link" href="#"&gt;Home
+                        &lt;span class="sr-only"&gt;(current)&lt;/span&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="#"&gt;Features&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="#"&gt;Pricing&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                      &lt;a class="nav-link" href="#"&gt;About&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item dropdown"&gt;
+                      &lt;a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"&gt;Dropdown&lt;/a&gt;
+                      &lt;div class="dropdown-menu"&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;
+                        &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                        &lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;
+                      &lt;/div&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;form class="form-inline my-2 my-lg-0"&gt;
+                    &lt;input class="form-control mr-sm-2" type="text" placeholder="Search"&gt;
+                    &lt;button class="btn btn-secondary my-2 my-sm-0" type="submit"&gt;Search&lt;/button&gt;
+                  &lt;/form&gt;
+                &lt;/div&gt;
+              &lt;/nav&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Buttons
+      ================================================== --&gt;
+      &lt;div class="bs-docs-section"&gt;
+        &lt;div class="page-header"&gt;
+          &lt;div class="row"&gt;
+            &lt;div class="col-lg-12"&gt;
+              &lt;h1 id="buttons"&gt;Buttons&lt;/h1&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-7"&gt;
+            &lt;p class="bs-component"&gt;
+              &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+              &lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+              &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+              &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+              &lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+              &lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+              &lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;
+            &lt;/p&gt;
+
+            &lt;p class="bs-component"&gt;
+              &lt;button type="button" class="btn btn-primary disabled"&gt;Primary&lt;/button&gt;
+              &lt;button type="button" class="btn btn-secondary disabled"&gt;Secondary&lt;/button&gt;
+              &lt;button type="button" class="btn btn-success disabled"&gt;Success&lt;/button&gt;
+              &lt;button type="button" class="btn btn-info disabled"&gt;Info&lt;/button&gt;
+              &lt;button type="button" class="btn btn-warning disabled"&gt;Warning&lt;/button&gt;
+              &lt;button type="button" class="btn btn-danger disabled"&gt;Danger&lt;/button&gt;
+              &lt;button type="button" class="btn btn-link disabled"&gt;Link&lt;/button&gt;
+            &lt;/p&gt;
+
+            &lt;p class="bs-component"&gt;
+              &lt;button type="button" class="btn btn-outline-primary"&gt;Primary&lt;/button&gt;
+              &lt;button type="button" class="btn btn-outline-secondary"&gt;Secondary&lt;/button&gt;
+              &lt;button type="button" class="btn btn-outline-success"&gt;Success&lt;/button&gt;
+              &lt;button type="button" class="btn btn-outline-info"&gt;Info&lt;/button&gt;
+              &lt;button type="button" class="btn btn-outline-warning"&gt;Warning&lt;/button&gt;
+              &lt;button type="button" class="btn btn-outline-danger"&gt;Danger&lt;/button&gt;
+            &lt;/p&gt;
+
+            &lt;div class="bs-component"&gt;
+              &lt;div class="btn-group" role="group" aria-label="Button group with nested dropdown"&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+                &lt;div class="btn-group" role="group"&gt;
+                  &lt;button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;/button&gt;
+                  &lt;div class="dropdown-menu" aria-labelledby="btnGroupDrop1"&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;div class="btn-group" role="group" aria-label="Button group with nested dropdown"&gt;
+                &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+                &lt;div class="btn-group" role="group"&gt;
+                  &lt;button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;/button&gt;
+                  &lt;div class="dropdown-menu" aria-labelledby="btnGroupDrop2"&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;div class="btn-group" role="group" aria-label="Button group with nested dropdown"&gt;
+                &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+                &lt;div class="btn-group" role="group"&gt;
+                  &lt;button id="btnGroupDrop3" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;/button&gt;
+                  &lt;div class="dropdown-menu" aria-labelledby="btnGroupDrop3"&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;div class="btn-group" role="group" aria-label="Button group with nested dropdown"&gt;
+                &lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+                &lt;div class="btn-group" role="group"&gt;
+                  &lt;button id="btnGroupDrop4" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;/button&gt;
+                  &lt;div class="dropdown-menu" aria-labelledby="btnGroupDrop4"&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="bs-component"&gt;
+              &lt;button type="button" class="btn btn-primary btn-lg"&gt;Large button&lt;/button&gt;
+              &lt;button type="button" class="btn btn-primary"&gt;Default button&lt;/button&gt;
+              &lt;button type="button" class="btn btn-primary btn-sm"&gt;Small button&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-5"&gt;
+            &lt;p class="bs-component"&gt;
+              &lt;button type="button" class="btn btn-primary btn-lg btn-block"&gt;Block level button&lt;/button&gt;
+            &lt;/p&gt;
+
+            &lt;div class="bs-component mb-3"&gt;
+              &lt;div class="btn-group btn-group-toggle" data-toggle="buttons"&gt;
+                &lt;label class="btn btn-primary active"&gt;
+                  &lt;input type="checkbox" checked autocomplete="off"&gt; Active
+                &lt;/label&gt;
+                &lt;label class="btn btn-primary"&gt;
+                  &lt;input type="checkbox" autocomplete="off"&gt; Check
+                &lt;/label&gt;
+                &lt;label class="btn btn-primary"&gt;
+                  &lt;input type="checkbox" autocomplete="off"&gt; Check
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="bs-component mb-3"&gt;
+              &lt;div class="btn-group btn-group-toggle" data-toggle="buttons"&gt;
+                &lt;label class="btn btn-primary active"&gt;
+                  &lt;input type="radio" name="options" id="option1" autocomplete="off" checked&gt; Active
+                &lt;/label&gt;
+                &lt;label class="btn btn-primary"&gt;
+                  &lt;input type="radio" name="options" id="option2" autocomplete="off"&gt; Radio
+                &lt;/label&gt;
+                &lt;label class="btn btn-primary"&gt;
+                  &lt;input type="radio" name="options" id="option3" autocomplete="off"&gt; Radio
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="bs-component"&gt;
+              &lt;div class="btn-group-vertical"&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;Button&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;Button&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;Button&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;Button&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;Button&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;Button&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="bs-component mb-3"&gt;
+              &lt;div class="btn-group" role="group" aria-label="Basic example"&gt;
+                &lt;button type="button" class="btn btn-secondary"&gt;Left&lt;/button&gt;
+                &lt;button type="button" class="btn btn-secondary"&gt;Middle&lt;/button&gt;
+                &lt;button type="button" class="btn btn-secondary"&gt;Right&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="bs-component mb-3"&gt;
+              &lt;div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"&gt;
+                &lt;div class="btn-group mr-2" role="group" aria-label="First group"&gt;
+                  &lt;button type="button" class="btn btn-secondary"&gt;1&lt;/button&gt;
+                  &lt;button type="button" class="btn btn-secondary"&gt;2&lt;/button&gt;
+                  &lt;button type="button" class="btn btn-secondary"&gt;3&lt;/button&gt;
+                  &lt;button type="button" class="btn btn-secondary"&gt;4&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class="btn-group mr-2" role="group" aria-label="Second group"&gt;
+                  &lt;button type="button" class="btn btn-secondary"&gt;5&lt;/button&gt;
+                  &lt;button type="button" class="btn btn-secondary"&gt;6&lt;/button&gt;
+                  &lt;button type="button" class="btn btn-secondary"&gt;7&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class="btn-group" role="group" aria-label="Third group"&gt;
+                  &lt;button type="button" class="btn btn-secondary"&gt;8&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Typography
+      ================================================== --&gt;
+      &lt;div class="bs-docs-section"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-12"&gt;
+            &lt;div class="page-header"&gt;
+              &lt;h1 id="typography"&gt;Typography&lt;/h1&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Headings --&gt;
+
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;h1&gt;Heading 1&lt;/h1&gt;
+              &lt;h2&gt;Heading 2&lt;/h2&gt;
+              &lt;h3&gt;Heading 3&lt;/h3&gt;
+              &lt;h4&gt;Heading 4&lt;/h4&gt;
+              &lt;h5&gt;Heading 5&lt;/h5&gt;
+              &lt;h6&gt;Heading 6&lt;/h6&gt;
+              &lt;h3&gt;
+                Heading
+                &lt;small class="text-muted"&gt;with muted text&lt;/small&gt;
+              &lt;/h3&gt;
+              &lt;p class="lead"&gt;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;h2&gt;Example body text&lt;/h2&gt;
+              &lt;p&gt;Nullam quis risus eget &lt;a href="#"&gt;urna mollis ornare&lt;/a&gt; vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.&lt;/p&gt;
+              &lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
+              &lt;p&gt;The following is &lt;strong&gt;rendered as bold text&lt;/strong&gt;.&lt;/p&gt;
+              &lt;p&gt;The following is &lt;em&gt;rendered as italicized text&lt;/em&gt;.&lt;/p&gt;
+              &lt;p&gt;An abbreviation of the word attribute is &lt;abbr title="attribute"&gt;attr&lt;/abbr&gt;.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;h2&gt;Emphasis classes&lt;/h2&gt;
+              &lt;p class="text-muted"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
+              &lt;p class="text-primary"&gt;Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+              &lt;p class="text-secondary"&gt;Pellentesque ornare sem lacinia quam venenatis vestibulum.&lt;/p&gt;
+              &lt;p class="text-warning"&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
+              &lt;p class="text-danger"&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
+              &lt;p class="text-success"&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;
+              &lt;p class="text-info"&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Blockquotes --&gt;
+
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-12"&gt;
+            &lt;h2 id="type-blockquotes"&gt;Blockquotes&lt;/h2&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;blockquote class="blockquote"&gt;
+                &lt;p class="mb-0"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                &lt;footer class="blockquote-footer"&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+              &lt;/blockquote&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;blockquote class="blockquote text-center"&gt;
+                &lt;p class="mb-0"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                &lt;footer class="blockquote-footer"&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+              &lt;/blockquote&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;blockquote class="blockquote text-right"&gt;
+                &lt;p class="mb-0"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                &lt;footer class="blockquote-footer"&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+              &lt;/blockquote&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Tables
+      ================================================== --&gt;
+      &lt;div class="bs-docs-section"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-12"&gt;
+            &lt;div class="page-header"&gt;
+              &lt;h1 id="tables"&gt;Tables&lt;/h1&gt;
+            &lt;/div&gt;
+
+            &lt;div class="bs-component"&gt;
+              &lt;table class="table table-hover"&gt;
+                &lt;thead&gt;
+                  &lt;tr&gt;
+                    &lt;th scope="col"&gt;Type&lt;/th&gt;
+                    &lt;th scope="col"&gt;Column heading&lt;/th&gt;
+                    &lt;th scope="col"&gt;Column heading&lt;/th&gt;
+                    &lt;th scope="col"&gt;Column heading&lt;/th&gt;
+                  &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                  &lt;tr class="table-active"&gt;
+                    &lt;th scope="row"&gt;Active&lt;/th&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th scope="row"&gt;Default&lt;/th&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr class="table-primary"&gt;
+                    &lt;th scope="row"&gt;Primary&lt;/th&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr class="table-secondary"&gt;
+                    &lt;th scope="row"&gt;Secondary&lt;/th&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr class="table-success"&gt;
+                    &lt;th scope="row"&gt;Success&lt;/th&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr class="table-danger"&gt;
+                    &lt;th scope="row"&gt;Danger&lt;/th&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr class="table-warning"&gt;
+                    &lt;th scope="row"&gt;Warning&lt;/th&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr class="table-info"&gt;
+                    &lt;th scope="row"&gt;Info&lt;/th&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr class="table-light"&gt;
+                    &lt;th scope="row"&gt;Light&lt;/th&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr class="table-dark"&gt;
+                    &lt;th scope="row"&gt;Dark&lt;/th&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                    &lt;td&gt;Column content&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/tbody&gt;
+              &lt;/table&gt;
+            &lt;/div&gt;&lt;!-- /example --&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Forms
+      ================================================== --&gt;
+      &lt;div class="bs-docs-section"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-12"&gt;
+            &lt;div class="page-header"&gt;
+              &lt;h1 id="forms"&gt;Forms&lt;/h1&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-6"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;form&gt;
+                &lt;fieldset&gt;
+                  &lt;legend&gt;Legend&lt;/legend&gt;
+                  &lt;div class="form-group row"&gt;
+                    &lt;label for="staticEmail" class="col-sm-2 col-form-label"&gt;Email&lt;/label&gt;
+                    &lt;div class="col-sm-10"&gt;
+                      &lt;input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="form-group"&gt;
+                    &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+                    &lt;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"&gt;
+                    &lt;small id="emailHelp" class="form-text text-muted"&gt;We'll never share your email with anyone else.&lt;/small&gt;
+                  &lt;/div&gt;
+                  &lt;div class="form-group"&gt;
+                    &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+                    &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;
+                  &lt;/div&gt;
+                  &lt;div class="form-group"&gt;
+                    &lt;label for="exampleSelect1"&gt;Example select&lt;/label&gt;
+                    &lt;select class="form-control" id="exampleSelect1"&gt;
+                      &lt;option&gt;1&lt;/option&gt;
+                      &lt;option&gt;2&lt;/option&gt;
+                      &lt;option&gt;3&lt;/option&gt;
+                      &lt;option&gt;4&lt;/option&gt;
+                      &lt;option&gt;5&lt;/option&gt;
+                    &lt;/select&gt;
+                  &lt;/div&gt;
+                  &lt;div class="form-group"&gt;
+                    &lt;label for="exampleSelect2"&gt;Example multiple select&lt;/label&gt;
+                    &lt;select multiple class="form-control" id="exampleSelect2"&gt;
+                      &lt;option&gt;1&lt;/option&gt;
+                      &lt;option&gt;2&lt;/option&gt;
+                      &lt;option&gt;3&lt;/option&gt;
+                      &lt;option&gt;4&lt;/option&gt;
+                      &lt;option&gt;5&lt;/option&gt;
+                    &lt;/select&gt;
+                  &lt;/div&gt;
+                  &lt;div class="form-group"&gt;
+                    &lt;label for="exampleTextarea"&gt;Example textarea&lt;/label&gt;
+                    &lt;textarea class="form-control" id="exampleTextarea" rows="3"&gt;&lt;/textarea&gt;
+                  &lt;/div&gt;
+                  &lt;div class="form-group"&gt;
+                    &lt;label for="exampleInputFile"&gt;File input&lt;/label&gt;
+                    &lt;input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp"&gt;
+                    &lt;small id="fileHelp" class="form-text text-muted"&gt;This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.&lt;/small&gt;
+                  &lt;/div&gt;
+                  &lt;fieldset class="form-group"&gt;
+                    &lt;legend&gt;Radio buttons&lt;/legend&gt;
+                    &lt;div class="form-check"&gt;
+                      &lt;label class="form-check-label"&gt;
+                        &lt;input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;
+                        Option one is this and that&amp;mdash;be sure to include why it's great
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-check"&gt;
+                      &lt;label class="form-check-label"&gt;
+                        &lt;input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2"&gt;
+                        Option two can be something else and selecting it will deselect option one
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-check disabled"&gt;
+                      &lt;label class="form-check-label"&gt;
+                        &lt;input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled&gt;
+                        Option three is disabled
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/fieldset&gt;
+                  &lt;fieldset class="form-group"&gt;
+                    &lt;legend&gt;Checkboxes&lt;/legend&gt;
+                    &lt;div class="form-check"&gt;
+                      &lt;label class="form-check-label"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" checked&gt;
+                        Option one is this and that&amp;mdash;be sure to include why it's great
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-check disabled"&gt;
+                      &lt;label class="form-check-label"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" disabled&gt;
+                        Option two is disabled
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/fieldset&gt;
+                  &lt;fieldset class="form-group"&gt;
+                    &lt;legend&gt;Sliders&lt;/legend&gt;
+                    &lt;label for="customRange1"&gt;Example range&lt;/label&gt;
+                    &lt;input type="range" class="custom-range" id="customRange1"&gt;
+                  &lt;/fieldset&gt;
+                  &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+                &lt;/fieldset&gt;
+              &lt;/form&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-4 offset-lg-1"&gt;
+            &lt;form class="bs-component"&gt;
+              &lt;div class="form-group"&gt;
+                &lt;fieldset disabled&gt;
+                  &lt;label class="control-label" for="disabledInput"&gt;Disabled input&lt;/label&gt;
+                  &lt;input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled&gt;
+                &lt;/fieldset&gt;
+              &lt;/div&gt;
+
+              &lt;div class="form-group"&gt;
+                &lt;fieldset&gt;
+                  &lt;label class="control-label" for="readOnlyInput"&gt;Readonly input&lt;/label&gt;
+                  &lt;input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here..." readonly&gt;
+                &lt;/fieldset&gt;
+              &lt;/div&gt;
+
+              &lt;div class="form-group has-success"&gt;
+                &lt;label class="form-control-label" for="inputValid"&gt;Valid input&lt;/label&gt;
+                &lt;input type="text" value="correct value" class="form-control is-valid" id="inputValid"&gt;
+                &lt;div class="valid-feedback"&gt;Success! You've done it.&lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;div class="form-group has-danger"&gt;
+                &lt;label class="form-control-label" for="inputInvalid"&gt;Invalid input&lt;/label&gt;
+                &lt;input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid"&gt;
+                &lt;div class="invalid-feedback"&gt;Sorry, that username's taken. Try another?&lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;div class="form-group"&gt;
+                &lt;label class="col-form-label col-form-label-lg" for="inputLarge"&gt;Large input&lt;/label&gt;
+                &lt;input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge"&gt;
+              &lt;/div&gt;
+
+              &lt;div class="form-group"&gt;
+                &lt;label class="col-form-label" for="inputDefault"&gt;Default input&lt;/label&gt;
+                &lt;input type="text" class="form-control" placeholder="Default input" id="inputDefault"&gt;
+              &lt;/div&gt;
+
+              &lt;div class="form-group"&gt;
+                &lt;label class="col-form-label col-form-label-sm" for="inputSmall"&gt;Small input&lt;/label&gt;
+                &lt;input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="inputSmall"&gt;
+              &lt;/div&gt;
+
+              &lt;div class="form-group"&gt;
+                &lt;label class="control-label"&gt;Input addons&lt;/label&gt;
+                &lt;div class="form-group"&gt;
+                  &lt;div class="input-group mb-3"&gt;
+                    &lt;div class="input-group-prepend"&gt;
+                      &lt;span class="input-group-text"&gt;$&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"&gt;
+                    &lt;div class="input-group-append"&gt;
+                      &lt;span class="input-group-text"&gt;.00&lt;/span&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+
+            &lt;div class="bs-component"&gt;
+              &lt;fieldset&gt;
+                &lt;legend&gt;Custom forms&lt;/legend&gt;
+                &lt;div class="form-group"&gt;
+                  &lt;div class="custom-control custom-radio"&gt;
+                    &lt;input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked&gt;
+                    &lt;label class="custom-control-label" for="customRadio1"&gt;Toggle this custom radio&lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;div class="custom-control custom-radio"&gt;
+                    &lt;input type="radio" id="customRadio2" name="customRadio" class="custom-control-input"&gt;
+                    &lt;label class="custom-control-label" for="customRadio2"&gt;Or toggle this other custom radio&lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;div class="custom-control custom-radio"&gt;
+                    &lt;input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled&gt;
+                    &lt;label class="custom-control-label" for="customRadio3"&gt;Disabled custom radio&lt;/label&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="form-group"&gt;
+                  &lt;div class="custom-control custom-checkbox"&gt;
+                    &lt;input type="checkbox" class="custom-control-input" id="customCheck1" checked&gt;
+                    &lt;label class="custom-control-label" for="customCheck1"&gt;Check this custom checkbox&lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;div class="custom-control custom-checkbox"&gt;
+                    &lt;input type="checkbox" class="custom-control-input" id="customCheck2" disabled&gt;
+                    &lt;label class="custom-control-label" for="customCheck2"&gt;Disabled custom checkbox&lt;/label&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="form-group"&gt;
+                  &lt;div class="custom-control custom-switch"&gt;
+                    &lt;input type="checkbox" class="custom-control-input" id="customSwitch1" checked&gt;
+                    &lt;label class="custom-control-label" for="customSwitch1"&gt;Toggle this switch element&lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;div class="custom-control custom-switch"&gt;
+                    &lt;input type="checkbox" class="custom-control-input" disabled id="customSwitch2"&gt;
+                    &lt;label class="custom-control-label" for="customSwitch2"&gt;Disabled switch element&lt;/label&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="form-group"&gt;
+                  &lt;select class="custom-select"&gt;
+                    &lt;option selected&gt;Open this select menu&lt;/option&gt;
+                    &lt;option value="1"&gt;One&lt;/option&gt;
+                    &lt;option value="2"&gt;Two&lt;/option&gt;
+                    &lt;option value="3"&gt;Three&lt;/option&gt;
+                  &lt;/select&gt;
+                &lt;/div&gt;
+                &lt;div class="form-group"&gt;
+                  &lt;div class="input-group mb-3"&gt;
+                    &lt;div class="custom-file"&gt;
+                      &lt;input type="file" class="custom-file-input" id="inputGroupFile02"&gt;
+                      &lt;label class="custom-file-label" for="inputGroupFile02"&gt;Choose file&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="input-group-append"&gt;
+                      &lt;span class="input-group-text"&gt;Upload&lt;/span&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/fieldset&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Navs
+      ================================================== --&gt;
+      &lt;div class="bs-docs-section"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-12"&gt;
+            &lt;div class="page-header"&gt;
+              &lt;h1 id="navs"&gt;Navs&lt;/h1&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row mb-5"&gt;
+          &lt;div class="col-lg-6"&gt;
+            &lt;h2 id="nav-tabs"&gt;Tabs&lt;/h2&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;ul class="nav nav-tabs"&gt;
+                &lt;li class="nav-item"&gt;
+                  &lt;a class="nav-link active" data-toggle="tab" href="#home"&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                  &lt;a class="nav-link" data-toggle="tab" href="#profile"&gt;Profile&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                  &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item dropdown"&gt;
+                  &lt;a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"&gt;Dropdown&lt;/a&gt;
+                  &lt;div class="dropdown-menu"&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;
+                    &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;div id="myTabContent" class="tab-content"&gt;
+                &lt;div class="tab-pane fade show active" id="home"&gt;
+                  &lt;p&gt;Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="tab-pane fade" id="profile"&gt;
+                  &lt;p&gt;Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="tab-pane fade" id="dropdown1"&gt;
+                  &lt;p&gt;Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="tab-pane fade" id="dropdown2"&gt;
+                  &lt;p&gt;Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="col-lg-6"&gt;
+            &lt;h2 id="nav-pills"&gt;Pills&lt;/h2&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;ul class="nav nav-pills"&gt;
+                &lt;li class="nav-item"&gt;
+                  &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item dropdown"&gt;
+                  &lt;a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"&gt;Dropdown&lt;/a&gt;
+                  &lt;div class="dropdown-menu"&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;
+                    &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                  &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                  &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;ul class="nav nav-pills flex-column"&gt;
+                &lt;li class="nav-item"&gt;
+                  &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item dropdown"&gt;
+                  &lt;a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"&gt;Dropdown&lt;/a&gt;
+                  &lt;div class="dropdown-menu"&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;
+                    &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                    &lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                  &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                  &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-6"&gt;
+            &lt;h2 id="nav-breadcrumbs"&gt;Breadcrumbs&lt;/h2&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;ol class="breadcrumb"&gt;
+                &lt;li class="breadcrumb-item active"&gt;Home&lt;/li&gt;
+              &lt;/ol&gt;
+              &lt;ol class="breadcrumb"&gt;
+                &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="breadcrumb-item active"&gt;Library&lt;/li&gt;
+              &lt;/ol&gt;
+              &lt;ol class="breadcrumb"&gt;
+                &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="breadcrumb-item active"&gt;Data&lt;/li&gt;
+              &lt;/ol&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="col-lg-6"&gt;
+            &lt;h2 id="pagination"&gt;Pagination&lt;/h2&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div&gt;
+                &lt;ul class="pagination"&gt;
+                  &lt;li class="page-item disabled"&gt;
+                    &lt;a class="page-link" href="#"&gt;&amp;laquo;&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item active"&gt;
+                    &lt;a class="page-link" href="#"&gt;1&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;2&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;3&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;4&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;5&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;&amp;raquo;&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+
+              &lt;div&gt;
+                &lt;ul class="pagination pagination-lg"&gt;
+                  &lt;li class="page-item disabled"&gt;
+                    &lt;a class="page-link" href="#"&gt;&amp;laquo;&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item active"&gt;
+                    &lt;a class="page-link" href="#"&gt;1&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;2&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;3&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;4&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;5&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;&amp;raquo;&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+
+              &lt;div&gt;
+                &lt;ul class="pagination pagination-sm"&gt;
+                  &lt;li class="page-item disabled"&gt;
+                    &lt;a class="page-link" href="#"&gt;&amp;laquo;&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item active"&gt;
+                    &lt;a class="page-link" href="#"&gt;1&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;2&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;3&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;4&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;5&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="page-item"&gt;
+                    &lt;a class="page-link" href="#"&gt;&amp;raquo;&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Indicators
+      ================================================== --&gt;
+      &lt;div class="bs-docs-section"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-12"&gt;
+            &lt;div class="page-header"&gt;
+              &lt;h1 id="indicators"&gt;Indicators&lt;/h1&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-12"&gt;
+            &lt;h2&gt;Alerts&lt;/h2&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="alert alert-dismissible alert-warning"&gt;
+                &lt;button type="button" class="close" data-dismiss="alert"&gt;&amp;times;&lt;/button&gt;
+                &lt;h4 class="alert-heading"&gt;Warning!&lt;/h4&gt;
+                &lt;p class="mb-0"&gt;Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, &lt;a href="#" class="alert-link"&gt;vel scelerisque nisl consectetur et&lt;/a&gt;.&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="alert alert-dismissible alert-danger"&gt;
+                &lt;button type="button" class="close" data-dismiss="alert"&gt;&amp;times;&lt;/button&gt;
+                &lt;strong&gt;Oh snap!&lt;/strong&gt; &lt;a href="#" class="alert-link"&gt;Change a few things up&lt;/a&gt; and try submitting again.
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="alert alert-dismissible alert-success"&gt;
+                &lt;button type="button" class="close" data-dismiss="alert"&gt;&amp;times;&lt;/button&gt;
+                &lt;strong&gt;Well done!&lt;/strong&gt; You successfully read &lt;a href="#" class="alert-link"&gt;this important alert message&lt;/a&gt;.
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="alert alert-dismissible alert-info"&gt;
+                &lt;button type="button" class="close" data-dismiss="alert"&gt;&amp;times;&lt;/button&gt;
+                &lt;strong&gt;Heads up!&lt;/strong&gt; This &lt;a href="#" class="alert-link"&gt;alert needs your attention&lt;/a&gt;, but it's not super important.
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="alert alert-dismissible alert-primary"&gt;
+                &lt;button type="button" class="close" data-dismiss="alert"&gt;&amp;times;&lt;/button&gt;
+                &lt;strong&gt;Oh snap!&lt;/strong&gt; &lt;a href="#" class="alert-link"&gt;Change a few things up&lt;/a&gt; and try submitting again.
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="alert alert-dismissible alert-secondary"&gt;
+                &lt;button type="button" class="close" data-dismiss="alert"&gt;&amp;times;&lt;/button&gt;
+                &lt;strong&gt;Well done!&lt;/strong&gt; You successfully read &lt;a href="#" class="alert-link"&gt;this important alert message&lt;/a&gt;.
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="alert alert-dismissible alert-light"&gt;
+                &lt;button type="button" class="close" data-dismiss="alert"&gt;&amp;times;&lt;/button&gt;
+                &lt;strong&gt;Heads up!&lt;/strong&gt; This &lt;a href="#" class="alert-link"&gt;alert needs your attention&lt;/a&gt;, but it's not super important.
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;h2&gt;Badges&lt;/h2&gt;
+          &lt;div class="bs-component mb-4"&gt;
+            &lt;span class="badge badge-primary"&gt;Primary&lt;/span&gt;
+            &lt;span class="badge badge-secondary"&gt;Secondary&lt;/span&gt;
+            &lt;span class="badge badge-success"&gt;Success&lt;/span&gt;
+            &lt;span class="badge badge-danger"&gt;Danger&lt;/span&gt;
+            &lt;span class="badge badge-warning"&gt;Warning&lt;/span&gt;
+            &lt;span class="badge badge-info"&gt;Info&lt;/span&gt;
+            &lt;span class="badge badge-light"&gt;Light&lt;/span&gt;
+            &lt;span class="badge badge-dark"&gt;Dark&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="bs-component"&gt;
+            &lt;span class="badge badge-pill badge-primary"&gt;Primary&lt;/span&gt;
+            &lt;span class="badge badge-pill badge-secondary"&gt;Secondary&lt;/span&gt;
+            &lt;span class="badge badge-pill badge-success"&gt;Success&lt;/span&gt;
+            &lt;span class="badge badge-pill badge-danger"&gt;Danger&lt;/span&gt;
+            &lt;span class="badge badge-pill badge-warning"&gt;Warning&lt;/span&gt;
+            &lt;span class="badge badge-pill badge-info"&gt;Info&lt;/span&gt;
+            &lt;span class="badge badge-pill badge-light"&gt;Light&lt;/span&gt;
+            &lt;span class="badge badge-pill badge-dark"&gt;Dark&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Containers
+      ================================================== --&gt;
+      &lt;div class="bs-docs-section"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-12"&gt;
+            &lt;div class="page-header"&gt;
+              &lt;h1 id="containers"&gt;Containers&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="jumbotron"&gt;
+                &lt;h1 class="display-3"&gt;Hello, world!&lt;/h1&gt;
+                &lt;p class="lead"&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
+                &lt;hr class="my-4"&gt;
+                &lt;p&gt;It uses utility classes for typography and spacing to space content out within the larger container.&lt;/p&gt;
+                &lt;p class="lead"&gt;
+                  &lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-12"&gt;
+            &lt;h2&gt;List groups&lt;/h2&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;ul class="list-group"&gt;
+                &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+                  Cras justo odio
+                  &lt;span class="badge badge-primary badge-pill"&gt;14&lt;/span&gt;
+                &lt;/li&gt;
+                &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+                  Dapibus ac facilisis in
+                  &lt;span class="badge badge-primary badge-pill"&gt;2&lt;/span&gt;
+                &lt;/li&gt;
+                &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+                  Morbi leo risus
+                  &lt;span class="badge badge-primary badge-pill"&gt;1&lt;/span&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="list-group"&gt;
+                &lt;a href="#" class="list-group-item list-group-item-action active"&gt;Cras justo odio&lt;/a&gt;
+                &lt;a href="#" class="list-group-item list-group-item-action"&gt;Dapibus ac facilisis in&lt;/a&gt;
+                &lt;a href="#" class="list-group-item list-group-item-action disabled"&gt;Morbi leo risus&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="list-group"&gt;
+                &lt;a href="#" class="list-group-item list-group-item-action flex-column align-items-start active"&gt;
+                  &lt;div class="d-flex w-100 justify-content-between"&gt;
+                    &lt;h5 class="mb-1"&gt;List group item heading&lt;/h5&gt;
+                    &lt;small&gt;3 days ago&lt;/small&gt;
+                  &lt;/div&gt;
+                  &lt;p class="mb-1"&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;/p&gt;
+                  &lt;small&gt;Donec id elit non mi porta.&lt;/small&gt;
+                &lt;/a&gt;
+                &lt;a href="#" class="list-group-item list-group-item-action flex-column align-items-start"&gt;
+                  &lt;div class="d-flex w-100 justify-content-between"&gt;
+                    &lt;h5 class="mb-1"&gt;List group item heading&lt;/h5&gt;
+                    &lt;small class="text-muted"&gt;3 days ago&lt;/small&gt;
+                  &lt;/div&gt;
+                  &lt;p class="mb-1"&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;/p&gt;
+                  &lt;small class="text-muted"&gt;Donec id elit non mi porta.&lt;/small&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-12"&gt;
+            &lt;h2&gt;Cards&lt;/h2&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="card text-white bg-primary mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Primary card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card bg-secondary mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Secondary card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card text-white bg-success mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Success card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card text-white bg-danger mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Danger card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card text-white bg-warning mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Warning card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card text-white bg-info mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Info card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card bg-light mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Light card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card text-white bg-dark mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Dark card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="card border-primary mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Primary card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card border-secondary mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Secondary card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card border-success mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Success card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card border-danger mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Danger card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card border-warning mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Warning card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card border-info mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Info card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card border-light mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Light card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card border-dark mb-3" style="max-width: 20rem;"&gt;
+                &lt;div class="card-header"&gt;Header&lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Dark card title&lt;/h4&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="col-lg-4"&gt;
+            &lt;div class="bs-component"&gt;
+              &lt;div class="card mb-3"&gt;
+                &lt;h3 class="card-header"&gt;Card header&lt;/h3&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+                  &lt;h6 class="card-subtitle text-muted"&gt;Support card subtitle&lt;/h6&gt;
+                &lt;/div&gt;
+                &lt;svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle"&gt;
+                  &lt;rect width="100%" height="100%" fill="#868e96"&gt;&lt;/rect&gt;
+                  &lt;text x="50%" y="50%" fill="#dee2e6" dy=".3em"&gt;Image cap&lt;/text&gt;
+                &lt;/svg&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;ul class="list-group list-group-flush"&gt;
+                  &lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;
+                  &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+                  &lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;a href="#" class="card-link"&gt;Card link&lt;/a&gt;
+                  &lt;a href="#" class="card-link"&gt;Another link&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="card-footer text-muted"&gt;
+                  2 days ago
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="card"&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                  &lt;h6 class="card-subtitle mb-2 text-muted"&gt;Card subtitle&lt;/h6&gt;
+                  &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                  &lt;a href="#" class="card-link"&gt;Card link&lt;/a&gt;
+                  &lt;a href="#" class="card-link"&gt;Another link&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</text>
+      <sha1>4x3bcgziczh6pon4v8qtumwkwg66o61</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Project:Bootstrap</title>
+    <ns>4</ns>
+    <id>8632</id>
+    <revision>
+      <id>17255</id>
+      <parentid>17253</parentid>
+      <timestamp>2021-12-26T19:52:31Z</timestamp>
+      <contributor>
+        <username>WikiVisor</username>
+        <id>29802</id>
+      </contributor>
+      <origin>17255</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="31" sha1="28pyjmo4o96irubxltcl96d5ubq31wl" xml:space="preserve">{{#widget:bootstrap}}
+__NOTOC__</text>
+      <sha1>28pyjmo4o96irubxltcl96d5ubq31wl</sha1>
+    </revision>
+  </page>
+</mediawiki>
